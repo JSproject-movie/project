@@ -1,0 +1,21 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin border-1{
+    border-radius: 20px;
+    border: 2px solid #B88ED3;
+}
+
+@mixin btn-border-1{
+    border-radius: 10px;
+    border: 2px solid #F8D8F5;
+}
+
+@mixin font-white{
+    color: #FFF;
+    font-family: $NotoSans;
+    font-style: normal;
+    line-height: normal;
+}
