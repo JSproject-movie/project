@@ -47,4 +47,53 @@
   width: 16px;
   height: 16px;
   margin-left: 60px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 163px;
+  height: 771px;
+  padding: 60px 0px;
+  background: linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%);
+  margin: 0;
+}
+
+.sidebar ul {
+  margin-left: -32px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sideitem ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 55px;
+}
+
+.sideitem a {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social li {
+  padding: 5px 0px;
 }/*# sourceMappingURL=style.css.map */
