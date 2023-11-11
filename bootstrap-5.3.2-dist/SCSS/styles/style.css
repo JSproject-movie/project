@@ -1,7 +1,6 @@
 .header {
   width: 1277px;
   height: 90px;
-  margin-left: 163px;
   display: flex;
   align-items: center;
   background: var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%));
