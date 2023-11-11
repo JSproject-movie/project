@@ -1,6 +1,10 @@
 .header{
+    width: 1277px;
+    height: 90px;
+    margin-left: 163px;
     display: flex;
     align-items:center;
+    background: $primary-c;
 }
 .header .logo{
     display: inline-block;
