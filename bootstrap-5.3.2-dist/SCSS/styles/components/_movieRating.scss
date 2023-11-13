@@ -1,0 +1,25 @@
+.movieRating{
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(115deg, rgba(255, 255, 255, 0.10) 0%, rgba(205, 203, 203, 0.15) 33.52%, rgba(249, 225, 255, 0.10) 67.04%, rgba(142, 9, 129, 0.10) 100.56%);
+    .scoreBtn{
+        color:white;
+        padding:10px;
+        border-radius: 10px;
+        border: 2px solid #B3B6F2;
+        background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);
+        box-shadow: 9px 5px 10px 0px rgba(110, 62, 147, 0.25);
+    }
+    .star-cb-group{
+        &>label{
+            display: inline-block;
+            font-size: 20px;
+            width: 1em;
+            white-space: nowrap;
+            background: linear-gradient(to right, #D08DDB, #B839CD);
+            -webkit-background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0px 0px 11px rgba(181, 106, 164, 0.50));
+        }
+    }
+}

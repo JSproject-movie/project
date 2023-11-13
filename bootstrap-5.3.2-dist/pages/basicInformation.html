@@ -21,7 +21,7 @@
                             <li><a href="#" class="link-light my-5 active">基本資料設定</a></li>
                             <li><a href="#" class="link-light my-5">帳號與安全性</a></li>
                             <li><a href="#" class="link-light my-5">我的收藏影評</a></li>
-                            <li><a href="#" class="link-light my-5">我的電影評論</a></li>
+                            <li><a href="#" class="link-light my-5">我的影評列表</a></li>
                             <li><a href="#" class="link-light my-5">我的評分列表</a></li>
                             <li><a href="#" class="link-light my-5">檢舉/申訴</a></li>
                         </ul>
@@ -50,7 +50,7 @@
                 </header>
                 <main class="d-flex flex-column align-items-center justify-content-center mb-5">
                     <h2 class="d-flex align-items-center text-white my-5"><img src="/icon/user.png" alt="user" class="me-5">用戶基本資料</h2>
-                    <div class="card border-1 border-white rounded-6 p-4 w-75" style="background: linear-gradient(115deg, rgba(161, 118, 182, 0.50) 0%, rgba(57, 30, 54, 0.50) 100.56%);">
+                    <div class="informationArea card border-1 border-white rounded-6 p-4 w-75" style="background: linear-gradient(115deg, rgba(161, 118, 182, 0.50) 0%, rgba(57, 30, 54, 0.50) 100.56%);">
                         <h5 class="card-title mb-2 text-white">個人基本資料</h5>
                         <div class="informationArea">
                             <div class="row g-0">
@@ -76,13 +76,13 @@
                                             <img src="/movie picture/Oppenheimer-3.jpg" alt="userImg" class="img-fluid" style="width: 223px; height: 207px;">
                                         </div>
                                         <div class="col-9 px-3 d-flex justify-content-center">
-                                            <a href="#" class="text-decoration-none text-light fw-bold"><img src="/icon/userSm.png" alt="userImg" class="p-2 mx-3" style="background: linear-gradient(180deg, #A62281 0%, #854E99 100%); border-radius: 10px;">變更個人會員相片</a>
+                                            <a href="#" class="text-decoration-none text-light fw-bold"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="/icon/userSm.png" alt="userImg" class="p-2 mx-3" style="background: linear-gradient(180deg, #A62281 0%, #854E99 100%); border-radius: 10px;">變更個人會員相片</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-4 text-white">
+                        <hr class="my-3 text-white">
                         <h5 class="card-title mb-2 text-white">個人介紹</h5>
                         <div class="introduce my-5 p-3">
                             <p class="text-white">你好，我是一名上班族的男性，非常高興能夠和你們交流。工作對我來說是生活的一部分，它讓我有機會不斷學習和成長，並實現自己的目標。我相信努力工作和追求夢想是每個人生命中重要的一部分。
@@ -95,54 +95,76 @@
                             <button class="btn text-white mx-3 border border-white" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">變更帳戶資訊</button>
                         </div>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                        <div class="modal-dialog">
+                          <div class="imgModal">
+                            <div class="modal-header justify-content-center  border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">變更個人會員相片</h5>
+                            </div>
+                            <div class="modal-body">
+                              <div class="uploadImg">
+                                <img src="/movie picture/Oppenheimer-3.jpg" alt="userImg" class="img-fluid" style="width: 223px; height: 207px; flex-shrink: 0;">
+                                <a href="#" class="text-decoration-none text-light fw-bold"><img src="/icon/publish.png" alt="userImg" class="p-2 mx-1">點我開始上傳新個人風格</a>
+                              </div>
+                            </div>
+                            <div class="d-flex">
+                                <input class="form-check-input me-3" type="radio" name="flexRadioDefault" id="consent">
+                                <label class="form-check-label" for="consent">
+                                    同意相關上傳照片規則<span style="color:#EA95D7;">定型化契約</span>
+                                </label>
+                            </div>
+                            
+                            <div class="modal-footer flex-row flex-nowrap border-0 w-100">
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);" data-bs-dismiss="modal">取消並返回會員資料</button>
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </main>
                 <footer class="p-4 pb-0" style="background: linear-gradient(91deg, rgba(0, 0, 0, 0.40) 0%, rgba(98, 106, 179, 0.00) 51.9%); backdrop-filter: blur(20px);">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col">
+                        <div class="col-3">
                             <a href="#">
                                 <img src="/movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
                                 </a>
                         </div>
                         <div class="col">
-                            <div class="d-flex flex-column align-items-center">
-                                <img src="/icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
-                                <h5 class="text-light h6 my-2">聯絡我們  E-MAIL</h5>
-                                <span class="text-secondary my-2">moviegalaxy@Anythings</span>
-                                <h6 class="text-light my-2">服務時間 14~18</h6>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">聯絡我們  E-MAIL</h5>
+                                        <span class="text-secondary my-2">moviegalaxy@Anythings</span>
+                                        <h6 class="text-light my-2">服務時間 14~18</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">關於 影評星塵</h5>
+                                        <span class="text-secondary my-2">Q & A</span>
+                                        <h6 class="text-light my-2">網站理念</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">平台規則</h5>
+                                        <span class="text-secondary my-2">用戶規章</span>
+                                        <h6 class="text-light my-2">評論規章</h6>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/error.png" alt="error" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">檢舉/申訴</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="d-flex flex-column align-items-center">
-                                <img src="/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
-                                <h5 class="text-light h6 my-2">關於 影評星塵</h5>
-                                <span class="text-secondary my-2">Q & A</span>
-                                <h6 class="text-light my-2">Behavior</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex flex-column align-items-center">
-                                <img src="/icon/rule.png" alt="rule" style="width: 20px; height: 20px;">
-                                <h5 class="text-light h6 my-2">用戶規章</h5>
-                                <span class="text-secondary my-2">Senses</span>
-                                <h6 class="text-light my-2">Behavior</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex flex-column align-items-center">
-                                <img src="/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
-                                <h5 class="text-light h6 my-2">評論規則</h5>
-                                <span class="text-secondary my-2">Senses</span>
-                                <h6 class="text-light my-2">Behavior</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex flex-column align-items-center">
-                                <img src="/icon/error.png" alt="error" style="width: 20px; height: 20px;">
-                                <h5 class="text-light h6 my-2">檢舉/申訴</h5>
-                                <span class="text-secondary my-2">Senses</span>
-                                <h6 class="text-light my-2">Behavior</h6>
-                            </div>
-                        </div>
+
                     </div>
                     <h5 class="h6 text-white text-center mt-5 mb-0">隱私權及服務條例  @ copyright    2023   All Rights Reserved.</h5>
                 </footer>
@@ -150,6 +172,6 @@
         </div>
     </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>

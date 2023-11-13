@@ -1,6 +1,15 @@
-@import "./variables";
-@import "./color-variable";
-@import "./mixin";
+@import "./helpers/variables";
+@import "./helpers/color-variable";
+@import "./helpers/mixin";
 //pages
-@import "./nav-bar";
-@import "./menu";
+@import './pages/moviereviewcollectionlist';
+@import './pages/editMovieReview';
+// components
+@import './components/InformationArea';
+@import './components/changepassword';
+@import './components/movieRating';
+@import './components/ratingWindow';
+@import "./components/nav-bar";
+@import "./components/menu";
+@import "./components/footer";
+

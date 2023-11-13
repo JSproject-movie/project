@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>影評星塵-用戶基本資料</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css">
+  </head>
+  <body style="background: linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%);">
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            <div class="col p-3 border-end border-1">
+                <aside class="d-flex flex-column justify-content-between align-items-center h-100">
+                    <div class="asideMenu h-75">
+                        <h2 class="menuTitle h5 fw-bold mt-5">星塵會員專區</h2>
+                        <ul class="menu_link d-flex flex-column justify-content-between align-items-center h-50 p-0">
+                            <li><a href="#" class="link-light my-5 active">基本資料設定</a></li>
+                            <li><a href="#" class="link-light my-5">帳號與安全性</a></li>
+                            <li><a href="#" class="link-light my-5">我的收藏影評</a></li>
+                            <li><a href="#" class="link-light my-5">我的影評列表</a></li>
+                            <li><a href="#" class="link-light my-5">我的評分列表</a></li>
+                            <li><a href="#" class="link-light my-5">檢舉/申訴</a></li>
+                        </ul>
+                    </div>
+                    <ul class="social_link d-flex flex-column justify-content-between p-0" style="height: 135px">
+                        <li><a href="#"><img src="/icon/tumblr.png" alt="tumblr"></a></li>
+                        <li><a href="#"><img src="/icon/linkedinLogo.png" alt="linkedinLogo"></a></li>
+                        <li><a href="#"><img src="/icon/facebookSm.png" alt="facebookSm"></a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-10">
+                <header class="header border-bottom border-1">
+                    <a href="#" class="logo">
+                        <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
+                       </a>
+                    <nav>
+                        <a href="#">關於影評星塵</a>
+                        <a href="#">
+                            <img src="/icon/Search.png" class="search-icon" alt="搜尋">
+                        </a>
+                        <a href="#">
+                            <img src="/icon/user.png" class="user-icon" alt="會員">
+                        </a>
+                    </nav>
+                </header>
+                <main class="d-flex flex-column align-items-center justify-content-center mb-5">
+                    <h2 class="d-flex align-items-center text-white my-5"><img src="/icon/user.png" alt="user" class="me-5">用戶基本資料</h2>
+                    <div class="editInformationArea card border-1 border-white w-75">
+                        <h5 class="card-title mb-2 text-white">個人基本資料</h5>
+                        <form class="informationArea">
+                            <div class="row mt-3 justify-content-between">
+                                <div class="editorInfo col-7 d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userId" class="form-label mb-0 me-3 fs-5 fw-bold text-center">用戶編號</label>
+                                        <input type="text" class="InformationForm" id="userId" placeholder="A00012">
+                                    </div>
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userName" class="form-label mb-0 me-3 fs-5 fw-bold text-center">會員名稱</label>
+                                        <input type="text" class="InformationForm" id="userName" placeholder="PENG Darius">
+                                    </div>
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userGender" class="form-label mb-0 fs-5 fw-bold px-4">性別</label>
+                                        <select class="InformationSelect" id="userGender" aria-label="Default select example">
+                                            <option selected>性別</option>
+                                            <option value="男性">男性</option>
+                                            <option value="女性">女性</option>
+                                            <option value="不透漏">不透漏</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userEmail" class="form-label mb-0 me-3 fs-5">電子郵件</label>
+                                        <input type="text" class="InformationForm" id="userEmail" placeholder="123456@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="editorImg col-5 text-white">
+                                    <div class="row g-0 flex-column justify-content-center align-items-center">
+                                        <div class="col  d-flex justify-content-center">
+                                            <img src="/movie picture/Oppenheimer-3.jpg" alt="userImg" class="img-fluid" style="width: 223px; height: 207px;">
+                                        </div>
+                                        <div class="col-9 px-3 mt-2 d-flex justify-content-center">
+                                            <a href="#" class="text-decoration-none text-light fw-bold"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="/icon/userSm.png" alt="userImg" class="p-2 mx-3" style="background: linear-gradient(180deg, #A62281 0%, #854E99 100%); border-radius: 10px;">變更個人會員相片</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column text-white my-4">
+                                <label for="userIntroduce" class="form-label mb-0 me-3 fs-5 fw-bold">個人介紹</label>
+                                <textarea class="editorTextarea form-control" id="userIntroduce" rows="10">
+你好，我是一名上班族的男性，非常高興能夠和你們交流。工作對我來說是生活的一部分，它讓我有機會不斷學習和成長，並實現自己的目標。我相信努力工作和追求夢想是每個人生命中重要的一部分。
+除了工作，我還有很多興趣和愛好，例如音樂、運動和旅行。我喜歡彈奏樂器，這對我來說是一種釋放壓力和表達情感的方式。運動也是我生活的一部分，它有幫助於保持身體健康和精力充沛。旅行則讓我有機會探索新的地方，體驗不同的文化和風景。
+我很喜歡與人交流和分享想法。我相信相互學習和交流經驗可以豐富我們的生活。無論是討論工作中的挑戰，分享生活中的快樂，還是探討世界上的各種話題，我都能夠期待與你們建立了有意義的對話。
+感謝您花時間閱讀我的自我介紹，我期待與您進一步的互動和交流！
+                                </textarea>
+                            </div>
+                            <div class="d-flex justify-content-center w-100">
+                                <button class="btn text-white mx-3 border border-white" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">取消變更</button>
+                                <button class="btn text-white mx-3 border border-white" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                        <div class="modal-dialog">
+                          <div class="imgModal">
+                            <div class="modal-header justify-content-center  border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">變更個人會員相片</h5>
+                            </div>
+                            <div class="modal-body">
+                              <div class="uploadImg">
+                                <img src="/movie picture/Oppenheimer-3.jpg" alt="userImg" class="img-fluid" style="width: 223px; height: 207px; flex-shrink: 0;">
+                                <a href="#" class="text-decoration-none text-light fw-bold"><img src="/icon/publish.png" alt="userImg" class="p-2 mx-1">點我開始上傳新個人風格</a>
+                              </div>
+                            </div>
+                            <div class="d-flex">
+                                <input class="form-check-input me-3" type="radio" name="flexRadioDefault" id="consent">
+                                <label class="form-check-label" for="consent">
+                                    同意相關上傳照片規則<span style="color:#EA95D7;">定型化契約</span>
+                                </label>
+                            </div>
+                            
+                            <div class="modal-footer flex-row flex-nowrap border-0 w-100">
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);" data-bs-dismiss="modal">取消並返回會員資料</button>
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </main>
+                <footer class="p-4 pb-0" style="background: linear-gradient(91deg, rgba(0, 0, 0, 0.40) 0%, rgba(98, 106, 179, 0.00) 51.9%); backdrop-filter: blur(20px);">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-3">
+                            <a href="#">
+                                <img src="/movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
+                                </a>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">聯絡我們  E-MAIL</h5>
+                                        <span class="text-secondary my-2">moviegalaxy@Anythings</span>
+                                        <h6 class="text-light my-2">服務時間 14~18</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">關於 影評星塵</h5>
+                                        <span class="text-secondary my-2">Q & A</span>
+                                        <h6 class="text-light my-2">網站理念</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">平台規則</h5>
+                                        <span class="text-secondary my-2">用戶規章</span>
+                                        <h6 class="text-light my-2">評論規章</h6>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/error.png" alt="error" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">檢舉/申訴</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h5 class="h6 text-white text-center mt-5 mb-0">隱私權及服務條例  @ copyright    2023   All Rights Reserved.</h5>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

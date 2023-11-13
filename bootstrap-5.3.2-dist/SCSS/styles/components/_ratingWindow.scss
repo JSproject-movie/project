@@ -1,0 +1,29 @@
+.ratingWindow{
+    padding:30px;
+    border-radius: 20px;
+    background: linear-gradient(115deg, rgba(255, 255, 255, 0.384) 0%, rgba(205, 203, 203, 0.425) 33.52%, rgba(249, 225, 255, 0.103) 67.04%,rgba(142, 9, 129, 0.418)) 100.56%;
+    .ratingStars{
+        height: 60px;
+        padding: 0px 20px;
+        border-radius: 50px;
+        background: #2A2121;
+        .star-cb-group{
+            &>.star-label{
+                display: inline-block;
+                font-size: 20px;
+                width: 1em;
+                white-space: nowrap;
+                background: linear-gradient(to right, #D08DDB, #B839CD);
+                -webkit-background-clip: text;
+                color: transparent;
+                filter: drop-shadow(0px 0px 11px rgba(181, 106, 164, 0.50));
+            }
+        }
+        .saveBtn,.closeBtn{
+            
+            color: white;
+            border-radius: 20px;
+            border: 1px solid #FFF;
+        }
+    }
+}
