@@ -9,7 +9,7 @@
   margin: 0;
 }
 .sidebar ul {
-  margin-left: -32px;
+  padding-inline-start: 0;
 }
 .sidebar li {
   list-style: none;
@@ -18,14 +18,12 @@
   text-decoration: none;
 }
 
-.sideitem ul{
+.sideitem ul {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 55px;
 }
-
-
 
 .sideitem a {
   color: #fff;
@@ -42,4 +40,56 @@
 }
 .social li {
   padding: 5px 0px;
+}
+// movie-group
+.mgtitle {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.mgtitle h3 {
+  font-family: Noto Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: $bg-c4;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mgtitle button div{
+  text-align: right;
+font-family: Noto Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+color: #98c1fe;
+}
+.mgtitle button {
+  border-radius: 10px;
+  border: 2px solid #98c1fe;
+  background-color: transparent;
+}
+.mgroup{
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+}
+.mgroup li{
+  padding-top: 30px;
+}
+.mgroup a{
+  color: #FFF;
+font-family: Noto Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
