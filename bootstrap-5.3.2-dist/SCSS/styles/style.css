@@ -52,9 +52,9 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: 1000px;
   width: 163px;
-  height: 771px;
   padding: 60px 0px;
   background: linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%);
   margin: 0;
@@ -100,7 +100,6 @@
 
 .mgtitle {
   display: flex;
-  height: 100px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -119,7 +118,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.mgtitle button div {
+.mgbtn {
   text-align: right;
   font-family: Noto Sans;
   font-size: 18px;
@@ -127,12 +126,15 @@
   font-weight: 700;
   line-height: normal;
   color: #98c1fe;
+  display: flex;
+  justify-content: center;
 }
 
 .mgtitle button {
   border-radius: 10px;
   border: 2px solid #98c1fe;
   background-color: transparent;
+  margin-top: 100px;
 }
 
 .mgroup {
@@ -148,7 +150,33 @@
 }
 
 .mgroup a {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.muser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 74px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.muser li {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 74px;
+}
+
+.muser a {
   color: #FFF;
+  text-align: center;
   font-family: Noto Sans;
   font-size: 18px;
   font-style: normal;
