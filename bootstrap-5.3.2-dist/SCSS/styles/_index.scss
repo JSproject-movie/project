@@ -5,18 +5,17 @@
     font-weight: 700;
 }
 .wrap-carousel-title{
-    background: linear-gradient(89deg, #C9E5E8 31.72%, #E8A7D6 68.97%);
+    background: $bg-c1;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 
 }
 .top10-text{
-    
     @include font-title;
     text-align: center;
     font-size: 50px;
-    font-weight: 00;
+    font-weight: 700;
 }
 .carousel-content{
     @include font-white;
@@ -33,39 +32,19 @@
     line-height: 30px; /* 187.5% */
     letter-spacing: 1.6px;
 }
-.mt60{
-    margin-top: 60px;
-}
-.mt81{
-    margin-top: 81px;
-}
-.mb40{
-    margin-bottom: 40px;
-}
-.ma{
-    margin: auto;
-}
 .wrap{
+    width: 1440px;
     display: flex;
-
+    background: $primary-c;
 }
 .side{
-    width: 163px;
-    // background-color: aquamarine;
-    
+    width: 163px;    
 }
 .container{
-    // 0
     margin: 0;
     padding: 0;
 
     width: 1277px;
-    // height: 578px;
-    
-    background: $primary-c;
-
-    // background-color: goldenrod;
-
 }
 
 //css 輪播
@@ -230,7 +209,8 @@ input[type="radio"]{
     border: 2px solid #D7CDFF;
     background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
 }
-button a{
+.btn-index-a{
+    @include btn-text-Inter;
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
@@ -261,7 +241,6 @@ button a{
     font-size: 20px;
     font-weight: 400;
     background: $bg-c2;
-    // (90deg, #FFF 0.53%, #E5CDCD 22.92%)
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -340,9 +319,6 @@ button a{
     line-height: normal;
     text-transform: uppercase;
     opacity: 0.5;
-}
-.ml-15{
-    margin-left: 15px;
 }
 // TOP 1 Discussion
 .top-discuss{
