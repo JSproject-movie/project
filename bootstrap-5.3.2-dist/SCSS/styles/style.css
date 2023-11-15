@@ -1,9 +1,47 @@
+.ma {
+  margin: auto;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-81 {
+  margin-top: 81px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
 .header {
   width: 1277px;
   height: 90px;
   display: flex;
   align-items: center;
-  background: var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%));
+  border-bottom: 1px solid rgba(204, 169, 169, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .header .logo {
@@ -71,7 +109,7 @@
   line-height: 150%;
   text-align: center;
   font-size: 50px;
-  font-weight: 0;
+  font-weight: 700;
 }
 
 .carousel-content {
@@ -97,24 +135,10 @@
   letter-spacing: 1.6px;
 }
 
-.mt60 {
-  margin-top: 60px;
-}
-
-.mt81 {
-  margin-top: 81px;
-}
-
-.mb40 {
-  margin-bottom: 40px;
-}
-
-.ma {
-  margin: auto;
-}
-
 .wrap {
+  width: 1440px;
   display: flex;
+  background: var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%));
 }
 
 .side {
@@ -125,7 +149,6 @@
   margin: 0;
   padding: 0;
   width: 1277px;
-  background: var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%));
 }
 
 .carousel {
@@ -291,7 +314,10 @@ input[type=radio] {
   background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
 }
 
-button a {
+.btn-index-a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
@@ -412,10 +438,6 @@ button a {
   opacity: 0.5;
 }
 
-.ml-15 {
-  margin-left: 15px;
-}
-
 .top-discuss {
   position: relative;
   width: 1200px;
@@ -494,4 +516,134 @@ button a {
   line-height: 30px;
   letter-spacing: 1.8px;
   margin: 15px 0;
+}
+
+.wrap-search {
+  padding: 40px;
+}
+
+.search-num {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: 150%;
+  font-size: 40px;
+  font-weight: 700;
+  background: linear-gradient(89deg, #C9E5E8 31.72%, #E8A7D6 68.97%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrap-search-card {
+  margin: 70px auto;
+  width: 1030px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 20px;
+  border: 2px solid #9498FE;
+  background: linear-gradient(115deg, rgba(67, 14, 100, 0.25) 0%, rgba(227, 255, 243, 0.19) 100.56%);
+}
+
+.search-card-header {
+  display: flex;
+}
+
+.search-img {
+  width: 180px;
+}
+
+.search-text {
+  margin-left: 30px;
+}
+.search-text h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.search-text p {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.wrap-star-score {
+  display: flex;
+}
+.wrap-star-score p {
+  padding-top: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.star-search {
+  width: 38px;
+}
+
+.search-card-p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  width: 538px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-search-result {
+  display: flex;
+  width: 180px;
+  height: 51px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  border: 2px solid #F8D8F5;
+  background: linear-gradient(94deg, #463069 1.43%, #A225C2 99.55%);
+}
+
+.text-btn-search {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.whole-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  padding: 0px 20px;
+  gap: 25px;
+}
+.whole-pagination li {
+  list-style: none;
+}
+
+.pagination-num {
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: 0px 4px 9px rgba(232, 151, 151, 0.35);
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 7.48px;
 }/*# sourceMappingURL=style.css.map */
