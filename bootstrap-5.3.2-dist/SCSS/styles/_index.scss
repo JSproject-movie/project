@@ -1,0 +1,395 @@
+//text
+.carousel-title{
+    @include font-title;
+    font-size: 32px;
+    font-weight: 700;
+}
+.wrap-carousel-title{
+    background: $bg-c1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+
+}
+.top10-text{
+    @include font-title;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.carousel-content{
+    @include font-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    letter-spacing: 1.6px;
+}
+.carousel-content2{
+    @include font-white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 1.6px;
+}
+.wrap{
+    width: 1440px;
+    display: flex;
+    background: $primary-c;
+}
+.side{
+    width: 163px;    
+}
+.container{
+    margin: 0;
+    padding: 0;
+
+    width: 1277px;
+}
+
+//css 輪播
+.carousel{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 61.5px;
+   background: $secondary-c;
+   border-radius: 20px;
+   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.green-box{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 39px;
+    // top: -33px;
+    border-radius: 351px;
+    background: #45DBC0;
+    filter: blur(171.5px);
+}
+ul.slides{
+    width: 1278px;
+   height: 578px;
+
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: $primary-c;
+
+    // 將2、3隱藏
+    overflow: hidden;
+}
+// 設定單張輪播圖樣式
+li.slide{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    font-size: 120px;
+    color: #fff;
+    transition: .5s transform ease-in-out;
+}
+// 加入3個選擇器，分別設定3張輪播圖的背景
+.slide:nth-last-of-type(1){
+    background-color: $primary-c;
+}
+.slide:nth-last-of-type(2){
+    background-color: #f25c05;
+    left: 100%;
+}
+.slide:nth-last-of-type(3){
+    background-color: #495f8c;
+    left: 200%;
+}
+
+//暫時加入選擇器，就會看到radio按鈕
+input[type="radio"]{
+   position: relative;
+   z-index: 100;
+   display: none; 
+}
+//設定容器樣式
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+.controls-visible label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: $primary-c;
+    
+    // 圓角設50%，圓形
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+}
+// 小圓點被選取後顯示
+.slides input[type="radio"]:nth-of-type(1):checked ~
+.controls-visible label:nth-of-type(1){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(2):checked ~
+.controls-visible label:nth-of-type(2){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(3):checked ~
+.controls-visible label:nth-of-type(3){
+    background-color: #333;
+}
+// 設定輪播圖切換的效果
+//意思是，當選中第一個radio按鈕後，後面三張.slide的樣式
+//當選擇第一個按鈕時，將transform設定為translatex(0%)
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide{
+    transform: translatex(0%);
+}
+:nth-of-type(2):checked ~ .slide{
+    transform: translatex(-100%);
+}
+:nth-of-type(3):checked ~ .slide{
+    transform: translatex(-200%);
+}
+
+.carousel-page{
+    display: flex;
+}
+.carousel-img{
+    // width: 576px;
+    height: 388px;
+    margin-left: 92px;
+    margin-top: 86px;
+    border-radius: 20px;
+}
+.caption{
+    width: 462px;
+    height: 440px;
+    margin-top: 80px;
+    margin-left: 54px;
+    background-color: $bg-c1;
+    
+}
+.wrap-carousel-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%; 
+    vertical-align: middle;
+}
+
+.mb-27{
+    margin-bottom: 27px;
+}
+.wrap-star{
+    display: flex;
+    @include flex-center;
+}
+.star{
+    height:30px;
+    margin: 0;
+    padding: 0;
+}
+.btn-carousel{
+    display: flex;
+    width: 175px;
+    height: 47px;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    // text-align:justify;
+    gap: 15px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 2px solid #D7CDFF;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
+}
+.btn-index-a{
+    @include btn-text-Inter;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: $btn-c2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+// top 10
+.top10bc{
+    width: 1238px;
+    margin-left: 20px;
+    margin-bottom: 68px;
+    background: $bg-c4;
+    border-radius: 20px;
+}
+.top10-title{
+    background: $bg-c1;
+    //(89deg, #C9E5E8 31.72%, #E8A7D6 68.97%)
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.top10-subtitle{
+    @include font-title;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    background: $bg-c2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+// cards
+.wrap-movie-card{
+    display: flex;
+    align-items: center;
+}
+.arrow-left{
+    width: 42px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.arrow-right{
+    width: 42px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.wrap-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.wrap-whole-card{
+    width: 256px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #B88ED3;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.movie-card-img{
+    margin: 0 auto;
+
+    width: 199px;
+    height: 274px;
+    border-radius: 20px;
+    // margin: 20px;
+}
+.wrap-title-btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    gap: 20px;
+}
+.card-title{
+    @include btn-text-Inter;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    a{
+        text-decoration: none;
+        color: #FFF;
+    }
+}
+.btn-vedio{
+    display: flex;
+    padding: 5px;
+}
+.vedio-link{
+
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+// TOP 1 Discussion
+.top-discuss{
+    position: relative;
+    width: 1200px;
+    height: 650px;
+    background: url(/icon/meet.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 20px;
+    background-size:108%;
+    margin:0 auto;
+}
+.blur-bg{
+    width: 518px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%); 
+
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+
+    border-radius: 30px;
+    background:$bg-c5;
+    backdrop-filter: blur(5.5px);
+}
+.discuss-section{
+    display:flex ;
+    width: 433px;
+}
+.img-oppen{
+    width: 170px;
+}
+.discuss-movie{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    gap: 25px;
+
+    padding: 20px;
+    margin-left: 10px;
+    h3{
+        @include btn-text-Inter;
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    h4{
+        @include btn-text-Inter;
+        color: #FFF;
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }   
+}
+.discuss-p{
+    width: 411px;
+    flex-shrink: 0;
+    @include font-white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: 1.8px;
+    margin: 15px 0;
+}
+
+
