@@ -1,1 +1,44 @@
-.header{width:1277px;height:90px;margin-left:163px;display:flex;align-items:center;background:var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%))}.header .logo{display:inline-block;margin:14px auto 14px 20px;margin-left:20px}.mLogo{width:184px;height:54px}.header nav{text-align:center;font-size:16px;margin-right:20px}.header nav a{text-decoration:none;display:inline-block;padding:0 10px;font-size:16px;font-weight:700;color:#fff;font-family:"Noto Sans TC",sans-serif;font-style:normal;line-height:normal}.search-icon{width:20px;height:20px;margin:10px;margin-left:60px}.user-icon{width:16px;height:16px;margin-left:60px}.footer{background:linear-gradient(91deg, rgba(0, 0, 0, 0.4) 0%, rgba(98, 106, 179, 0) 51.9%)}.body-primary{background:var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%))}
+.header{
+  width:1277px;
+  height:90px;
+  display:flex;
+  align-items:center;
+  background:var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%))}
+.header .logo{
+  display:inline-block;
+  margin:14px auto 14px 20px;
+  margin-left:20px}
+.mLogo{
+  width:184px;
+  height:54px
+}
+.header nav{
+  text-align:center;
+  font-size:16px;
+  margin-right:20px
+}
+.header nav a{
+  text-decoration:none;
+  display:inline-block;
+  padding:0 10px;
+  font-size:16px;
+  font-weight:700;
+  color:#fff;
+  font-family:"Noto Sans TC",sans-serif;
+  font-style:normal;line-height:normal
+}
+.search-icon{
+  width:20px;
+  height:20px;
+  margin:10px;
+  margin-left:60px}
+.user-icon{
+  width:16px;
+  height:16px;
+  margin-left:60px}
+.footer{
+  background:linear-gradient(91deg, rgba(0, 0, 0, 0.4) 0%, rgba(98, 106, 179, 0) 51.9%)
+}
+.body-primary{
+  background:var(--web_BK_1, linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%))
+}
