@@ -34,14 +34,48 @@
 				</div>
 				<!-- appeal -->
 				<div class="wrap-appeal m-90-a">
-					<div class="appeal-card-2">
-						<div class="green-circle">
-							<img src="/icon/check.png" alt="" class="green-check">
+
+					<div class="wrap-report-title">
+						<img src="/icon/report.png" alt="" class="appeal-title-icon">
+						<h2 class="report-censor-title">申訴案件 審核進度</h2>
+					</div>
+
+					<div class="appeal-card-3">
+
+						<!-- 收合內容 -->							
+						<div class="collapse" id="collapseExample">
+							<div class="card card-body bg-transparent">
+								<!-- status 圖示 -->
+								<div class="wrap-case-st">
+									<!-- 一組icon+text -->
+									<div>
+										<div class="st-green-frame">
+											<img src="/icon/mark01-chat-read.png" alt="">
+										</div>
+										<h4 class="st-green-txt">案件已成立</h4>
+									</div>
+									<div>
+										<div class="st-gray-frame">
+											<img src="/icon/mark02-2-teacher.png" alt="">
+										</div>
+										<h4 class="st-gray-txt">審核中</h4>
+									</div>
+									<div>
+										<div class="st-gray-frame">
+											<img src="/icon/mark03-2-book-check.png" alt="">
+										</div>
+										<h4 class="st-gray-txt">案件已完結</h4>
+									</div>
+
+								</div>
+							</div>
 						</div>
-						
-						<div class="appeal-fin-text">
-							<h2 class="appeal-fin">申訴完成</h2>
-							<p class="appeal-respond">本公司已收到您的申訴，我們會儘速處理您的案件,謝謝</p>
+							
+							
+							
+	
+						<!-- 案件info -->
+						<div class="respond-info-header">
 							<div class="wrap-respond-info">
 								<span>案件編號</span>
 								<span class="ml-40">AB0001</span>
@@ -52,14 +86,19 @@
 							</div>
 							<div class="wrap-respond-info">
 								<span>申訴原因</span>
-								<span class="ml-40">留言暴雷</span>
+								<span class="ml-40">遭惡意檢舉</span>
 							</div>
-							<button class="btn-send-appeal mb-30">
-							<a href="#" class="text-btn-appeal">回檢舉案件狀態
-							</a>
-					</button>
 						</div>
-						
+						<!-- 收合btn -->
+						<p>								
+							<button class="btn-expand" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+								<div class="expand-btn-text">
+									查看案件狀態
+								</div>
+															
+							</button>
+						</p>
+
 					</div> 
 				</div>
 				

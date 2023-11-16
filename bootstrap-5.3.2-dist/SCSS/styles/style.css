@@ -929,12 +929,12 @@ input[type=radio] {
   padding: 30px;
 }
 
-.expand {
+.btn-expand {
   margin: auto;
   display: flex;
   width: 350px;
   height: 34px;
-  padding: 10px;
+  padding: 25px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -942,13 +942,97 @@ input[type=radio] {
   background: linear-gradient(115deg, rgba(255, 255, 255, 0.1) 0%, rgba(205, 203, 203, 0.15) 33.52%, rgba(249, 225, 255, 0.1) 67.04%, rgba(142, 9, 129, 0.1) 100.56%);
   box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
 }
-.expand img {
-  width: 17px;
-  height: 10px;
-  flex-shrink: 0;
-}
 
 .expand-btn-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bg-transparent {
+  background: transparent;
+  border: none;
+}
+
+.wrap-case-st {
+  justify-content: space-between;
+  display: flex;
+  background: transparent;
+}
+
+.st-green-txt {
+  text-align: center;
+  margin: 40px auto 0 auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.st-green-frame {
+  margin: auto;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: 7px solid #9DD69C;
+  background: #C8E2C8;
+}
+
+.st-gray-frame {
+  margin: auto;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: 6px solid #C1C1C1;
+  background: #D9D9D9;
+}
+
+.st-gray-txt {
+  text-align: center;
+  margin: 40px auto 0 auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: #B7B7B7;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sensor-result {
+  padding: 20px 0 30px 30px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.result-title {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.result-content {
+  margin-top: 15px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   line-height: normal;
