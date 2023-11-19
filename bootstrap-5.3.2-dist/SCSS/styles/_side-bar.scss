@@ -55,12 +55,20 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background: $bg-c4;
+  background: $bg-c7;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.mgbtn {
+
+// 按鈕特效
+.return-button {
+  position: relative;
+  padding: 5px 40px 5px 20px; /* 調整右邊距離 */
+  border-radius: 10px;
+  border: 2px solid #98c1fe;
+  background-color: transparent;
+  margin-top: 20px;
   text-align: right;
   font-family: Noto Sans;
   font-size: 18px;
@@ -70,13 +78,42 @@
   color: #98c1fe;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out; /* 添加背景色的過渡效果 */
 }
-.mgtitle button {
-  border-radius: 10px;
-  border: 2px solid #98c1fe;
-  background-color: transparent;
-  margin-top: 100px;
+
+.text {
+  transition: opacity 0.3s ease-in-out;
+  order: 1; /* 更改順序 */
 }
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 20%; /* 調整右邊位置 */
+  transform: translate(50%, -50%);
+  transition: transform 0.5s ease-in-out;
+  opacity: 1; /* 讓 icon 預設隱藏 */
+}
+
+.return-button:hover .text {
+  opacity: 0;
+}
+
+.return-button:hover {
+  background-color: transparent; /* 讓背景色消失 */
+  border: transparent;
+}
+
+.return-button:hover .icon {
+  opacity: 1; /* 顯示 icon */
+  transform: translate(-70%, -50%); /* 使 icon 保持在中間位置 */
+}
+//end
+
+
+
 .mgroup {
   display: flex;
   flex-direction: column;
@@ -104,13 +141,13 @@
   flex-shrink: 0;
   align-self: stretch;
 }
-.muser li{
+.muser li {
   display: flex;
   justify-content: space-around;
   padding-top: 74px;
 }
-.muser a{
-  color: #FFF;
+.muser a {
+  color: #fff;
   text-align: center;
   font-family: Noto Sans;
   font-size: 18px;
