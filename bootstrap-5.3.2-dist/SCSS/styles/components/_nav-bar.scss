@@ -1,6 +1,12 @@
 .header{
+    width: 1277px;
+    height: 90px;
     display: flex;
     align-items:center;
+    // background: $primary-c;
+
+    border-bottom: 1px solid rgba(204, 169, 169, 0.50);
+    backdrop-filter: blur(2px);
 }
 .header .logo{
     display: inline-block;
@@ -12,8 +18,6 @@
     height: 54px;
 }
 .header nav{
-    display: flex;
-    align-items: center;
     text-align: center;
     font-size: 16px;
     margin-right: 20px;

@@ -1,15 +1,20 @@
+// helpers
 @import "./helpers/variables";
 @import "./helpers/color-variable";
 @import "./helpers/mixin";
-//pages
-@import './pages/moviereviewcollectionlist';
-@import './pages/editMovieReview';
+@import "./helpers/margin-padding";
 // components
-@import './components/InformationArea';
+@import "./components/nav-bar";
+@import "./components/index";
 @import './components/changepassword';
+@import './components/footer';
+@import './components/InformationArea';
+@import './components/menu';
 @import './components/movieRating';
 @import './components/ratingWindow';
-@import "./components/nav-bar";
-@import "./components/menu";
-@import "./components/footer";
+//pages
+@import "./pages/page1-2-1";
+@import "./pages/report";
+@import './pages/editMovieReview';
+@import './pages/moviereviewcollectionlist';
 

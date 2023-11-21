@@ -10,7 +10,7 @@
     <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css">
   </head>
-  <body style="background: linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%);">
+  <body class="body-primary">
     <div class="container-fluid px-0">
         <div class="row g-0">
             <div class="col p-3 border-end border-1">
@@ -57,15 +57,15 @@
                                 <div class="editorInfo col-7 d-flex flex-column align-items-center">
                                     <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
                                         <label for="userId" class="form-label mb-0 me-3 fs-5 fw-bold text-center">用戶編號</label>
-                                        <input type="text" class="InformationForm" id="userId" placeholder="A00012">
+                                        <input type="text" class="InformationForm text-white" id="userId" placeholder="A00012" value="A00012">
                                     </div>
                                     <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
                                         <label for="userName" class="form-label mb-0 me-3 fs-5 fw-bold text-center">會員名稱</label>
-                                        <input type="text" class="InformationForm" id="userName" placeholder="PENG Darius">
+                                        <input type="text" class="InformationForm text-white" id="userName" placeholder="PENG Darius" value="PENG Darius">
                                     </div>
                                     <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
-                                        <label for="userGender" class="form-label mb-0 fs-5 fw-bold px-4">性別</label>
-                                        <select class="InformationSelect" id="userGender" aria-label="Default select example">
+                                        <label for="userGender" class="form-label d-flex justify-content-center mb-0 fs-5 fw-bold px-4 me-3">性別</label>
+                                        <select class="InformationSelect text-white bg-dark" id="userGender" aria-label="Default select example">
                                             <option selected>性別</option>
                                             <option value="男性">男性</option>
                                             <option value="女性">女性</option>
@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
                                         <label for="userEmail" class="form-label mb-0 me-3 fs-5">電子郵件</label>
-                                        <input type="text" class="InformationForm" id="userEmail" placeholder="123456@gmail.com">
+                                        <input type="text" class="InformationForm text-white" id="userEmail" placeholder="123456@gmail.com" value="123456@gmail.com">
                                     </div>
                                 </div>
                                 <div class="editorImg col-5 text-white">
@@ -98,12 +98,12 @@
                                 </textarea>
                             </div>
                             <div class="d-flex justify-content-center w-100">
-                                <button class="btn text-white mx-3 border border-white" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">取消變更</button>
-                                <button class="btn text-white mx-3 border border-white" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
+                                <button type="button" class="btn text-white mx-3 border border-white"  style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">取消變更</button>
+                                <button type="button" class="btn text-white mx-3 border border-white"  data-bs-toggle="modal" data-bs-target="#accountInformationModal" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
                             </div>
                         </form>
                     </div>
-                    <!-- Modal -->
+                    <!-- Modal  個人會員相片 -->
                     <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
                         <div class="modal-dialog">
                           <div class="imgModal">
@@ -130,8 +130,35 @@
                           </div>
                         </div>
                       </div>
+                      <!-- Modal  修改帳戶資訊 -->
+                    <div class="modal fade" id="accountInformationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                        <div class="modal-dialog">
+                          <div class="imgModal">
+                            <div class="modal-header justify-content-center  border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">變更個人會員相片</h5>
+                            </div>
+                            <div class="modal-body">
+                              <div class="uploadImg">
+                                <img src="/movie picture/Oppenheimer-3.jpg" alt="userImg" class="img-fluid" style="width: 223px; height: 207px; flex-shrink: 0;">
+                                <a href="#" class="text-decoration-none text-light fw-bold"><img src="/icon/publish.png" alt="userImg" class="p-2 mx-1">點我開始上傳新個人風格</a>
+                              </div>
+                            </div>
+                            <div class="d-flex">
+                                <input class="form-check-input me-3" type="radio" name="flexRadioDefault" id="consent">
+                                <label class="form-check-label" for="consent">
+                                    同意相關上傳照片規則<span style="color:#EA95D7;">定型化契約</span>
+                                </label>
+                            </div>
+                            
+                            <div class="modal-footer flex-row flex-nowrap border-0 w-100">
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);" data-bs-dismiss="modal">取消並返回會員資料</button>
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </main>
-                <footer class="p-4 pb-0" style="background: linear-gradient(91deg, rgba(0, 0, 0, 0.40) 0%, rgba(98, 106, 179, 0.00) 51.9%); backdrop-filter: blur(20px);">
+                <footer class="footer p-4 pb-0">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-3">
                             <a href="#">
@@ -153,7 +180,7 @@
                                         <img src="/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
                                         <h5 class="text-light h6 my-2">關於 影評星塵</h5>
                                         <span class="text-secondary my-2">Q & A</span>
-                                        <h6 class="text-light my-2">網站理念</h6>
+                                        <h6 class="text-secondary my-2">網站理念</h6>
                                     </div>
                                 </div>
                                 <div class="col-3">
@@ -161,7 +188,7 @@
                                         <img src="/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
                                         <h5 class="text-light h6 my-2">平台規則</h5>
                                         <span class="text-secondary my-2">用戶規章</span>
-                                        <h6 class="text-light my-2">評論規章</h6>
+                                        <h6 class="text-secondary my-2">評論規章</h6>
                                     </div>
                                 </div>
                                 <div class="col-2">
@@ -172,7 +199,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <h5 class="h6 text-white text-center mt-5 mb-0">隱私權及服務條例  @ copyright    2023   All Rights Reserved.</h5>
                 </footer>
