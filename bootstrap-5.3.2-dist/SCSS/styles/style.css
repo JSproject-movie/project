@@ -712,7 +712,7 @@ input[type=radio] {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background: linear-gradient(115deg, rgba(255, 255, 255, 0.1) 0%, rgba(205, 203, 203, 0.15) 33.52%, rgba(249, 225, 255, 0.1) 67.04%, rgba(142, 9, 129, 0.1) 100.56%);
+  background: linear-gradient(90deg, #94C5FF 5.53%, #D595F3 99.69%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -840,7 +840,7 @@ input[type=radio] {
 .mf-wrap {
   width: 1276px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 40px 20px;
   color: #fff;
   font-family: Inter;
   font-style: normal;
@@ -849,7 +849,6 @@ input[type=radio] {
 }
 
 .mf-wrap li {
-  display: flex;
   list-style: none;
 }
 
@@ -1034,7 +1033,12 @@ input[type=radio] {
   padding: 30px;
 }
 
+.indi-card li {
+  padding-bottom: 30px;
+}
+
 .indi-title {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -1068,6 +1072,7 @@ input[type=radio] {
 }
 
 .indi-intro {
+  display: flex;
   padding: 30px 0px;
   justify-content: space-between;
   width: 35%;
@@ -1091,6 +1096,7 @@ input[type=radio] {
 }
 
 .indi-reaction {
+  display: flex;
   width: 35%;
   justify-content: space-between;
   align-items: center;
@@ -1122,4 +1128,14 @@ input[type=radio] {
   border: 2px solid #b37dd4;
   background: linear-gradient(271deg, #6a477f 11.6%, #30536d 94.29%);
   padding: 10px 0;
+}
+
+.indi-pic img {
+  width: 1176px;
+}
+
+.indi-comment {
+  padding-right: 150px;
+  text-align: left;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
