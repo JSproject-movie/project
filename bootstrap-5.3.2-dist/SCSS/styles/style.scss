@@ -1,13 +1,24 @@
-@import "./variables";
-@import "./color-variable";
-@import "./mixin";
-@import "./margin-padding";
+// helpers
+@import './helpers/color-variable';
+@import './helpers/margin-padding';
+@import './helpers/mixin';
+@import './helpers/variables';
+// components
+@import './components/changepassword';
+@import './components/index';
+@import './components/InformationArea';
+@import './components/informationModal';
+@import './components/movieRating';
+@import './components/ratingWindow';
 //pages
-@import "./nav-bar";
-@import "./index";
-@import "./page1-2-1";
-
-
-@import "./side-bar";
-@import "./movieforum";
-@import "./individual-forum"
+@import './pages/editMovieReview';
+@import './pages/individual-forum';
+@import './pages/movieforum';
+@import './pages/moviereviewcollectionlist';
+@import './pages/page1-2-1';
+@import './pages/report';
+// layout
+@import "./layout/footer";
+@import './layout/menu';
+@import './layout/nav-bar';
+@import './layout/side-bar';
