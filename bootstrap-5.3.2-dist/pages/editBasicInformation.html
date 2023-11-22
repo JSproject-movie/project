@@ -105,7 +105,7 @@
                     </div>
                     <!-- Modal  個人會員相片 -->
                     <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                           <div class="imgModal">
                             <div class="modal-header justify-content-center  border-0">
                               <h5 class="modal-title" id="exampleModalLabel">變更個人會員相片</h5>
@@ -132,28 +132,32 @@
                       </div>
                       <!-- Modal  修改帳戶資訊 -->
                     <div class="modal fade" id="accountInformationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
-                        <div class="modal-dialog">
-                          <div class="imgModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="informationModal">
                             <div class="modal-header justify-content-center  border-0">
-                              <h5 class="modal-title" id="exampleModalLabel">變更個人會員相片</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">警告</h5>
                             </div>
                             <div class="modal-body">
-                              <div class="uploadImg">
-                                <img src="/movie picture/Oppenheimer-3.jpg" alt="userImg" class="img-fluid" style="width: 223px; height: 207px; flex-shrink: 0;">
-                                <a href="#" class="text-decoration-none text-light fw-bold"><img src="/icon/publish.png" alt="userImg" class="p-2 mx-1">點我開始上傳新個人風格</a>
-                              </div>
-                            </div>
-                            <div class="d-flex">
-                                <input class="form-check-input me-3" type="radio" name="flexRadioDefault" id="consent">
-                                <label class="form-check-label" for="consent">
-                                    同意相關上傳照片規則<span style="color:#EA95D7;">定型化契約</span>
-                                </label>
-                            </div>
-                            
+                                <h5 class="modal-title text-center fw-bold">確定取消並離開嗎?<br>系統不會儲存你最後的變更!</h5>
+                            </div>                          
                             <div class="modal-footer flex-row flex-nowrap border-0 w-100">
-                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);" data-bs-dismiss="modal">取消並返回會員資料</button>
-                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);" data-bs-dismiss="modal">確定取消</button>
+                              <button type="button"  class="btn text-white mx-3 border border-white w-50" data-bs-target="#accountInformationModal2" data-bs-toggle="modal" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">繼續變更</button>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Modal  已成功修改 -->
+                    <div class="modal fade" id="accountInformationModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="informationMessageModal">
+                            <div class="modal-header justify-content-center  border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">完成儲存</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h5 class="modal-title text-center fw-bold">已更新完成資訊</h5>
+                            </div>                          
                           </div>
                         </div>
                       </div>
