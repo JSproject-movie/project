@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>影評星塵-我的評分列表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css">
+  </head>
+  <body class="body-primary">
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            <div class="col p-3 border-end border-1">
+                <aside class="d-flex flex-column justify-content-between align-items-center h-100">
+                    <div class="asideMenu h-75">
+                        <h2 class="menuTitle h5 fw-bold mt-5">星塵會員專區</h2>
+                        <ul class="menu_link d-flex flex-column justify-content-between align-items-center h-50 p-0">
+                            <li><a href="#" class="link-light my-5">基本資料設定</a></li>
+                            <li><a href="#" class="link-light my-5">帳號與安全性</a></li>
+                            <li><a href="#" class="link-light my-5">我的收藏影評</a></li>
+                            <li><a href="#" class="link-light my-5">我的影評列表</a></li>
+                            <li><a href="#" class="link-light my-5 active">我的評分列表</a></li>
+                            <li><a href="#" class="link-light my-5">檢舉/申訴</a></li>
+                        </ul>
+                    </div>
+                    <ul class="social_link d-flex flex-column justify-content-between p-0" style="height: 135px">
+                        <li><a href="#"><img src="/icon/tumblr.png" alt="tumblr"></a></li>
+                        <li><a href="#"><img src="/icon/linkedinLogo.png" alt="linkedinLogo"></a></li>
+                        <li><a href="#"><img src="/icon/facebookSm.png" alt="facebookSm"></a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-10">
+                <header class="header border-bottom border-1">
+                    <a href="#" class="logo">
+                        <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
+                       </a>
+                    <nav>
+                        <a href="#">關於影評星塵</a>
+                        <a href="#">
+                            <img src="/icon/Search.png" class="search-icon" alt="搜尋">
+                        </a>
+                        <a href="#">
+                            <img src="/icon/user.png" class="user-icon" alt="會員">
+                        </a>
+                    </nav>
+                </header>
+                <main class="d-flex flex-column align-items-center justify-content-center mb-5">
+                    <h2 class="d-flex align-items-center text-white my-5">我的評分列表</h2>
+                    <div class="searchArea d-flex w-100 justify-content-center mb-5">
+                        <a href="#" class="d-flex align-items-center"><img src="/icon/Search.png" class="img-fluid mx-3" alt="Search"></a>
+                        <select class="filterCategories mx-3" aria-label="Default select example">
+                            <option selected>篩選</option>
+                            <option value="喜劇片">喜劇片</option>
+                            <option value="劇情片">劇情片</option>
+                            <option value="科幻片">科幻片</option>
+                            <option value="恐怖片">恐怖片</option>
+                            <option value="音樂劇">音樂劇</option>
+                            <option value="愛情片">愛情片</option>
+                            <option value="驚悚片">驚悚片</option>
+                          </select>
+                          <div class="searchMovie">
+                            <input type="text" class="search">
+                            <span class="ms-1">搜尋</span>
+                          </div>
+                    </div>
+                    <div class="movieRating w-75 mb-4">
+                       <div class="row">
+                        <div class="col-2">
+                            <img src="/movie picture/Oppenheimer-1.jpg" class="img-fluid" alt="Oppenheimer">
+                        </div>
+                        <div class="col p-4">
+                            <div class="row">
+                                <div class="col-12 mb-4">
+                                    <h2 class="text-white fw-bold">奧本海默</h2>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/icon/userSm.png" alt="user" class="img-fluid mx-3">
+                                        <p class="mb-0 text-white">3000人評價</p>
+                                        <div class="star-cb-group mx-3">
+                                            <label>★</label>
+                                            <label>★</label>
+                                            <label>★</label>
+                                            <label>★</label>
+                                            <label>★</label>
+                                        </div>
+                                        <p class="text-light mb-0">3.8</p>
+                                    </div>
+                                </div>
+                                <div class="col-3" mb-4>
+                                    <button type="button" class="btn scoreBtn w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">開始修改評分</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="movieRating w-75 mb-4">
+                        <div class="row">
+                         <div class="col-2">
+                             <img src="/movie picture/Oppenheimer-1.jpg" class="img-fluid" alt="Oppenheimer">
+                         </div>
+                         <div class="col p-4">
+                             <div class="row">
+                                 <div class="col-12 mb-4">
+                                     <h2 class="text-white fw-bold">奧本海默</h2>
+                                 </div>
+                                 <div class="col-12 mb-4">
+                                     <div class="d-flex align-items-center">
+                                         <img src="/icon/userSm.png" alt="user" class="img-fluid mx-3">
+                                         <p class="mb-0 text-white">3000人評價</p>
+                                         <div class="star-cb-group mx-3">
+                                             <label>★</label>
+                                             <label>★</label>
+                                             <label>★</label>
+                                             <label>★</label>
+                                             <label>★</label>
+                                         </div>
+                                         <p class="text-light mb-0">3.8</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-3" mb-4>
+                                     <button type="button" class="btn scoreBtn w-100">開始修改評分</button>
+                                 </div>
+                             </div>
+                         </div>
+                        </div>
+                     </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link bg-transparent text-white border-0" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link bg-transparent text-secondary border-0" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link bg-transparent text-secondary border-0" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link bg-transparent text-secondary border-0" href="#">4</a></li>
+                          <li class="page-item">
+                            <a class="page-link bg-transparent text-white border-0" href="#" aria-label="Next">
+                              <img src="/icon/Vector.png" alt="Vector">
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+
+                      <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="ratingWindow modal-content">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="/movie picture/Oppenheimer-1.jpg" class="img-fluid" alt="Oppenheimer">
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column">
+                                        <h2 class="text-white fw-bold">奧本海默</h2>
+                                        <div class="ratingStars d-flex align-items-center mb-3">
+                                            <p class="mb-0 text-white me-3">請選擇評分星星數</p>
+                                            <div class="star-cb-group mx-3">
+                                                <label class="star-label">&#9733;</label>
+                                                <label class="star-label">&#9733;</label>
+                                                <label class="star-label">&#9733;</label>
+                                                <label class="star-label">&#9733;</label>
+                                                <label class="star-label">&#9733;</label>
+
+                                            </div>
+                                            <button type="button" class="btn saveBtn me-3" >確定修改</button>
+                                            <button type="button" class="btn closeBtn" data-bs-dismiss="modal">取消修改</button>
+                                        </div>
+                                        <h5 class="text-white mb-3">電影簡介 ：</h5>
+                                        <p class="mb-0 text-white">
+                                            語言：英語
+                                            <br>
+                                            片長：181分鐘
+                                            <br>
+                                            導演：安東尼魯索(AnthonyRusso),喬羅素(JoeRusso)
+                                            <br>
+                                            演員：布萊德利庫柏(BradleyCooper),布麗拉森(BrieLarson),克里斯漢斯沃
+                                            <br>
+                                            (ChrisHemsworth),克里斯伊凡(ChrisEvans)...
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </main>
+                <footer class="footer p-4 pb-0">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-3">
+                            <a href="#">
+                                <img src="/movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
+                                </a>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">聯絡我們  E-MAIL</h5>
+                                        <span class="text-secondary my-2">moviegalaxy@Anythings</span>
+                                        <h6 class="text-light my-2">服務時間 14~18</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">關於 影評星塵</h5>
+                                        <span class="text-secondary my-2">Q & A</span>
+                                        <h6 class="text-secondary my-2">網站理念</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">平台規則</h5>
+                                        <span class="text-secondary my-2">用戶規章</span>
+                                        <h6 class="text-secondary my-2">評論規章</h6>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/icon/error.png" alt="error" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">檢舉/申訴</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="h6 text-white text-center mt-5 mb-0">隱私權及服務條例  @ copyright    2023   All Rights Reserved.</h5>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
