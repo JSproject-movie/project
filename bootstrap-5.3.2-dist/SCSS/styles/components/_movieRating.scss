@@ -1,0 +1,25 @@
+.movieRating{
+    padding: 30px;
+    border-radius: 20px;
+    background: $btn-c3;
+    .scoreBtn{
+        color:white;
+        padding:10px;
+        border-radius: 10px;
+        border: 2px solid #B3B6F2;
+        background: $bg-c9;
+        box-shadow: 9px 5px 10px 0px rgba(110, 62, 147, 0.25);
+    }
+    .star-cb-group{
+        &>label{
+            display: inline-block;
+            font-size: 20px;
+            width: 1em;
+            white-space: nowrap;
+            background: linear-gradient(to right, #D08DDB, #B839CD);
+            -webkit-background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0px 0px 11px rgba(181, 106, 164, 0.50));
+        }
+    }
+}
