@@ -4,7 +4,7 @@
     display: flex;
     align-items:center;
     border-bottom: 1px solid rgba(204, 169, 169, 0.50);
-    backdrop-filter: blur(2px);
+    // backdrop-filter: blur(2px);
 }
 .header .logo{
     display: inline-block;
@@ -21,15 +21,10 @@
     font-size: 16px;
     margin-right: 20px;
 }
-// .header nav a{
-    
-// }
 .nav-txt{
-    // margin-bottom: 30px;
     margin: auto;
     text-decoration: none;
     display: inline-block;
-    // padding: 0 10px;
     font-size: 16px;
     font-weight: 700;
     @include font-white;
@@ -41,8 +36,8 @@
     margin-left: 60px;
 }
 .user-icon{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-left: 60px;
 
 }
@@ -53,8 +48,6 @@
 	width: auto;
 	border-radius: 10px;
 	min-width: 10px;
-	// height: 40px;
-	// line-height: normal;
 	display: inline-block;
 	position: relative;
 	// overflow: hidden;

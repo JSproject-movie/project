@@ -32,18 +32,17 @@
     line-height: 30px; /* 187.5% */
     letter-spacing: 1.6px;
 }
-.wrap{
+.wrap-main{
     width: 1440px;
     display: flex;
     background: $primary-c;
 }
-.side{
+.side-main{
     width: 163px;    
 }
-.container{
+.container-main{
     margin: 0;
     padding: 0;
-
     width: 1277px;
 }
 
