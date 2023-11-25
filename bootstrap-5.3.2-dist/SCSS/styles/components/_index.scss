@@ -1,16 +1,21 @@
 //text
+.wrap-carousel-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 27px;
+}
 .carousel-title{
     @include font-title;
     font-size: 32px;
     font-weight: 700;
-}
-.wrap-carousel-title{
     background: $bg-c1;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
-
+    -webkit-text-fill-color: transparent;
 }
+
 .top10-text{
     @include font-title;
     text-align: center;
@@ -18,11 +23,13 @@
     font-weight: 700;
 }
 .carousel-content{
+    width: 360px;
     @include font-white;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px; /* 156.25% */
     letter-spacing: 1.6px;
+    text-align:left;
 }
 .carousel-content2{
     @include font-white;
@@ -48,62 +55,7 @@
 }
 
 //css 輪播
-.carousel{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 61.5px;
-   background: $secondary-c;
-   border-radius: 20px;
-   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-}
-.green-box{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 39px;
-    // top: -33px;
-    border-radius: 351px;
-    background: #45DBC0;
-    filter: blur(171.5px);
-}
-ul.slides{
-    width: 1278px;
-   height: 578px;
 
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: $primary-c;
-
-    // 將2、3隱藏
-    overflow: hidden;
-}
-// 設定單張輪播圖樣式
-li.slide{
-    margin: 0;
-    padding: 0;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    display: flex;
-    font-size: 120px;
-    color: #fff;
-    transition: .5s transform ease-in-out;
-}
-// 加入3個選擇器，分別設定3張輪播圖的背景
-.slide:nth-last-of-type(1){
-    background-color: $primary-c;
-}
-.slide:nth-last-of-type(2){
-    background-color: #f25c05;
-    left: 100%;
-}
-.slide:nth-last-of-type(3){
-    background-color: #495f8c;
-    left: 200%;
-}
 
 //暫時加入選擇器，就會看到radio按鈕
 input[type="radio"]{
@@ -159,26 +111,28 @@ input[type="radio"]{
     display: flex;
 }
 .carousel-img{
-    // width: 576px;
+    width: 576px;
     height: 388px;
-    margin-left: 92px;
-    margin-top: 86px;
+    margin-left: 27px;
+    margin-top: 40px;
     border-radius: 20px;
+    object-fit: cover;
+    object-position: center center;
 }
-.caption{
+.car-caption{
     width: 462px;
     height: 440px;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 54px;
     background-color: $bg-c1;
     
 }
 .wrap-carousel-content{
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 60%; 
     vertical-align: middle;
 }
 
@@ -389,4 +343,95 @@ input[type="radio"]{
     margin: 15px 0;
 }
 
-
+.green-box{
+    width: 351px;
+    height: 351px;
+    position: absolute;
+    left: 39px;
+    top: -33px;
+    border-radius: 351px;
+    background: #45DBC0;
+    filter: blur(171.5px);
+}
+.pink-box{
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    right: 9px;
+    top: -71px;
+    background: #BE2EA7;
+    filter: blur(171.5px);
+}
+.swiper{
+    border-radius: 20px;
+    background: $secondary-c;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    width: 1278px;
+    height: 578px;
+}
+  
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+// pagination
+/*包裹自定義分頁器的div的位置等CSS樣式*/
+.swiper-pagination-custom {
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+/*自定義分頁器的樣式，這個你自己想要什麼樣子自己寫*/
+.swiper-pagination-customs {
+    width: 80px;
+    height: 8px;
+    display:inline-block;
+    border-radius: 20px;
+    background: #8C7B97;
+    opacity: .3;
+    margin: 0 5px;
+    outline: 0;
+}
+/*自定義分頁器激活時的樣式表現*/
+.swiper-pagination-customs-active {
+    opacity: 1;
+    border-radius: 20px;
+    background: #FFABF7;
+    box-shadow: 0px 2px 11px 0px rgba(255, 171, 247, 0.30);
+}
+// btn
+.swiper-button-prev {
+    background-image: url(/icon/leftArrow.png) !important;
+    width: 42px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    }
+    
+    .swiper-button-next {
+    background-image: url(/icon/rightArrow.png) !important;
+    width: 42px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    }
+    
+    .swiper-button-next::after {
+    display: none;
+    }
+    
+    .swiper-button-prev::after {
+    display: none;
+    }
+.mt-62{
+    margin-top: 62px;
+}
