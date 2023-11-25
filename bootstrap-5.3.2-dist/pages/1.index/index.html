@@ -15,7 +15,39 @@
   <body>
     <div class="wrap-main">
       <div class="side-main">
-        side bar
+        <div class="sidebar">
+          <div class="mgtitle">
+              <h3>電影評論分類</h3>
+              <button class="return-button">
+                <span class="text">返回</span>
+                <img src="/icon/arrow-back-circle.svg" alt="" class="icon" srcset="">
+              </button>  
+            </div>
+        <div class="mgroup">
+          <ul>
+            <li><a href="#">喜劇片</a></li>
+            <li><a href="#">劇情片</a></li>
+            <li><a href="#">科幻片</a></li>
+            <li><a href="#">恐怖片</a></li>
+            <li><a href="#">紀錄片</a></li>
+            <li><a href="#">音樂劇</a></li>
+            <li><a href="#">驚悚片</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#"><img src="/icon/tumblr.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="/icon/linkedinLogo.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="/icon/facebookSm.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
       <div class="container-main">
         <!-- nav bar -->
@@ -86,9 +118,37 @@
                     </div>
                   </div>
                 </div>
-
               </div>
-              <div class="swiper-slide">Slide 2</div>
+              <!-- 第二頁 -->
+              <div class="swiper-slide">
+                <div class="carousel-page">
+                  <img src="/movie picture/mission.jpg" class="carousel-img" alt="oppen">
+                  <div class="car-caption">
+                    <div class="wrap-carousel-title">
+                      <h3 class="carousel-title">不可能的任務：致命清算 第一章</h3>
+                      <h3 class="carousel-title">Mission: Impossible – Dead Reckoning Part One</h3>
+                    </div>
+                    <p class="carousel-content">伊森·韓特和他的不可能任務情報局（IMF）團隊展開他們迄今為止最危險的任務：阻止一件威脅著全人類的危險武器落入惡人的手中；隨著世界的命運危在旦夕，伊森過去的黑暗勢力也找上門來</p>
+                    <div class="wrap-carousel-content">
+                      <!-- 星星 -->
+                      <div class="wrap-star">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      </div>
+                      <p class="carousel-content2">本周評論數:769則評論
+                      </p>
+                      <button class="btn-carousel">
+                        <a href="#" class="btn-index-a">read more
+                          <span class="ml-15"></span><img src="/icon/PlayButton_purple.png"  alt="">
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="swiper-slide">Slide 3</div>
               <div class="swiper-slide">Slide 4</div>
             </div>
@@ -100,7 +160,9 @@
         <!-- TOP 10  -->
         <div class="top10bc mt-62">
           <div class="top10-title">
-            <h2 class="top10-text">TOP   10  Popular movies this week</h2>
+            <div class="yellow-box"></div>
+            <h2 class="top10-text">
+              TOP   10  Popular movies this week</h2>
             <h3 class="top10-subtitle">本週熱門電影　 TOP 10</h3>
           </div>
         </div>
@@ -200,6 +262,7 @@
         <!-- TOP 1 Discussion -->
         <div class="top10bc mt-81 mb-40">
           <div class="top10-title">
+            <div class="blue-box"></div>
             <h2 class="top10-text">TOP   1   Discussion this week</h2>
             <h3 class="top10-subtitle">本週討論度   TOP  1</h3>
           </div>
@@ -332,6 +395,7 @@
         <!-- Recently viewed -->
         <div class="top10bc mt-60">
           <div class="top10-title">
+            <div class="purple-box"></div>
             <h2 class="top10-text">Recently viewed</h2>
             <h3 class="top10-subtitle">近期瀏覽紀錄</h3>
           </div>
@@ -431,10 +495,11 @@
 
         
 
-
-
+        <!-- footer -->
+        
 
       </div>
+      
     </div>
     
     

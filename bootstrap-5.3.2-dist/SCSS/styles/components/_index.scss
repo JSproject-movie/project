@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 27px;
 }
 .carousel-title{
     @include font-title;
@@ -23,7 +22,7 @@
     font-weight: 700;
 }
 .carousel-content{
-    width: 360px;
+    width: 450px;
     @include font-white;
     font-size: 16px;
     font-weight: 400;
@@ -114,7 +113,7 @@ input[type="radio"]{
     width: 576px;
     height: 388px;
     margin-left: 27px;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 20px;
     object-fit: cover;
     object-position: center center;
@@ -122,7 +121,7 @@ input[type="radio"]{
 .car-caption{
     width: 462px;
     height: 440px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 54px;
     background-color: $bg-c1;
     
@@ -361,6 +360,33 @@ input[type="radio"]{
     top: -71px;
     background: #BE2EA7;
     filter: blur(171.5px);
+}
+.yellow-box{
+    position: absolute;
+    left: 700px;
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #97794C;
+    filter: blur(150px);
+}
+.blue-box{
+    position: absolute;
+    left: 900px;
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #7FE7CE;
+    filter: blur(150px);
+}
+.purple-box{
+    position: absolute;
+    left: 400px;    
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #5C6DC6;
+    filter: blur(150px);
 }
 .swiper{
     border-radius: 20px;
