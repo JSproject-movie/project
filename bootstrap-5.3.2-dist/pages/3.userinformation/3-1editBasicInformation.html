@@ -34,70 +34,97 @@
                 </aside>
             </div>
             <div class="col-10">
-                <header class="header border-bottom border-1">
-                    <a href="#" class="logo">
-                        <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
-                       </a>
+                <div class="nav-header">
+                    <a href="#" class="nav-logo">
+                      <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
+                    </a>
                     <nav>
-                        <a href="#">關於影評星塵</a>
-                        <a href="#">
-                            <img src="/icon/Search.png" class="search-icon" alt="搜尋">
-                        </a>
-                        <a href="#">
-                            <img src="/icon/user.png" class="user-icon" alt="會員">
-                        </a>
+                      <a href="#" class="nav-txt">關於影評星塵</a>
+                      <!-- 搜尋 -->        
+                      <div class="btn-box">
+                        <img src="/icon/Search.png" class="search-icon" alt="搜尋">
+                        <input type="text" placeholder=" "/>
+                      </div>
+                      <!-- dropdown -->
+                      <div class="dropdown">
+                        <button class="dropbtn"> 篩選 
+                          <span></span>
+                          <img src="/icon/dropdown-arrow-down.png" alt="">
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#"> 喜劇片 </a>
+                          <a href="#"> 劇情片 </a>
+                          <a href="#"> 科幻片 </a>
+                          <a href="#"> 恐怖片 </a>
+                          <a href="#"> 音樂劇 </a>
+                          <a href="#"> 愛情片 </a>
+                          <a href="#"> 驚悚片 </a>
+                        </div>
+                      </div>
+                      <button class="btn-search">搜尋</button>
+                      <a href="#" class="nav-txt">
+                        <img src="/icon/user.png" class="user-icon" alt="會員">
+                    </a>
                     </nav>
-                </header>
+                  </div>
                 <main class="d-flex flex-column align-items-center justify-content-center mb-5">
                     <h2 class="d-flex align-items-center text-white my-5"><img src="/icon/user.png" alt="user" class="me-5">用戶基本資料</h2>
-                    <div class="informationArea card border-1 border-white rounded-6 p-4 w-75" style="background: linear-gradient(115deg, rgba(161, 118, 182, 0.50) 0%, rgba(57, 30, 54, 0.50) 100.56%);">
+                    <div class="editInformationArea card border-1 border-white w-75">
                         <h5 class="card-title mb-2 text-white">個人基本資料</h5>
-                        <div class="informationArea">
-                            <div class="row g-0">
-                                <div class="col-7 p-5">
-                                    <div class="row">
-                                        <div class="col-3 text-white">
-                                            <p>用戶編號</p>
-                                            <p>會員名稱</p>
-                                            <p>性別</p>
-                                            <p>電子郵件</p>
-                                        </div>
-                                        <div class="col-5 text-white">
-                                            <p>A00012</p>
-                                            <p>PENG</p>
-                                            <p>男性</p>
-                                            <p>123456@gmail.com</p>
-                                        </div>
+                        <form class="informationArea">
+                            <div class="row mt-3 justify-content-between">
+                                <div class="editorInfo col-7 d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userId" class="form-label mb-0 me-3 fs-5 fw-bold text-center">用戶編號</label>
+                                        <input type="text" class="InformationForm text-white" id="userId" placeholder="A00012" value="A00012">
+                                    </div>
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userName" class="form-label mb-0 me-3 fs-5 fw-bold text-center">會員名稱</label>
+                                        <input type="text" class="InformationForm text-white" id="userName" placeholder="PENG Darius" value="PENG Darius">
+                                    </div>
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userGender" class="form-label d-flex justify-content-center mb-0 fs-5 fw-bold px-4 me-3">性別</label>
+                                        <select class="InformationSelect text-white bg-dark" id="userGender" aria-label="Default select example">
+                                            <option selected>性別</option>
+                                            <option value="男性">男性</option>
+                                            <option value="女性">女性</option>
+                                            <option value="不透漏">不透漏</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex flex-nowrap align-items-center mb-3 text-white">
+                                        <label for="userEmail" class="form-label mb-0 me-3 fs-5">電子郵件</label>
+                                        <input type="text" class="InformationForm text-white" id="userEmail" placeholder="123456@gmail.com" value="123456@gmail.com">
                                     </div>
                                 </div>
-                                <div class="col-5 px-6">
+                                <div class="editorImg col-5 text-white">
                                     <div class="row g-0 flex-column justify-content-center align-items-center">
-                                        <div class="col p-3 d-flex justify-content-center">
+                                        <div class="col  d-flex justify-content-center">
                                             <img src="/movie picture/Oppenheimer-3.jpg" alt="userImg" class="img-fluid" style="width: 223px; height: 207px;">
                                         </div>
-                                        <div class="col-9 px-3 d-flex justify-content-center">
+                                        <div class="col-9 px-3 mt-2 d-flex justify-content-center">
                                             <a href="#" class="text-decoration-none text-light fw-bold"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="/icon/userSm.png" alt="userImg" class="p-2 mx-3" style="background: linear-gradient(180deg, #A62281 0%, #854E99 100%); border-radius: 10px;">變更個人會員相片</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <hr class="my-3 text-white">
-                        <h5 class="card-title mb-2 text-white">個人介紹</h5>
-                        <div class="introduce my-5 p-3">
-                            <p class="text-white">你好，我是一名上班族的男性，非常高興能夠和你們交流。工作對我來說是生活的一部分，它讓我有機會不斷學習和成長，並實現自己的目標。我相信努力工作和追求夢想是每個人生命中重要的一部分。
-                                除了工作，我還有很多興趣和愛好，例如音樂、運動和旅行。我喜歡彈奏樂器，這對我來說是一種釋放壓力和表達情感的方式。運動也是我生活的一部分，它有幫助於保持身體健康和精力充沛。旅行則讓我有機會探索新的地方，體驗不同的文化和風景。
-                                我很喜歡與人交流和分享想法。我相信相互學習和交流經驗可以豐富我們的生活。無論是討論工作中的挑戰，分享生活中的快樂，還是探討世界上的各種話題，我都能夠期待與你們建立了有意義的對話。
-                                感謝您花時間閱讀我的自我介紹，我期待與您進一步的互動和交流！</p>
-                        </div>
-                        <div class="d-flex justify-content-center w-100">
-                            <button class="btn text-white mx-3 border border-white" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">變更密碼</button>
-                            <button class="btn text-white mx-3 border border-white" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">變更帳戶資訊</button>
-                        </div>
+                            <div class="d-flex flex-column text-white my-4">
+                                <label for="userIntroduce" class="form-label mb-0 me-3 fs-5 fw-bold">個人介紹</label>
+                                <textarea class="editorTextarea form-control" id="userIntroduce" rows="10">
+你好，我是一名上班族的男性，非常高興能夠和你們交流。工作對我來說是生活的一部分，它讓我有機會不斷學習和成長，並實現自己的目標。我相信努力工作和追求夢想是每個人生命中重要的一部分。
+除了工作，我還有很多興趣和愛好，例如音樂、運動和旅行。我喜歡彈奏樂器，這對我來說是一種釋放壓力和表達情感的方式。運動也是我生活的一部分，它有幫助於保持身體健康和精力充沛。旅行則讓我有機會探索新的地方，體驗不同的文化和風景。
+我很喜歡與人交流和分享想法。我相信相互學習和交流經驗可以豐富我們的生活。無論是討論工作中的挑戰，分享生活中的快樂，還是探討世界上的各種話題，我都能夠期待與你們建立了有意義的對話。
+感謝您花時間閱讀我的自我介紹，我期待與您進一步的互動和交流！
+                                </textarea>
+                            </div>
+                            <div class="d-flex justify-content-center w-100">
+                                <button type="button" class="btn text-white mx-3 border border-white"  style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">取消變更</button>
+                                <button type="button" class="btn text-white mx-3 border border-white"  data-bs-toggle="modal" data-bs-target="#accountInformationModal" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
+                            </div>
+                        </form>
                     </div>
-                    <!-- Modal -->
+                    <!-- Modal  個人會員相片 -->
                     <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                           <div class="imgModal">
                             <div class="modal-header justify-content-center  border-0">
                               <h5 class="modal-title" id="exampleModalLabel">變更個人會員相片</h5>
@@ -119,6 +146,37 @@
                               <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);" data-bs-dismiss="modal">取消並返回會員資料</button>
                               <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">確定變更</button>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal  修改帳戶資訊 -->
+                    <div class="modal fade" id="accountInformationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="informationModal">
+                            <div class="modal-header justify-content-center  border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">警告</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h5 class="modal-title text-center fw-bold">確定取消並離開嗎?<br>系統不會儲存你最後的變更!</h5>
+                            </div>                          
+                            <div class="modal-footer flex-row flex-nowrap border-0 w-100">
+                              <button type="button" class="btn text-white mx-3 border border-white w-50" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);" data-bs-dismiss="modal">確定取消</button>
+                              <button type="button"  class="btn text-white mx-3 border border-white w-50" data-bs-target="#accountInformationModal2" data-bs-toggle="modal" style="background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);">繼續變更</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Modal  已成功修改 -->
+                    <div class="modal fade" id="accountInformationModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="informationMessageModal">
+                            <div class="modal-header justify-content-center  border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">完成儲存</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h5 class="modal-title text-center fw-bold">已更新完成資訊</h5>
+                            </div>                          
                           </div>
                         </div>
                       </div>
