@@ -1632,14 +1632,14 @@ input[type=radio] {
   text-shadow: 0 0 10px white;
 }
 
-.header {
+.nav-header {
   height: 90px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(204, 169, 169, 0.5);
 }
 
-.header .logo {
+.nav-header .nav-logo {
   display: inline-block;
   margin: 14px auto 14px 20px;
   margin-left: 20px;
@@ -1650,7 +1650,7 @@ input[type=radio] {
   height: 54px;
 }
 
-.header nav {
+.nav-header nav {
   display: flex;
   text-align: center;
   font-size: 16px;
