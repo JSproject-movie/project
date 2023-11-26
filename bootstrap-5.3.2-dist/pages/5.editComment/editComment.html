@@ -10,7 +10,7 @@
     <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css">
   </head>
-  <body style="background: linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%);">
+  <body class="body-primary">
     <div class="container-fluid px-0">
         <div class="row g-0">
             <div class="col p-3 border-end border-1">
@@ -29,33 +29,52 @@
                 </aside>
             </div>
             <div class="col-10">
-                <header class="header border-bottom border-1">
-                    <a href="#" class="logo">
-                        <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
-                       </a>
+                <div class="nav-header">
+                    <a href="#" class="nav-logo">
+                      <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
+                    </a>
                     <nav>
-                        <a href="#">關於影評星塵</a>
-                        <a href="#">
-                            <img src="/icon/Search.png" class="search-icon" alt="搜尋">
-                        </a>
-                        <a href="#">
-                            <img src="/icon/user.png" class="user-icon" alt="會員">
-                        </a>
+                      <a href="#" class="nav-txt">關於影評星塵</a>
+                      <!-- 搜尋 -->        
+                      <div class="btn-box">
+                        <img src="/icon/Search.png" class="search-icon" alt="搜尋">
+                        <input type="text" placeholder=" "/>
+                      </div>
+                      <!-- dropdown -->
+                      <div class="dropdown">
+                        <button class="dropbtn"> 篩選 
+                          <span></span>
+                          <img src="/icon/dropdown-arrow-down.png" alt="">
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#"> 喜劇片 </a>
+                          <a href="#"> 劇情片 </a>
+                          <a href="#"> 科幻片 </a>
+                          <a href="#"> 恐怖片 </a>
+                          <a href="#"> 音樂劇 </a>
+                          <a href="#"> 愛情片 </a>
+                          <a href="#"> 驚悚片 </a>
+                        </div>
+                      </div>
+                      <button class="btn-search">搜尋</button>
+                      <a href="#" class="nav-txt">
+                        <img src="/icon/user.png" class="user-icon" alt="會員">
+                    </a>
                     </nav>
-                </header>
+                  </div>
                 <main class="d-flex flex-column align-items-center justify-content-center mb-5">
                     <h2 class="my-5 text-white fw-bold">開始評論</h2>
                     <div class="editcomment d-flex flex-column w-75">
                         <div class="row g-0 justify-content-center">
-                            <div class="col-2">
-                                <img src="/movie picture/Oppenheimer-1.jpg" alt="Oppenheimer" class="img-fluid">
+                            <div class="col-4">
+                                <img src="/movie picture/Oppenheimer-1.jpg" alt="Oppenheimer" class="img-fluid" style="width: 247px; height: 340px; object-fit: cover;">
                             </div>
-                            <div class="col-7 text-white ms-5">
+                            <div class="col-7 text-white">
                                 <div class="d-flex align-items-center">
                                     <img src="/movie picture/userImg.png" alt="userImg" class="rounded-circle">
                                     <h5 class="text-white mb-0 fw-bold ms-4">奧本海默</h5>
                                 </div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center my-3">
                                     <div class="star-cb-group ">
                                         <label>★</label>
                                         <label>★</label>
@@ -78,47 +97,47 @@
                         <div class="d-flex p-3 mt-5 flex-column">
                             <h3 class="text-white fw-bold">會員評論</h3>
                             <form class="commentEditor">
-                                <input type="text" class="commentTitle my-4 w-75" placeholder="請輸入標題" value="科學與道德的交織">
+                                <input type="text" class="commentTitle my-4 w-75 fw-bold text-white" placeholder="請輸入標題" value="科學與道德的交織">
                                 <div class="d-flex justify-content-end">
                                     <div class="form-check text-white">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="thunderComments">
+                                        <label class="form-check-label" for="thunderComments">
                                             有雷評論
                                         </label>
                                       </div>
                                       <div class="form-check text-white mx-3">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="noThunderComments" checked>
+                                        <label class="form-check-label" for="noThunderComments">
                                             無雷評論
                                         </label>
                                       </div>
                                 </div>
-                                <textarea cols="30" rows="10" class="commentArticle w-100">
+                                <textarea cols="30" rows="10" class="commentArticle w-100 text-white">
 片中賈羅·奧本海默的角色由傑克·吉倫哈爾精湛詮釋，他不僅展現了奧本海默作為核物理學家的才華，更將觀眾帶入他內心的道德掙扎。奧本海默在創造毀滅性武器的同時，也面臨道德的困惑和人性的挑戰，這種內心掙扎讓影片更具深度和情感。
 影片不僅探討了科學家在戰爭時期所承受的壓力，也提出了深刻的道德問題。奧本海默的故事讓觀眾思考科學與道德之間的平衡，以及科技發展對世界的影響。同時也反映出在困難時刻，個人的信仰和價值觀會如何影響重大決定。
 總的來說，《Oppenheimer》是一部富有挑戰性和啟發性的電影，讓觀眾不僅了解科學的奇妙，也思考人類的道德責任。這部電影將深深觸動觀眾的內心，值得一看。
                                 </textarea>
                                 <div class="form-check d-flex justify-content-center text-white">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                    <label class="form-check-label mx-3" for="flexRadioDefault3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault1" id="contract">
+                                    <label class="form-check-label mx-3" for="contract">
                                         同意相關評論的<span class="text-danger">定型化歸則契約</span>
                                     </label>
                                   </div>
                                   <div class="d-flex justify-content-center mt-3">
-                                    <button type="button" class="btn cancelBtn">取消發布</button>
-                                    <button type="button" class="btn releaseBtn mx-3">發布</button>
+                                    <button type="button" class="btn cancelBtn w-25">取消發布</button>
+                                    <button type="button" class="btn releaseBtn w-25 mx-3">發布</button>
                                   </div>
                             </form>
                         </div>
                         
                     </div>
                 </main>
-                <footer class="p-4 pb-0" style="background: linear-gradient(91deg, rgba(0, 0, 0, 0.40) 0%, rgba(98, 106, 179, 0.00) 51.9%); backdrop-filter: blur(20px);">
+                <footer class="footer p-4 pb-0">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-3">
                             <a href="#">
-                                <img src="/movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
-                                </a>
+															<img src="/movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
+														</a>
                         </div>
                         <div class="col">
                             <div class="row align-items-center">
@@ -135,7 +154,7 @@
                                         <img src="/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
                                         <h5 class="text-light h6 my-2">關於 影評星塵</h5>
                                         <span class="text-secondary my-2">Q & A</span>
-                                        <h6 class="text-light my-2">網站理念</h6>
+                                        <h6 class="text-secondary my-2">網站理念</h6>
                                     </div>
                                 </div>
                                 <div class="col-3">
@@ -143,7 +162,7 @@
                                         <img src="/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
                                         <h5 class="text-light h6 my-2">平台規則</h5>
                                         <span class="text-secondary my-2">用戶規章</span>
-                                        <h6 class="text-light my-2">評論規章</h6>
+                                        <h6 class="text-secondary my-2">評論規章</h6>
                                     </div>
                                 </div>
                                 <div class="col-2">
