@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影評列表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+    <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="m-row row">
+      <div class="navbar" style="background: darkgrey; height: 90px">
+        <p>navbar</p>
+      </div>
+
+      <div class="mf-content">
+        <div class="col-4" style="background: gray; width: 163px">
+          <ul>
+            <li>sidebar</li>
+            <li>123</li>
+            <li>456</li>
+          </ul>
+        </div>
+        <div class="about-content">
+          <p class="about-title">聯絡我們</p>
+          <div>
+            <ul class="contact-row">
+              <li>
+                <p>姓名</p><input type="text" placeholder="輸入姓名" />
+                <p>E-mail</p><input type="text" placeholder="電子郵件" />
+              </li>
+              <li>
+                <p>連絡電話</p><input type="text" placeholder="輸入電話" />
+                <p>事發時間</p><input type="date" placeholder="事發時間" />
+              </li>
+              <li>
+                <div class="">
+                  <select
+                    class=""
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">詳細說明</label>
+                  </div>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

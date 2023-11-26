@@ -1,0 +1,10 @@
+.contact-row{
+    width: 802px;
+    margin: 0 auto;
+}
+.contact-row li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
