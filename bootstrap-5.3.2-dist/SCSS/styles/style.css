@@ -15,6 +15,10 @@
   margin-top: 60px;
 }
 
+.mt-62 {
+  margin-top: 62px;
+}
+
 .mt-70 {
   margin-top: 70px;
 }
@@ -273,11 +277,13 @@ input[type=radio] {
 }
 
 .top10bc {
+  padding: 30px;
   width: 1238px;
   margin-left: 20px;
   margin-bottom: 68px;
   background: linear-gradient(115deg, rgba(219, 72, 196, 0.34) -13.24%, rgba(50, 193, 224, 0.15) 9.84%, rgba(205, 203, 203, 0) 35.52%, rgba(165, 162, 162, 0) 84.27%);
   border-radius: 20px;
+  box-shadow: 6px 6px 200px rgba(0, 0, 0, 0.3);
 }
 
 .top10-title {
@@ -584,8 +590,43 @@ input[type=radio] {
   display: none;
 }
 
-.mt-62 {
-  margin-top: 62px;
+.toTop-arrow {
+  width: 56px;
+  height: 56px;
+  border: 0;
+  cursor: pointer;
+  position: fixed;
+  right: 13px;
+  bottom: 15px;
+  display: none;
+  border-radius: 20px;
+  background: rgba(219, 144, 255, 0.1);
+  box-shadow: 3px 4px 32px 0px rgba(167, 122, 202, 0.25);
+}
+
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 31px;
+  height: 7px;
+  border-radius: 3px;
+  background: #FFF;
+  position: absolute;
+  content: "";
+  stroke-width: 8px;
+  filter: drop-shadow(0px 4px 5px rgba(161, 186, 250, 0.25));
+}
+
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.4rem;
+}
+
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.4rem;
+}
+
+.toTop-arrow:focus {
+  outline: none;
 }
 
 .editInformationArea {
