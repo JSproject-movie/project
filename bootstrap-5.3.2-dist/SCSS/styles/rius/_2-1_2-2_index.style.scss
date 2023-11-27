@@ -9,11 +9,10 @@ body{
   background-repeat: no-repeat;
 }
 
-.login_Allmain{
- 
+.login_Allmain_2-1_2_2{
   display: flex;
   width: 600px;
-  height: auto;
+  height: 492px;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +25,7 @@ background: linear-gradient(115deg, rgba(255, 255, 255, 0.25) 0%, rgba(205, 203,
 box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
 }
 
- .login_Allmain > #H1_login{
+#H1_login{
 font-family: Inter;
 font-size:  44px;
 font-style: normal;
@@ -54,7 +53,7 @@ justify-content: center;
 align-items: center;
 gap: 25px;
 }
-.Login_ALLuser_input  {
+.Login_ALLuser_input_2-1_2-2{
   /* display: flex; */
   width: 250px;
   height: 30px;
@@ -71,7 +70,7 @@ box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.40) inset, -1px -3px 18px 0px rgba(
 
 }
  /* <!-- 登入按鈕 --> */
-    #BT_Login_submit{
+    #BT_Login_submit_2-1_2-2{
   display: flex;
   width: 200px;
   height: 41px;
@@ -88,7 +87,7 @@ box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.40) inset, -1px -3px 18px 0px rgba(
  }
 
 
- #BT_Login_submit:hover {
+ #BT_Login_submit_2-1_2-2:hover {
   display: flex;
   width: 200px;
   height: 41px;
@@ -102,19 +101,21 @@ background: linear-gradient(96deg, #FDFDFD 3.46%, #FFF 50.43%, #FDFDFD 97.41%);
 box-shadow: 0px 2px 13px 0px rgba(255, 220, 220, 0.25);
 
  }
- #BT_Login_submit > #submit {
+ #BT_Login_submit_2-1_2-2 > #submit_2-1_2-2  {
   text-align: center;
-  font-family: inter;
+  font-family: Noto Sans TC;
   font-size: 18px;
-  font-style: bold;
-  font-weight: 700;
+  font-style: normal;
+  font-weight:bolder;
+
+
   line-height: 166.52%; /* 29.974px */
   background: linear-gradient(111deg, #2B356A 15.43%, rgba(206, 24, 198, 0.84) 106.57%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
- }
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
  /* 註冊忘記密碼 */
+ }
 
  .BT_Register_mon{
   /* display: flex;
