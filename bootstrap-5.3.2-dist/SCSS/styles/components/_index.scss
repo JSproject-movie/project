@@ -1,16 +1,20 @@
 //text
+.wrap-carousel-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 .carousel-title{
     @include font-title;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-}
-.wrap-carousel-title{
     background: $bg-c1;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
-
+    -webkit-text-fill-color: transparent;
 }
+
 .top10-text{
     @include font-title;
     text-align: center;
@@ -18,11 +22,13 @@
     font-weight: 700;
 }
 .carousel-content{
+    width: 450px;
     @include font-white;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px; /* 156.25% */
     letter-spacing: 1.6px;
+    text-align:left;
 }
 .carousel-content2{
     @include font-white;
@@ -32,15 +38,15 @@
     line-height: 30px; /* 187.5% */
     letter-spacing: 1.6px;
 }
-.wrap{
+.wrap-main{
     width: 1440px;
     display: flex;
     background: $primary-c;
 }
-.side{
+.side-main{
     width: 163px;    
 }
-.container{
+.container-main{
     margin: 0;
     padding: 0;
 
@@ -48,137 +54,33 @@
 }
 
 //css 輪播
-.carousel{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 61.5px;
-   background: $secondary-c;
-   border-radius: 20px;
-   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-}
-.green-box{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 39px;
-    // top: -33px;
-    border-radius: 351px;
-    background: #45DBC0;
-    filter: blur(171.5px);
-}
-ul.slides{
-    width: 1278px;
-   height: 578px;
-
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: $primary-c;
-
-    // 將2、3隱藏
-    overflow: hidden;
-}
-// 設定單張輪播圖樣式
-li.slide{
-    margin: 0;
-    padding: 0;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    display: flex;
-    font-size: 120px;
-    color: #fff;
-    transition: .5s transform ease-in-out;
-}
-// 加入3個選擇器，分別設定3張輪播圖的背景
-.slide:nth-last-of-type(1){
-    background-color: $primary-c;
-}
-.slide:nth-last-of-type(2){
-    background-color: #f25c05;
-    left: 100%;
-}
-.slide:nth-last-of-type(3){
-    background-color: #495f8c;
-    left: 200%;
-}
-
-//暫時加入選擇器，就會看到radio按鈕
-input[type="radio"]{
-   position: relative;
-   z-index: 100;
-   display: none; 
-}
-//設定容器樣式
-.controls-visible{
-    position: absolute;
-    width: 100%;
-    bottom: 12px;
-    text-align: center;
-}
-.controls-visible label{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: $primary-c;
-    
-    // 圓角設50%，圓形
-    border-radius: 50%;
-    margin: 0 3px;
-    border: 2px solid #fff;
-}
-// 小圓點被選取後顯示
-.slides input[type="radio"]:nth-of-type(1):checked ~
-.controls-visible label:nth-of-type(1){
-    background-color: #333;
-}
-.slides input[type="radio"]:nth-of-type(2):checked ~
-.controls-visible label:nth-of-type(2){
-    background-color: #333;
-}
-.slides input[type="radio"]:nth-of-type(3):checked ~
-.controls-visible label:nth-of-type(3){
-    background-color: #333;
-}
-// 設定輪播圖切換的效果
-//意思是，當選中第一個radio按鈕後，後面三張.slide的樣式
-//當選擇第一個按鈕時，將transform設定為translatex(0%)
-.slides input[type="radio"]:nth-of-type(1):checked ~ .slide{
-    transform: translatex(0%);
-}
-:nth-of-type(2):checked ~ .slide{
-    transform: translatex(-100%);
-}
-:nth-of-type(3):checked ~ .slide{
-    transform: translatex(-200%);
-}
 
 .carousel-page{
     display: flex;
 }
 .carousel-img{
-    // width: 576px;
+    width: 576px;
     height: 388px;
-    margin-left: 92px;
-    margin-top: 86px;
+    margin-left: 27px;
+    margin-top: 20px;
     border-radius: 20px;
+    object-fit: cover;
+    object-position: center center;
 }
-.caption{
+.car-caption{
     width: 462px;
     height: 440px;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: 54px;
     background-color: $bg-c1;
     
 }
 .wrap-carousel-content{
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 60%; 
     vertical-align: middle;
 }
 
@@ -222,12 +124,13 @@ input[type="radio"]{
 }
 // top 10
 .top10bc{
+    padding: 30px;
     width: 1238px;
     margin-left: 20px;
     margin-bottom: 68px;
     background: $bg-c4;
     border-radius: 20px;
-}
+    box-shadow: 6px 6px 200px rgba(0,0,0,0.3);}
 .top10-title{
     background: $bg-c1;
     //(89deg, #C9E5E8 31.72%, #E8A7D6 68.97%)
@@ -338,15 +241,12 @@ input[type="radio"]{
     right: 30px;
     top: 50%;
     transform: translateY(-50%); 
-
     padding: 20px 40px;
     justify-content: center;
     align-items: center;
     align-content: center;
     gap: 10px;
     flex-wrap: wrap;
-
-
     border-radius: 30px;
     background:$bg-c5;
     backdrop-filter: blur(5.5px);
@@ -392,4 +292,150 @@ input[type="radio"]{
     margin: 15px 0;
 }
 
+.green-box{
+    width: 351px;
+    height: 351px;
+    position: absolute;
+    left: 39px;
+    top: -33px;
+    border-radius: 351px;
+    background: #45DBC0;
+    filter: blur(171.5px);
+}
+.pink-box{
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    right: 9px;
+    top: -71px;
+    background: #BE2EA7;
+    filter: blur(171.5px);
+}
+.yellow-box{
+    position: absolute;
+    left: 700px;
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #97794C;
+    filter: blur(150px);
+}
+.blue-box{
+    position: absolute;
+    left: 900px;
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #7FE7CE;
+    filter: blur(150px);
+}
+.purple-box{
+    position: absolute;
+    left: 400px;    
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #5C6DC6;
+    filter: blur(150px);
+}
+.swiper{
+    border-radius: 20px;
+    background: $secondary-c;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    width: 1278px;
+    height: 578px;
+}
+  
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+// pagination
+/*包裹自定義分頁器的div的位置等CSS樣式*/
+.swiper-pagination-custom {
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+/*自定義分頁器的樣式，這個你自己想要什麼樣子自己寫*/
+.swiper-pagination-customs {
+    width: 80px;
+    height: 8px;
+    display:inline-block;
+    border-radius: 20px;
+    background: #8C7B97;
+    opacity: .3;
+    margin: 0 5px;
+    outline: 0;
+}
+/*自定義分頁器激活時的樣式表現*/
+.swiper-pagination-customs-active {
+    opacity: 1;
+    border-radius: 20px;
+    background: #FFABF7;
+    box-shadow: 0px 2px 11px 0px rgba(255, 171, 247, 0.30);
+}
+// btn
+.swiper-button-prev {
+    background-image: url(/icon/leftArrow.png) !important;
+    width: 42px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}   
+.swiper-button-next {
+background-image: url(/icon/rightArrow.png) !important;
+width: 42px;
+height: 60px;
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: center;
+}
+.swiper-button-next::after {
+display: none;
+}
+.swiper-button-prev::after {
+display: none;
+}
 
+// btn returnTop
+.toTop-arrow {
+	width: 56px;
+	height: 56px;
+	border: 0;
+    cursor: pointer;
+	position:fixed;
+	right: 13px;
+    bottom: 15px;
+	display: none;
+    border-radius: 20px;
+    background: rgba(219, 144, 255, 0.10);
+    box-shadow: 3px 4px 32px 0px rgba(167, 122, 202, 0.25);
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #FFF;
+	position: absolute;
+	content: "";
+    stroke-width: 8px;
+    filter: drop-shadow(0px 4px 5px rgba(161, 186, 250, 0.25));
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}

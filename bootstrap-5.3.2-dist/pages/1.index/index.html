@@ -9,17 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;200;300;400;500;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css">
   </head>
   <body>
-    <div class="wrap">
-      <div class="side">
-        side bar
+    <div class="wrap-main">
+      <div class="side-main">
+        <div class="sidebar">
+          <div class="mgtitle">
+            <h3>電影評論分類</h3>
+            <button class="return-button">
+              <span class="text">返回</span>
+              <img src="/icon/arrow-back-circle.svg" alt="" class="icon" srcset="">
+            </button>  
+          </div>
+          <div class="mgroup">
+            <ul>
+              <li><a href="#">喜劇片</a></li>
+              <li><a href="#">劇情片</a></li>
+              <li><a href="#">科幻片</a></li>
+              <li><a href="#">恐怖片</a></li>
+              <li><a href="#">紀錄片</a></li>
+              <li><a href="#">音樂劇</a></li>
+              <li><a href="#">驚悚片</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><img src="/icon/tumblr.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon/linkedinLogo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon/facebookSm.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="container">
+      <div class="container-main">
         <!-- nav bar -->
-        <div class="header">
-          <a href="#" class="logo">
+        <div class="nav-header">
+          <a href="#" class="nav-logo">
             <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
           </a>
           <nav>
@@ -27,10 +60,7 @@
             <!-- 搜尋 -->        
             <div class="btn-box">
               <img src="/icon/Search.png" class="search-icon" alt="搜尋">
-              
-
               <input type="text" placeholder=" "/>
-              
             </div>
             <!-- dropdown -->
             <div class="dropdown">
@@ -49,77 +79,149 @@
               </div>
             </div>
             <button class="btn-search">搜尋</button>
-            
-            
             <a href="#" class="nav-txt">
               <img src="/icon/user.png" class="user-icon" alt="會員">
           </a>
-
-            
-            
-
           </nav>
         </div>
-        
-        <!-- Carousel -->
-        <div class="carousel">
-          <div class="green-box"></div>
-          <ul class="slides">
-            <input type="radio" id="control-1" name="control" checked>
-            <input type="radio" id="control-2" name="control">
-            <input type="radio" id="control-3" name="control">
-            <li class="slide">
-              1
-            </li>
-            <li class="slide">2</li>
-            <li class="slide">
-              <div class="carousel-page">
-                <img src="/movie picture/oppen.png" class="carousel-img" alt="oppen">
-                <div class="caption">
-                  <div class="wrap-carousel-title">
-                    <h3 class="carousel-title mb-27">奧本海默</h3>
-                    <h3 class="carousel-title">Oppenheimer</h3>
-                  </div>
-                  <div class="wrap-carousel-content">
-                    <p class="carousel-content">《奧本海默》由環球影業定檔2023年7月21日在美國上映，由於2020年底諾蘭與華納兄弟於2021年起全面實施院線與HBO Max同步</p>
-                    <!-- 星星 -->
-                    <div class="wrap-star">
-                    <img src="/icon/star1.png" class="star" alt="">
-                    <img src="/icon/star1.png" class="star" alt="">
-                    <img src="/icon/star1.png" class="star" alt="">
-                    <img src="/icon/star1.png" class="star" alt="">
-                    <img src="/icon/star1.png" class="star" alt="">
+        <!-- carousel -->
+        <div class="swiper-container">
+          <div class="swiper">
+            <div class="pink-box"></div>
+            <div class="green-box"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="carousel-page">
+                  <img src="/movie picture/Oppenheimer-3.jpg" class="carousel-img" alt="oppen">
+                  <div class="car-caption">
+                    <div class="wrap-carousel-title">
+                      <h3 class="carousel-title">奧本海默</h3>
+                      <h3 class="carousel-title">Oppenheimer</h3>
                     </div>
-                    <p class="carousel-content2">已獲得本周評論數第一名:955則評論</p>
-                    <button class="btn-carousel">
-                      <a href="#" class="btn-index-a">read more
-                        <span class="ml-15"></span><img src="/icon/PlayButton_purple.png"  alt="">
-                      </a>
-                    </button>
+                    <p class="carousel-content">由克里斯多福·諾蘭編劇和執導，改編自凱·柏德和馬丁·J·薛文撰寫的傳記《奧本海默》，劇情講述了美國理論物理學家羅伯特·歐本海默參與研製原子彈的過程。全球票房超過9億美元，成為商業表現極為成功的二戰題材電影、傳記片以及R級電影之一</p>
+                    <div class="wrap-carousel-content">
+                      <!-- 星星 -->
+                      <div class="wrap-star">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      </div>
+                      <p class="carousel-content2">已獲得本周評論數第一名:955則評論
+                      </p>
+                      <button class="btn-carousel">
+                        <a href="#" class="btn-index-a">read more
+                          <span class="ml-15"></span><img src="/icon/PlayButton_purple.png"  alt="">
+                        </a>
+                      </button>
+                    </div>
                   </div>
-                  
-
-
                 </div>
               </div>
-            </li>
-            <div class="controls-visible">
-              <!-- 將這三個label 調整成一個原點的樣式-->
-              <label for="control-1"></label>
-              <label for="control-2"></label>
-              <label for="control-3"></label>
+              <!-- 第二頁 -->
+              <div class="swiper-slide">
+                <div class="carousel-page">
+                  <img src="/movie picture/mission.jpg" class="carousel-img" alt="oppen">
+                  <div class="car-caption">
+                    <div class="wrap-carousel-title">
+                      <h3 class="carousel-title">不可能的任務：致命清算 第一章</h3>
+                      <h3 class="carousel-title">Mission: Impossible – Dead Reckoning Part One</h3>
+                    </div>
+                    <p class="carousel-content">伊森·韓特和他的不可能任務情報局（IMF）團隊展開他們迄今為止最危險的任務：阻止一件威脅著全人類的危險武器落入惡人的手中；隨著世界的命運危在旦夕，伊森過去的黑暗勢力也找上門來</p>
+                    <div class="wrap-carousel-content">
+                      <!-- 星星 -->
+                      <div class="wrap-star">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      </div>
+                      <p class="carousel-content2">本周評論數:769則評論
+                      </p>
+                      <button class="btn-carousel">
+                        <a href="#" class="btn-index-a">read more
+                          <span class="ml-15"></span><img src="/icon/PlayButton_purple.png"  alt="">
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel-page">
+                  <img src="/movie picture/sand.jpg" class="carousel-img" alt="oppen">
+                  <div class="car-caption">
+                    <div class="wrap-carousel-title">
+                      <h3 class="carousel-title">沙丘</h3>
+                      <h3 class="carousel-title">Dune</h3>
+                    </div>
+                    <p class="carousel-content">由丹尼·維勒納夫執導，艾瑞克·羅斯、喬·斯派茨和導演本人共同編寫劇本，劇情改編自法蘭克·赫伯特的1965年英文同名科幻小說《沙丘》的前半部分內容，是兩部改編電影計畫中的第一部；講述出身貴族家庭的年輕繼承者背負起守護銀河系中最寶貴的資產也是最重要的元素</p>
+                    <div class="wrap-carousel-content">
+                      <!-- 星星 -->
+                      <div class="wrap-star">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      </div>
+                      <p class="carousel-content2">本周評論數:861則評論
+                      </p>
+                      <button class="btn-carousel">
+                        <a href="#" class="btn-index-a">read more
+                          <span class="ml-15"></span><img src="/icon/PlayButton_purple.png"  alt="">
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel-page">
+                  <img src="/movie picture/game.jpg" class="carousel-img" alt="oppen">
+                  <div class="car-caption">
+                    <div class="wrap-carousel-title">
+                      <h3 class="carousel-title">飢餓遊戲：鳴鳥與游蛇之歌</h3>
+                      <h3 class="carousel-title">The Hunger Games: The Ballad of Songbirds and Snakes</h3>
+                    </div>
+                    <p class="carousel-content">18歲的史諾將擔任第十屆飢餓遊戲的導師，期待能透過指導貢品贏得比賽，振興落魄的家族，不料他抽中的貢品是一名來自施惠國最窮困十二區的個性古怪女孩露西，兩人最後能夠順利在飢餓遊戲中勝出嗎？</p>
+                    <div class="wrap-carousel-content">
+                      <!-- 星星 -->
+                      <div class="wrap-star">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      <img src="/icon/star1.png" class="star" alt="">
+                      </div>
+                      <p class="carousel-content2">本周評論數:672則評論
+                      </p>
+                      <button class="btn-carousel">
+                        <a href="#" class="btn-index-a">read more
+                          <span class="ml-15"></span><img src="/icon/PlayButton_purple.png"  alt="">
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-          </ul>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
         <!-- TOP 10  -->
-        <div class="top10bc">
+        <div class="top10bc mt-62">
           <div class="top10-title">
-            <h2 class="top10-text">TOP   10  Popular movies this week</h2>
+            <div class="yellow-box"></div>
+            <h2 class="top10-text">
+              TOP   10  Popular movies this week</h2>
             <h3 class="top10-subtitle">本週熱門電影　 TOP 10</h3>
           </div>
         </div>
-
         <div class="wrap-movie-card">
           <div class="arrow-left">
             <img src="/icon/leftArrow.png" alt="">
@@ -215,6 +317,7 @@
         <!-- TOP 1 Discussion -->
         <div class="top10bc mt-81 mb-40">
           <div class="top10-title">
+            <div class="blue-box"></div>
             <h2 class="top10-text">TOP   1   Discussion this week</h2>
             <h3 class="top10-subtitle">本週討論度   TOP  1</h3>
           </div>
@@ -252,7 +355,6 @@
             <h3 class="top10-subtitle">即將上映</h3>
           </div>
         </div>
-
         <div class="wrap-movie-card">
           <div class="arrow-left">
             <img src="/icon/leftArrow.png" alt="">
@@ -347,6 +449,7 @@
         <!-- Recently viewed -->
         <div class="top10bc mt-60">
           <div class="top10-title">
+            <div class="purple-box"></div>
             <h2 class="top10-text">Recently viewed</h2>
             <h3 class="top10-subtitle">近期瀏覽紀錄</h3>
           </div>
@@ -443,13 +546,14 @@
             <img src="/icon/rightArrow.png" alt="">
           </div>
         </div>
-
+        <!-- btn returnTop -->
+        <button type="button" id="BackTop" class="toTop-arrow"></button>
+        
+        <!-- footer -->
         
 
-
-
-
       </div>
+      
     </div>
     
     
@@ -473,6 +577,9 @@
     
 
     <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/bootstrap-5.3.2-dist/js-page/index.js"></script>
     <!-- <script src="/bootstrap-5.3.2-dist/js-page/star.js"></script> -->
   </body>
 </html>
