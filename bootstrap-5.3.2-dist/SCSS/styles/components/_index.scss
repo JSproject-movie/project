@@ -55,57 +55,6 @@
 
 //css 輪播
 
-
-//暫時加入選擇器，就會看到radio按鈕
-input[type="radio"]{
-   position: relative;
-   z-index: 100;
-   display: none; 
-}
-//設定容器樣式
-.controls-visible{
-    position: absolute;
-    width: 100%;
-    bottom: 12px;
-    text-align: center;
-}
-.controls-visible label{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: $primary-c;
-    
-    // 圓角設50%，圓形
-    border-radius: 50%;
-    margin: 0 3px;
-    border: 2px solid #fff;
-}
-// 小圓點被選取後顯示
-.slides input[type="radio"]:nth-of-type(1):checked ~
-.controls-visible label:nth-of-type(1){
-    background-color: #333;
-}
-.slides input[type="radio"]:nth-of-type(2):checked ~
-.controls-visible label:nth-of-type(2){
-    background-color: #333;
-}
-.slides input[type="radio"]:nth-of-type(3):checked ~
-.controls-visible label:nth-of-type(3){
-    background-color: #333;
-}
-// 設定輪播圖切換的效果
-//意思是，當選中第一個radio按鈕後，後面三張.slide的樣式
-//當選擇第一個按鈕時，將transform設定為translatex(0%)
-.slides input[type="radio"]:nth-of-type(1):checked ~ .slide{
-    transform: translatex(0%);
-}
-:nth-of-type(2):checked ~ .slide{
-    transform: translatex(-100%);
-}
-:nth-of-type(3):checked ~ .slide{
-    transform: translatex(-200%);
-}
-
 .carousel-page{
     display: flex;
 }
