@@ -1,0 +1,54 @@
+
+.rule-btn {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.rule-btn button {
+  color: #fff;
+  background: $btn-c6;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #dfdff1;
+  box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
+}
+// .rule-target {
+//   background: $btn-c7;
+// }
+.active {
+  background: $btn-c6;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: $bg-c7;
+}
+.user-text {
+  display: flex;
+  width: 730px;
+  margin: 0 auto;
+  padding: 20px 30px 40px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.user-text p {
+    text-align: left;
+  color: #fff;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rule-row{
+    padding: 40px;
+  border-radius: 20px;
+  border: 2px solid #dfdff1;
+}

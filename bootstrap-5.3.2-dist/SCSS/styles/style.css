@@ -2137,6 +2137,61 @@
   letter-spacing: 7.48px;
 }
 
+.rule-btn {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.rule-btn button {
+  color: #fff;
+  background: linear-gradient(0deg, rgba(25, 22, 24, 0.54) 0%, rgba(25, 22, 24, 0.54) 100%);
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #dfdff1;
+  box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
+}
+
+.active {
+  background: linear-gradient(0deg, rgba(25, 22, 24, 0.54) 0%, rgba(25, 22, 24, 0.54) 100%);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: linear-gradient(115deg, rgba(255, 255, 255, 0.1019607843) 0%, rgba(205, 203, 203, 0.15) 33.52%, rgba(249, 225, 255, 0.1) 67.04%, rgba(142, 9, 129, 0.1) 100.56%);
+}
+
+.user-text {
+  display: flex;
+  width: 730px;
+  margin: 0 auto;
+  padding: 20px 30px 40px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.user-text p {
+  text-align: left;
+  color: #fff;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rule-row {
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid #dfdff1;
+}
+
 .footer {
   background: linear-gradient(91deg, rgba(0, 0, 0, 0.4) 0%, rgba(98, 106, 179, 0) 51.9%);
   -webkit-backdrop-filter: blur(20px);
@@ -2394,7 +2449,7 @@
 }
 
 .sideitem li {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .sideitem a {
@@ -2491,10 +2546,6 @@
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-}
-
-.mgroup li {
-  padding-top: 30px;
 }
 
 .mgroup a {
