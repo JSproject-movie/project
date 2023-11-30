@@ -1,0 +1,441 @@
+//text
+.wrap-carousel-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.carousel-title{
+    @include font-title;
+    font-size: 28px;
+    font-weight: 700;
+    background: $bg-c1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top10-text{
+    @include font-title;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.carousel-content{
+    width: 450px;
+    @include font-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    letter-spacing: 1.6px;
+    text-align:left;
+}
+.carousel-content2{
+    @include font-white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 1.6px;
+}
+.wrap-main{
+    max-width: 1440px;
+    display: flex;
+    background: $primary-c;
+}
+.side-main{
+    width: 163px;    
+}
+.container-main{
+    margin: 0;
+    padding: 0;
+    width: 1277px;
+}
+
+//css 輪播
+
+.carousel-page{
+    display: flex;
+}
+.carousel-img{
+    width: 576px;
+    height: 388px;
+    margin-left: 27px;
+    margin-top: 20px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center center;
+}
+.car-caption{
+    width: 462px;
+    height: 440px;
+    margin-top: 20px;
+    margin-left: 54px;
+    background-color: $bg-c1;
+    
+}
+.wrap-carousel-content{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.mb-27{
+    margin-bottom: 27px;
+}
+.wrap-star{
+    display: flex;
+    @include flex-center;
+}
+.star{
+    height:30px;
+    margin: 0;
+    padding: 0;
+}
+.btn-carousel{
+    display: flex;
+    width: 175px;
+    height: 47px;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    // text-align:justify;
+    gap: 15px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 2px solid #D7CDFF;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
+}
+.btn-index-a{
+    @include btn-text-Inter;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: $btn-c2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+// top 10
+.top10bc{
+    padding: 30px;
+    max-width: 1238px;
+    margin-left: 20px;
+    margin-bottom: 68px;
+    background: $bg-c4;
+    border-radius: 20px;
+    box-shadow: 6px 6px 200px rgba(0,0,0,0.3);}
+.top10-title{
+    background: $bg-c1;
+    //(89deg, #C9E5E8 31.72%, #E8A7D6 68.97%)
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.top10-subtitle{
+    @include font-title;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    background: $bg-c2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+// cards
+.wrap-movie-card{
+    display: flex;
+    align-items: center;
+}
+.arrow-left{
+    width: 42px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.arrow-right{
+    width: 42px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.wrap-cards{
+    max-width: 1277px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.wrap-whole-card{
+    width: 256px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #B88ED3;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.movie-card-img{
+    margin: 0 auto;
+
+    width: 199px;
+    height: 274px;
+    border-radius: 20px;
+    // margin: 20px;
+}
+.wrap-title-btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    gap: 20px;
+}
+.card-title{
+    @include btn-text-Inter;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    a{
+        text-decoration: none;
+        color: #FFF;
+    }
+}
+.btn-vedio{
+    display: flex;
+    padding: 5px;
+}
+.vedio-link{
+
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+// TOP 1 Discussion
+.top-discuss{
+    position: relative;
+    width: 1200px;
+    height: 650px;
+    background: url(/icon/meet.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 20px;
+    background-size:108%;
+    margin:0 auto;
+}
+.blur-bg{
+    width: 518px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%); 
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    background:$bg-c5;
+    backdrop-filter: blur(5.5px);
+}
+.discuss-section{
+    display:flex ;
+    width: 433px;
+}
+.img-oppen{
+    width: 170px;
+}
+.discuss-movie{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    gap: 25px;
+
+    padding: 20px;
+    margin-left: 10px;
+    h3{
+        @include btn-text-Inter;
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    h4{
+        @include btn-text-Inter;
+        color: #FFF;
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }   
+}
+.discuss-p{
+    width: 411px;
+    flex-shrink: 0;
+    @include font-white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: 1.8px;
+    margin: 15px 0;
+}
+
+.green-box{
+    width: 351px;
+    height: 351px;
+    position: absolute;
+    left: 39px;
+    top: -33px;
+    border-radius: 351px;
+    background: #45DBC0;
+    filter: blur(171.5px);
+}
+.pink-box{
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    right: 9px;
+    top: -71px;
+    background: #BE2EA7;
+    filter: blur(171.5px);
+}
+.yellow-box{
+    position: absolute;
+    left: 700px;
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #97794C;
+    filter: blur(150px);
+}
+.blue-box{
+    position: absolute;
+    left: 900px;
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #7FE7CE;
+    filter: blur(150px);
+}
+.purple-box{
+    position: absolute;
+    left: 400px;    
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    background: #5C6DC6;
+    filter: blur(150px);
+}
+.swiper{
+    border-radius: 20px;
+    background: $secondary-c;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    max-width: 1278px;
+    height: 578px;
+}
+  
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+// pagination
+/*包裹自定義分頁器的div的位置等CSS樣式*/
+.swiper-pagination-custom {
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+/*自定義分頁器的樣式，這個你自己想要什麼樣子自己寫*/
+.swiper-pagination-customs {
+    width: 80px;
+    height: 8px;
+    display:inline-block;
+    border-radius: 20px;
+    background: #8C7B97;
+    opacity: .3;
+    margin: 0 5px;
+    outline: 0;
+}
+/*自定義分頁器激活時的樣式表現*/
+.swiper-pagination-customs-active {
+    opacity: 1;
+    border-radius: 20px;
+    background: #FFABF7;
+    box-shadow: 0px 2px 11px 0px rgba(255, 171, 247, 0.30);
+}
+// btn
+.swiper-button-prev {
+    background-image: url(/icon/leftArrow.png) !important;
+    width: 42px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}   
+.swiper-button-next {
+background-image: url(/icon/rightArrow.png) !important;
+width: 42px;
+height: 60px;
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: center;
+}
+.swiper-button-next::after {
+display: none;
+}
+.swiper-button-prev::after {
+display: none;
+}
+
+// btn returnTop
+.toTop-arrow {
+	width: 56px;
+	height: 56px;
+	border: 0;
+    cursor: pointer;
+	position:fixed;
+	right: 13px;
+    bottom: 15px;
+	display: none;
+    border-radius: 20px;
+    background: rgba(219, 144, 255, 0.10);
+    box-shadow: 3px 4px 32px 0px rgba(167, 122, 202, 0.25);
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #FFF;
+	position: absolute;
+	content: "";
+    stroke-width: 8px;
+    filter: drop-shadow(0px 4px 5px rgba(161, 186, 250, 0.25));
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
