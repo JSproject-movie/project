@@ -137,7 +137,7 @@
 }
 
 .wrap-main {
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   background: var(--web_BK_1, linear-gradient(142deg, #404c53 21.85%, #382538 56.98%, #161618 91.4%));
 }
@@ -232,7 +232,7 @@
 
 .top10bc {
   padding: 30px;
-  width: 1238px;
+  max-width: 1238px;
   margin-left: 20px;
   margin-bottom: 68px;
   background: linear-gradient(115deg, rgba(219, 72, 196, 0.34) -13.24%, rgba(50, 193, 224, 0.15) 9.84%, rgba(205, 203, 203, 0) 35.52%, rgba(165, 162, 162, 0) 84.27%);
@@ -279,6 +279,7 @@
 }
 
 .wrap-cards {
+  max-width: 1277px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -477,7 +478,7 @@
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-  width: 1278px;
+  max-width: 1278px;
   height: 578px;
 }
 
@@ -1284,7 +1285,7 @@
 
 .wrap-search-card {
   margin: 70px auto;
-  width: 1030px;
+  max-width: 1030px;
   display: flex;
   padding: 30px;
   flex-direction: column;
@@ -1418,7 +1419,7 @@
   flex-direction: column;
   gap: 30px;
   margin: auto;
-  width: 802px;
+  max-width: 802px;
   height: 740px;
   padding: 30px;
   align-content: space-between;
