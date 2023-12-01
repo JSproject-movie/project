@@ -1992,7 +1992,7 @@ input[type=radio] {
   line-height: normal;
 }
 
-body {
+.wrap-2-1 {
   display: flex;
   width: 1920px;
   height: 1080px;
@@ -2462,7 +2462,7 @@ body {
   flex-shrink: 0;
 }
 
-body {
+.wrap2-1-1 {
   display: flex;
   width: 1920px;
   height: 1080px;
@@ -2639,7 +2639,7 @@ body {
   line-height: normal;
 }
 
-body {
+.wrap2-1-2 {
   display: flex;
   width: 1920px;
   height: 1080px;
