@@ -1,8 +1,8 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-
+justify-content: space-between;
+gap: 30px;
   width: 163px;
   padding: 60px 0px;
   background: $blc;
