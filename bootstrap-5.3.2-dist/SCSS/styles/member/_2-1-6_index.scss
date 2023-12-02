@@ -1,4 +1,4 @@
-body {
+wrap2-1-6 {
   display: flex;
   width: 1920px;
   height: 1080px;
@@ -9,20 +9,20 @@ body {
   background-repeat: no-repeat;
 }
 
-.login_Allmain_2-1-5{
+.login_Allmain-2-1-6{
   display: flex;
   width: 600px;
-  height: 515px;
+  height: 237px;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 49px;
   flex-shrink: 0;
   border-radius: 30px;
-border: 3px solid #DFDFF1;
-background: linear-gradient(115deg, rgba(255, 255, 255, 0.25) 0%, rgba(205, 203, 203, 0.25) 50.28%, rgba(249, 198, 244, 0.20) 100.56%);
-box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
+  border: 3px solid #DFDFF1;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.25) 0%, rgba(205, 203, 203, 0.25) 50.28%, rgba(249, 198, 244, 0.20) 100.56%);
+  box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
 }
 
 #h1 {
@@ -81,7 +81,7 @@ box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
   line-height: normal;
 }
 
-#Create_account_input_e-mail_2-1-5{
+#Create_account_input_e-mail {
   display: flex;
   height: 259px;
   flex-direction: column;
@@ -139,7 +139,7 @@ box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
 
 #password_input {
   display: flex;
-  width: 178px;
+  width: 339px;
   height: 30px;
   padding: 10px 20px;
   flex-direction: column;

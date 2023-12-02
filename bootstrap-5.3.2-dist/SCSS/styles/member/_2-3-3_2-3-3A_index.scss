@@ -1,4 +1,4 @@
-body {
+.wrap2-3-3 {
   display: flex;
   width: 1920px;
   height: 1080px;
@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.login_Allmain_2-3-1{
+.login_Allmain {
   display: flex;
   width: 600px;
   height: 309.408px;
@@ -37,13 +37,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.Register_account_stage_and_img {
-  display: flex;
-  height: 222.245px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-shrink: 0;
+.Register_account_stage_and_im_2-3-2A{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
 }
 
 
@@ -82,10 +81,10 @@ body {
   line-height: normal;
 }
 
-#Create_account_input_e-mail_2-3-1{
+#Create_account_input_e-mail_2-3-2A {
   display: flex;
   width: 600px;
-  height: 311.245px;
+  height: 320.245px;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
