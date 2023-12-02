@@ -12,6 +12,11 @@
     border-radius: 10px;
     border: 2px solid #F8D8F5;
 }
+@mixin btn-border-2{
+    border-radius: 10px;
+    border: 2px solid #B37DD4;
+    background: linear-gradient(271deg, #6A477F 11.6%, #30536D 94.29%);
+}
 // font
 @mixin font-white{
     color: #FFF;
