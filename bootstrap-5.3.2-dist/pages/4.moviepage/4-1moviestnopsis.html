@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-5.3.2-dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css">
   </head>
   <body class="body-primary">
@@ -112,10 +113,14 @@
                     <div class="movieTrailer d-flex flex-column w-100">
                         <h2 class="text-white fw-bold mb-0 d-flex align-items-center"><img src="/icon/play-arrow.svg" alt="play-arrow" class="me-3">預告片</h2>
                         <div class="movieImg d-flex justify-content-center my-3 mt-5 w-100">
-                            <button type="button" class="btn movieBtn position-absolute top-50 start-50 translate-middle">
+                            <!--
+                                <button type="button" class="btn movieBtn position-absolute top-50 start-50 translate-middle">
                                 <img src="/icon/PlayButton.svg" alt="playBtn" class="img-fluid">
                             </button>
                             <img src="/movie picture/OppenheimerVideo.png" alt="Oppenheimer" class="position-relative img-fluid">
+                            <iframe width="1063" height="404" src="https://www.youtube.com/embed/cnc8mDAB7QI?si=VJTrkMIu_p_B93Jz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            -->
+                            <div id="player"></div>
                         </div>
                         <div class="movieControl d-flex justify-content-center w-100">
                             <div class="row g-0 justify-content-between w-75">
@@ -135,16 +140,24 @@
                         <h2 class="text-white fw-bold d-flex align-items-center my-5"><img src="/icon/layout-masonry-fill.svg" alt="play-arrow" class="me-3">劇照</h2>
                         <div class="row g-0 w-100">
                             <div class="col">
-                                <img src="/movie picture/Oppenheimer-6.png" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                <a href="/movie picture/Oppenheimer-6.png" data-lightbox="image-1" data-title="奧本海默">
+                                    <img src="/movie picture/Oppenheimer-6.png" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                </a>
                             </div>
                             <div class="col">
-                                <img src="/movie picture/meet.jpg" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                <a href="/movie picture/meet.jpg" data-lightbox="image-1" data-title="奧本海默">
+                                    <img src="/movie picture/meet.jpg" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                </a>
                             </div>
                             <div class="col">
-                                <img src="/movie picture/Oppenheimer-3.jpg" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                <a href="/movie picture/Oppenheimer-3.jpg" data-lightbox="image-1" data-title="奧本海默">
+                                    <img src="/movie picture/Oppenheimer-3.jpg" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                </a>
                             </div>
                             <div class="col">
-                                <img src="/movie picture/Oppenheimer-5.jpeg" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                <a href="/movie picture/Oppenheimer-5.jpeg" data-lightbox="image-1" data-title="奧本海默">
+                                    <img src="/movie picture/Oppenheimer-5.jpeg" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -262,7 +275,10 @@
             </div>
         </div>
     </div>
-
     <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/bootstrap-5.3.2-dist/js/lightbox.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="/bootstrap-5.3.2-dist/js-page/moviestnopsis.js"></script>
   </body>
 </html>
