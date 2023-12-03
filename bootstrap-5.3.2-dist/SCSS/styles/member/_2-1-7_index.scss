@@ -37,10 +37,10 @@
   -webkit-text-fill-color: transparent;
 }
 
-.Register_account_stage_and_img {
+.Register_account_stage_and_img{
   display: flex;
-  width: 358px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -393,6 +393,6 @@ filter: drop-shadow(0px 0px 4px rgba(252, 249, 255, 0.25));
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
+gap: 10px;
 
 }

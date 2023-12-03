@@ -2046,6 +2046,22 @@ input[type=radio] {
   gap: 25px;
 }
 
+.Login_Input_account {
+  display: flex;
+  width: 591px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.Login_Input_password {
+  display: flex;
+  width: 591px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
 .Login_ALLuser_input_2-1_2-2 {
   /* display: flex; */
   width: 250px;
@@ -2473,10 +2489,10 @@ input[type=radio] {
   background-repeat: no-repeat;
 }
 
-.login_Allmain2-1-1 {
+.login_Allmain-2-1-1 {
   display: flex;
   width: 600px;
-  height: auto;
+  height: 350px;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
@@ -2503,8 +2519,8 @@ input[type=radio] {
 
 .Register_account_stage_and_img {
   display: flex;
-  width: 358px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -2513,7 +2529,7 @@ input[type=radio] {
   display: flex;
   width: 322px;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .Register_account_stage_font > #stage1_e-mail {
@@ -2650,7 +2666,7 @@ input[type=radio] {
   background-repeat: no-repeat;
 }
 
-.login_Allmain {
+.login_Allmain_2-1-2 {
   display: flex;
   width: 600px;
   height: 369.654px;
@@ -2679,12 +2695,12 @@ input[type=radio] {
   -webkit-text-fill-color: transparent;
 }
 
-.Register_account_stage_and_img {
+.Register_account_stage_and_img-2-1-2 {
   display: flex;
-  width: 358px;
+  width: 468px;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .Register_account_stage_font {
@@ -2939,7 +2955,7 @@ input[type=radio] {
   gap: 10px;
 }
 
-.Register_account_stage_font {
+.Register_account_stage_font-2-2-1 {
   display: flex;
   width: 322px;
   justify-content: space-between;
@@ -4601,8 +4617,8 @@ wrap2-1-6 {
 
 .Register_account_stage_and_img {
   display: flex;
-  width: 358px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -4943,6 +4959,7 @@ wrap2-1-6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .wrap2-3 {
