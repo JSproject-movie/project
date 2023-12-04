@@ -20,12 +20,57 @@
       </div>
 
       <div class="mf-content">
-        <div class="col-4" style="background: gray; width: 163px">
-          <ul>
-            <li>sidebar</li>
-            <li>123</li>
-            <li>456</li>
-          </ul>
+        <div class="sidebar">
+          <div class="sideitem">
+            <ul>
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >電影分類</a
+                >
+              </li>
+              <li class="collapse" id="collapseExample">
+                <!-- <div class="mgtitle">
+    
+                  <button class="return-button">
+                    <span class="text">返回</span>
+                    <img src="/icon/arrow-back-circle.svg" alt="" class="icon" srcset="">
+                  </button>  
+                </div> -->
+            <div class="mgroup">
+              <ul>
+                <li><a href="#">喜劇片</a></li>
+                <li><a href="#">劇情片</a></li>
+                <li><a href="#">科幻片</a></li>
+                <li><a href="#">恐怖片</a></li>
+                <li><a href="#">紀錄片</a></li>
+                <li><a href="#">音樂劇</a></li>
+                <li><a href="#">驚悚片</a></li>
+              </ul>
+            </div>
+          </li>  
+              <li><a href="#">平台規則</a></li>
+            </ul>
+          </div>
+    
+    
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><img src="/icon/tumblr.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon/linkedinLogo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon/facebookSm.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="mf-wrap">
           <ul class="indi-card">
@@ -106,9 +151,9 @@
                 <button type="button" class="mf-addcomment">回覆</button>
               </li>
             </ul>
-            <div class="pb-4">
+            <!-- <div class="pb-4">
             <button type="button" class="mf-addcomment">展開/收合評論</button>
-          </div>
+          </div> -->
             <ul class="indi-forumcard col-7">
               <li class="indi-user">
                 <img
@@ -133,6 +178,6 @@
         </div>
       </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
