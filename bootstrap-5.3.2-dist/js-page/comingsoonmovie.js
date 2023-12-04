@@ -10,6 +10,7 @@ lightbox.option({
 
   const queryString = window.location.search;
   const movieMain = document.querySelector('main');
+  const loadingPage = document.querySelector('.loadingPage');
   let movieData = '';
   const renderData = () => {
     const starCounts = parseInt(movieData.ratingStars);
@@ -103,7 +104,7 @@ lightbox.option({
                 <button type="button" class="btn"><img src="/icon/Next.svg" alt="next"></button>
             </div>
             <div class="col d-flex flex-column justify-content-center">
-                <input type="range" class="movie-range" id="customRange1">
+                <input type="range" class="movie-range" id="customRange1" value="0">
             </div>
         </div>
     </div>
@@ -150,30 +151,16 @@ lightbox.option({
 </div>
     `
     movieMain.innerHTML = n;
-    const collectBtn = document.querySelector('.collectBtn');
-    let enable = false;
-    collectBtn.addEventListener('click',(e) => {
-      e.preventDefault();
-      
-      if(enable === false){
-        collectBtn.setAttribute('class','btn collectBtn me-5  d-flex align-items-center text-danger');
-        collectBtn.innerHTML = '<i class="bi bi-heart-fill mx-3"></i>已收藏';
-        enable = true;
-      }else if(enable === true){
-        collectBtn.setAttribute('class','btn collectBtn me-5  d-flex align-items-center');
-        collectBtn.innerHTML = '<i class="love bi bi-heart mx-3"></i>收藏';
-        enable = false;
-      }
-      
-    })
   }
   const getData = async () => {
     try{
       const res = await axios.get(`http://localhost:3000/comingsoonmovie${queryString}`);
       movieData = res.data[0];
+      document.title = `即將上映-${movieData.movieName}`;
+      renderData();
       setTimeout(() => {
-        renderData();
-      },1000)
+        loadingPage.setAttribute('class','d-none')
+    },500);
     }catch(error){
       console.log(error);
     }

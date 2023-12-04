@@ -1,0 +1,19 @@
+.loadingPage{
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    background:#3f3e35;
+    .loadingImg{
+        background: url('/icon/loadingicon.gif');
+        width: 400px;
+        height: 300px;
+        position: relative;
+        z-index:1;
+    }
+}

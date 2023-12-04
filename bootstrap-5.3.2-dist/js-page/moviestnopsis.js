@@ -9,6 +9,7 @@ lightbox.option({
   }); 
   const queryString = window.location.search;
   const movieMain = document.querySelector('main');
+  const loadingPage = document.querySelector('.loadingPage');
   let movieData = '';
   const renderData = () => {
     const starCounts = parseInt(movieData.ratingStars);
@@ -85,9 +86,6 @@ lightbox.option({
 <div class="movieTrailer d-flex flex-column w-100">
     <h2 class="text-white fw-bold mb-0 d-flex align-items-center"><img src="/icon/play-arrow.svg" alt="play-arrow" class="me-3">預告片</h2>
     <div class="movieImg d-flex justify-content-center my-3 mt-5 w-100">
-        <!--
-        <iframe width="1063" height="404" src="https://www.youtube.com/embed/cnc8mDAB7QI?si=IiadAe2c6_x4r24K&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        -->
         <button type="button" class="btn movieBtn position-absolute top-50 start-50 translate-middle">
             <img src="/icon/PlayButton.svg" alt="playBtn" class="img-fluid">
         </button>
@@ -102,7 +100,7 @@ lightbox.option({
                 <button type="button" class="btn"><img src="/icon/Next.svg" alt="next"></button>
             </div>
             <div class="col d-flex flex-column justify-content-center">
-                <input type="range" class="movie-range" id="customRange1">
+                <input type="range" class="movie-range" id="customRange1" value="0">
             </div>
         </div>
     </div>
@@ -111,23 +109,23 @@ lightbox.option({
     <h2 class="text-white fw-bold d-flex align-items-center my-5"><img src="/icon/layout-masonry-fill.svg" alt="play-arrow" class="me-3">劇照</h2>
     <div class="row g-0 w-100">
         <div class="col">
-            <a href="${movieData.stillsPhotos[0]}" data-lightbox="image-1" data-title="奧本海默">
-                <img src="${movieData.stillsPhotos[0]}" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+            <a href="${movieData.stillsPhotos[0]}" data-lightbox="image-1" data-title="${movieData.movieName}">
+                <img src="${movieData.stillsPhotos[0]}" alt="${movieData.movieEnglishName}-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
             </a>
         </div>
         <div class="col">
-            <a href="${movieData.stillsPhotos[1]}" data-lightbox="image-1" data-title="奧本海默">
-                <img src="${movieData.stillsPhotos[1]}" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+            <a href="${movieData.stillsPhotos[1]}" data-lightbox="image-1" data-title="${movieData.movieName}">
+                <img src="${movieData.stillsPhotos[1]}" alt="${movieData.movieEnglishName}-2" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
             </a>
         </div>
         <div class="col">
-            <a href="${movieData.stillsPhotos[2]}" data-lightbox="image-1" data-title="奧本海默">
-                <img src="${movieData.stillsPhotos[2]}" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+            <a href="${movieData.stillsPhotos[2]}" data-lightbox="image-1" data-title="${movieData.movieName}">
+                <img src="${movieData.stillsPhotos[2]}" alt="${movieData.movieEnglishName}-3" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
             </a>
         </div>
         <div class="col">
-            <a href="${movieData.stillsPhotos[3]}" data-lightbox="image-1" data-title="奧本海默">
-                <img src="${movieData.stillsPhotos[3]}" alt="Oppenheimer-1" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
+            <a href="${movieData.stillsPhotos[3]}" data-lightbox="image-1" data-title="${movieData.movieName}">
+                <img src="${movieData.stillsPhotos[3]}" alt="${movieData.movieEnglishName}-4" class="img-fluid" style="width: 310px; height: 215px; object-fit: cover;">
             </a>
         </div>
     </div>
@@ -163,16 +161,21 @@ lightbox.option({
         collectBtn.innerHTML = '<i class="love bi bi-heart mx-3"></i>收藏';
         enable = false;
       }
-      
     })
   }
   const getData = async () => {
     try{
       const res = await axios.get(`http://localhost:3000/movieDatas${queryString}`);
       movieData = res.data[0];
-      setTimeout(() => {
-        renderData();
-      },1000)
+        if(movieData.length === 0){
+            alert('資料取得錯誤!');
+        }else{
+            document.title = `${movieData.movieName}`;
+            renderData();
+            setTimeout(() => {
+                loadingPage.setAttribute('class','d-none loadingPage');
+            },500);
+        }
     }catch(error){
       console.log(error);
     }
