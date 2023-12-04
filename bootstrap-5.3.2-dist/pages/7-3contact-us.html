@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影評列表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+    <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="m-row row">
+      <div class="navbar" style="background: darkgrey; height: 90px">
+        <p>navbar</p>
+      </div>
+
+      <div class="mf-content">
+        <div class="sidebar">
+          <div class="sideitem">
+            <ul>
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >電影分類</a
+                >
+              </li>
+              <li class="collapse" id="collapseExample">
+                <!-- <div class="mgtitle">
+    
+                  <button class="return-button">
+                    <span class="text">返回</span>
+                    <img src="/icon/arrow-back-circle.svg" alt="" class="icon" srcset="">
+                  </button>  
+                </div> -->
+            <div class="mgroup">
+              <ul>
+                <li><a href="#">喜劇片</a></li>
+                <li><a href="#">劇情片</a></li>
+                <li><a href="#">科幻片</a></li>
+                <li><a href="#">恐怖片</a></li>
+                <li><a href="#">紀錄片</a></li>
+                <li><a href="#">音樂劇</a></li>
+                <li><a href="#">驚悚片</a></li>
+              </ul>
+            </div>
+          </li>  
+              <li><a href="#">平台規則</a></li>
+            </ul>
+          </div>
+    
+    
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><img src="/icon/tumblr.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon/linkedinLogo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon/facebookSm.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-title">聯絡我們</p>
+          <div class="contact-row">
+            <ul >
+              <li>
+                <p class="col-3">姓名</p><input type="text" placeholder="輸入姓名" />
+                <p class="col-1">E-mail</p><input type="text" placeholder="電子郵件" />
+              </li>
+              <li class="col-12">
+                <p class="col-3">連絡電話</p><input type="text" placeholder="輸入電話" />
+                <p class="">事發時間</p><input type="date" placeholder="事發時間" />
+              </li>
+              <li>
+                <div class=" contact-option">
+                  <select
+                    class=" contact-question"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>請選擇原因</option>
+                    <option value="1">帳戶問題</option>
+                    <option value="2">合作提案</option>
+                    <option value="3">意見回饋</option>
+                    <option value="4">其他</option>
+                  </select>
+                </div>
+              </li>
+              <li >
+                <div class="form-floating col-12 contact-detal">
+                    <textarea class="form-control" placeholder="詳細說明" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">詳細說明</label>
+                  </div>
+              </li>
+              <li>
+                <div class="pb-4 contact-btn">
+                  <button type="button" class="mf-addcomment">提交</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
