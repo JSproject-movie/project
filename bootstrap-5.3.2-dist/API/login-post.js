@@ -3,7 +3,7 @@ let token="";
 let id="";
 // 註冊
 function signUp(){
-  axios.post("http://localhost:3000/signup",{
+  axios.post(`http://localhost:3000/signup`,{
     "email":"user10@mail.com",
     "password":"user10",
     "lastName":"Hogan",
@@ -21,7 +21,7 @@ function signUp(){
 }
 // 登入
 function login(){
-  axios.post("http://localhost:3000/login",{
+  axios.post(`http://localhost:3000/login`,{
     "email":"user06@mail.com",
     "password":"Users006",
   })   
@@ -36,7 +36,7 @@ function login(){
 }
 // 修改密碼
 function upDatePassword(){
-  axios.patch("http://localhost:3000/600/users/5",{
+  axios.patch(`http://localhost:3000/600/users/5`,{
     "password":"Users005",
   },{
     headers:{
@@ -54,7 +54,7 @@ function upDatePassword(){
 // 發布影評
 // 不用另外代userId的寫法：http://localhost:3000/600/users/${id}/posts
 function addPost(){
-  axios.post("http://localhost:3000/600/posts",{
+  axios.post(`http://localhost:3000/600/posts`,{
     "movieId":1, 
     "spoiler":"false",
     "title":"科學與道德的交織",
@@ -73,11 +73,9 @@ function addPost(){
   })
 }
 // 刪除影評
-let delPostId="";
-delPostId=2;
+// let delPostId=2;
 function delPost(){
-  axios.delete("http://localhost:3000/posts/${delPostId}",{
-    // "delPostId":1
+  axios.delete(`http://localhost:3000/posts/${delPostId}`,{
   },{
     headers:{
       "authorization":`Bearer ${token}`
@@ -93,7 +91,7 @@ function delPost(){
 }
 // 修改影評
 function editPost(){
-  axios.patch("http://localhost:3000/600/posts",{
+  axios.patch(`http://localhost:3000/600/posts`,{
     
   },{
     headers:{
@@ -110,7 +108,7 @@ function editPost(){
 }
 // 新增留言
 function addComment(){
-  axios.post("http://localhost:3000/600/comments",{
+  axios.post(`http://localhost:3000/600/comments`,{
     "movieId":1, 
     "postId": 1,
     "spoiler":"false",
@@ -130,7 +128,7 @@ function addComment(){
 }
 // 刪除留言
 function delComment(){
-  axios.delete("http://localhost:3000/posts/${delCommentId}",{
+  axios.delete(`http://localhost:3000/posts/${delCommentId}`,{
 
   },{
     headers:{
@@ -147,7 +145,7 @@ function delComment(){
 }
 // 修改留言
 function editComment(){
-  axios.patch("http://localhost:3000/600/comments",{
+  axios.patch(`http://localhost:3000/600/comments`,{
     
   },{
     headers:{
@@ -164,7 +162,7 @@ function editComment(){
 }
 // 聯絡我們
 function addContact(){
-  axios.post("http://localhost:3000/600/contacts",{
+  axios.post(`http://localhost:3000/600/contacts`,{
     "name":"Tom",
     "email": "user05@mail.com",
     "phoneNumber":"0912345678",
@@ -187,7 +185,7 @@ function addContact(){
 
 // 檢舉影評
 function reportPost(){
-  axios.post("http://localhost:3000/reportPosts",{
+  axios.post(`http://localhost:3000/reportPosts`,{
     "postId": 1,
     "reportReason":"惡意劇透",
     "userId":id
@@ -206,7 +204,7 @@ function reportPost(){
 }
 // 檢舉留言
 function reportComment(){
-  axios.post("http://localhost:3000/reportComments",{
+  axios.post(`http://localhost:3000/reportComments`,{
     "commentId": 1,
     "reportReason":"散布明顯無意義之內容",
     "userId":id
@@ -225,7 +223,7 @@ function reportComment(){
 }
 // 對檢舉影評提出申訴
 function appealPost(){
-  axios.post("http://localhost:3000/600/appealposts",{
+  axios.post(`http://localhost:3000/600/appealposts`,{
     "email":"user05@mail.com",
     "beReportReason":"惡意劇透",
     "reportPostId":1,
@@ -246,7 +244,7 @@ function appealPost(){
 }
 // 對檢舉留言提出申訴
 function appealComment(){
-  axios.post("http://localhost:3000/appealComments",{
+  axios.post(`http://localhost:3000/appealComments`,{
     "email":"user05@mail.com",
     "beReportReason":"散布明顯無意義之內容",
     "reportCommentId":1,
