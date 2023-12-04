@@ -225,10 +225,10 @@
       "imgUrl": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki.jpg",
       "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/lokiMovie.png",
       "stillsPhotos": [
-        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki1.png",
-        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki2.png",
-        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki3.png",
-        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki4.png"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki1.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki2.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki3.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki4.jpg"
       ],
       "memberComments": [
         {
@@ -274,7 +274,7 @@
         "actor": "比爾·芬格  鮑勃·凱恩"
       },
       "imgUrl": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker.jpg",
-      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker4.png",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/jokermovie.jpg",
       "stillsPhotos": [
         "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker1.jpg",
         "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker2.jpg",
@@ -325,7 +325,7 @@
         "actor": "安德魯·加菲爾德  文斯·范恩"
       },
       "imgUrl": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/hacksaw.jpg",
-      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge3.jpg",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidgemovie.jpg",
       "stillsPhotos": [
         "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge1.jpg",
         "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge2.jpg",
