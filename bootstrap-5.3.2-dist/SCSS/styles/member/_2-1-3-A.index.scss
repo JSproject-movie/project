@@ -45,7 +45,7 @@ gap: 20px;
 }
 
 
-.Register_account_stage_font {
+.Register_account_stage_font-2-2-1{
   display: flex;
   width: 322px;
   justify-content: space-between;
@@ -135,7 +135,7 @@ gap: 20px;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.40) inset, -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
 }
 
-#password_input {
+#password_input,#password_input_1,#password_input_2{
   display: flex;
   width: 339px;
   height: 30px;
@@ -148,17 +148,8 @@ gap: 20px;
   border: 1px solid #9965B9;
   background: linear-gradient(115deg, rgba(13, 16, 36, 0.10) 0%, rgba(34, 11, 11, 0.31) 100.56%);
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.40) inset, -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
-
 }
 
-#BT_return_font {
-  color: rgba(255, 255, 255, 0.80);
-  font-family: Inter;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
 
 /* #Create_account_font {
   display: flex;
@@ -223,7 +214,7 @@ gap: 20px;
 
 
 /* 驗證按鈕 */
-#BT_Login_submit {
+#BT_Login_submit,#BT_Login_submit_next,#BT_Login_submit_backing{
   display: flex;
   width: 160px;
   height: 30px;
