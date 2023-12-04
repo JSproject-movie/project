@@ -2119,8 +2119,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  -moz-text-align-last: left;
-       text-align-last: left;
 }
 
 .contact-row input {
@@ -2187,6 +2185,11 @@
   margin: 0 auto;
 }
 
+.contact-btn p {
+  margin: 0 auto;
+  color: red;
+}
+
 .meg-row {
   padding: 40px 20px;
   color: #fff;
@@ -2212,11 +2215,29 @@
   list-style: none;
 }
 
+.meg-head {
+  display: flex;
+  align-items: center;
+}
+
 .meg-head input {
   padding: 9px 16px;
   border-radius: 6px;
   border: 1px solid var(--gray-300, #dee2e6);
   background: var(--default-white, #fff);
+}
+
+.meg-head button {
+  background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);
+  border-radius: 10px;
+  border: 2px solid #B3B6F2;
+  padding: 10px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .meg-category {
