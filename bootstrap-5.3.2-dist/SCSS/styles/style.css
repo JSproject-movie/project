@@ -2748,6 +2748,22 @@
   gap: 25px;
 }
 
+.Login_Input_account {
+  display: flex;
+  width: 591px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.Login_Input_password {
+  display: flex;
+  width: 591px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
 .Login_ALLuser_input_2-1_2-2 {
   /* display: flex; */
   width: 250px;
@@ -3175,10 +3191,10 @@
   background-repeat: no-repeat;
 }
 
-.login_Allmain2-1-1 {
+.login_Allmain-2-1-1 {
   display: flex;
   width: 600px;
-  height: auto;
+  height: 350px;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
@@ -3205,8 +3221,8 @@
 
 .Register_account_stage_and_img {
   display: flex;
-  width: 358px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -3215,10 +3231,10 @@
   display: flex;
   width: 322px;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.Register_account_stage_font > #stage1_e-mail {
+.Register_account_stage_font > #stage1_e-mai {
   color: #D0C3E2;
   text-align: center;
   font-family: Inter;
@@ -3352,15 +3368,15 @@
   background-repeat: no-repeat;
 }
 
-.login_Allmain {
+.login_Allmain_2-1-2A {
   display: flex;
   width: 600px;
-  height: 369.654px;
+  height: 450px;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   flex-shrink: 0;
   box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
   border-radius: 30px;
@@ -3381,12 +3397,12 @@
   -webkit-text-fill-color: transparent;
 }
 
-.Register_account_stage_and_img {
+.Register_account_stage_and_img-2-1-2 {
   display: flex;
-  width: 358px;
+  width: 468px;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .Register_account_stage_font {
@@ -3641,7 +3657,7 @@
   gap: 10px;
 }
 
-.Register_account_stage_font {
+.Register_account_stage_font-2-2-1 {
   display: flex;
   width: 322px;
   justify-content: space-between;
@@ -3727,7 +3743,7 @@
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4) inset, -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
 }
 
-#password_input {
+#password_input, #password_input_1, #password_input_2 {
   display: flex;
   width: 339px;
   height: 30px;
@@ -3740,15 +3756,6 @@
   border: 1px solid #9965B9;
   background: linear-gradient(115deg, rgba(13, 16, 36, 0.1) 0%, rgba(34, 11, 11, 0.31) 100.56%);
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4) inset, -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
-}
-
-#BT_return_font {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: Inter;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 /* #Create_account_font {
@@ -3811,7 +3818,7 @@
 }
 
 /* 驗證按鈕 */
-#BT_Login_submit {
+#BT_Login_submit, #BT_Login_submit_next, #BT_Login_submit_backing {
   display: flex;
   width: 160px;
   height: 30px;
@@ -4885,11 +4892,11 @@
   letter-spacing: 0.28px;
 }
 
-wrap2-1-6 {
+.bk-wrap-2-1-6 {
   display: flex;
   width: 1920px;
   height: 1080px;
-  justify-content: s;
+  justify-content: center;
   align-items: center;
   gap: 2px;
   background: linear-gradient(142deg, #404C53 21.85%, #382538 56.98%, #161618 91.4%);
@@ -5303,8 +5310,8 @@ wrap2-1-6 {
 
 .Register_account_stage_and_img {
   display: flex;
-  width: 358px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -5645,6 +5652,7 @@ wrap2-1-6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .wrap2-3 {
