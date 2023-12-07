@@ -15,7 +15,7 @@
     <div class="login_Allmain_2-1_2_2">
       <div id="H1_login">Login</div>
       <!-- user 帳號-->
-      <div class="Login_Input"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+      <div class="Login_Input_account" > <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
           fill="none">
           <path
             d="M8.5 8.64648C10.71 8.64648 12.5 6.85648 12.5 4.64648C12.5 2.43648 10.71 0.646484 8.5 0.646484C6.29 0.646484 4.5 2.43648 4.5 4.64648C4.5 6.85648 6.29 8.64648 8.5 8.64648ZM8.5 10.6465C5.83 10.6465 0.5 11.9865 0.5 14.6465V15.6465C0.5 16.1965 0.95 16.6465 1.5 16.6465H15.5C16.05 16.6465 16.5 16.1965 16.5 15.6465V14.6465C16.5 11.9865 11.17 10.6465 8.5 10.6465Z"
@@ -36,13 +36,13 @@
     
       </div>
       <!-- password -->
-      <div class="Login_Input"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"
+      <div class="Login_Input_password"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"
           fill="none">
           <path
             d="M14.5 6.64648H13.5V4.9322C13.5 2.56648 11.26 0.646484 8.5 0.646484C5.74 0.646484 3.5 2.56648 3.5 4.9322V6.64648H2.5C1.4 6.64648 0.5 7.41791 0.5 8.36077V16.9322C0.5 17.8751 1.4 18.6465 2.5 18.6465H14.5C15.6 18.6465 16.5 17.8751 16.5 16.9322V8.36077C16.5 7.41791 15.6 6.64648 14.5 6.64648ZM8.5 14.3608C7.4 14.3608 6.5 13.5893 6.5 12.6465C6.5 11.7036 7.4 10.9322 8.5 10.9322C9.6 10.9322 10.5 11.7036 10.5 12.6465C10.5 13.5893 9.6 14.3608 8.5 14.3608ZM5.5 6.64648V4.9322C5.5 3.50934 6.84 2.36077 8.5 2.36077C10.16 2.36077 11.5 3.50934 11.5 4.9322V6.64648H5.5Z"
             fill="#C7D3E4" />
         </svg>
-        <input type="text"
+        <input type="password"
         placeholder=" 密碼"
         onfocus ="this.placeholder=''"
         onblur ="this.placeholder='密碼'"
@@ -64,8 +64,8 @@
        <div id="forget_password">忘記密碼</div>
        <!-- 忘記密碼 -->
      </button>
-     <button type="button" class="BT_Register_mon" >
-      <div id="register" src="/(2)2-1-1填寫e-mail/2-1-1_index.html" >註冊</div>
+     <button type="button" class="BT_Register_mon" onclick="location.href='./2-1-1_index.html'">
+      <div id="register">註冊</div>
         <!-- 註冊 -->
     </button>
     </div>
@@ -109,5 +109,7 @@
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
+<script src="/bootstrap-5.3.2-dist/js-page/member2-1_2-2.js"></script>
 </html>

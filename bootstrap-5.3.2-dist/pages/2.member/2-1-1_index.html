@@ -6,50 +6,83 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css">
-  <title>2-1-1填寫e-mail</title>
-</head>
+    <title>2-1-1填寫e-mail</title>
+  </head>
 
-<body>
-  <div class="wrap2-1-1">
-    <!-- 創建帳戶 與 顯示列 -->
-    <div class="login_Allmain2-1-1">
-      <div id="h1">創建您的帳戶</div>
-      <div class="Register_account_stage_and_img">
-        <div class="Register_account_stage_font">
-          <div id="stage1_e-mail">電郵密碼</div>
-          <div id="stage2_user">個人資料</div>
-          <div id="stage3_finish">完成送出</div>
+  <body>
+    <div class="wrap2-1-1">
+      <!-- 創建帳戶 與 顯示列 -->
+      <div class="login_Allmain-2-1-1">
+        <div id="h1">創建您的帳戶</div>
+        <div class="Register_account_stage_and_img_2-3-4">
+          <div class="Register_account_stage_font">
+            <div id="stage1_e-mail" style="color: #D0C3E2 ;font-weight: 700;">電郵密碼</div>
+            <div id="stage2_user" style=" color: rgba(255, 255, 255, 0.20); ;font-weight: 400;">個人資料</div>
+            <div id="stage3_finish">完成送出</div>
+          </div>
+          <img src="/movie picture/Group 2610438.svg" alt="" id="Register_account_img">
         </div>
-        <img src="/movie picture/Group 2610438.svg" alt="" id="Register_account_img">
-      </div>
-    <!-- 文字與輸入框 -->
-      <div id="Create_account_input_e-mail_2-1-1">
-        <div id="Create_account_font">
-          <div id="E-mail">E-mail</div>
-          <div id="E-mail_fonts">電郵是找尋密碼使用請謹慎填寫</div>
-        </div>
-        <!-- 輸入框 -->
-        <input type="text"
-        placeholder=" 請輸入電子郵件並驗證"
-        onfocus ="this.placeholder=''"
-        onblur ="this.placeholder='請輸入電子郵件並驗證'"
-        style="
+        <!-- 文字與輸入框 -->
+        <div id="Create_account_input_e-mail_2-1-1">
+          <div id="Create_account_font">
+            <div id="E-mail">E-mail</div>
+            <div id="E-mail_fonts">電郵是找尋密碼使用請謹慎填寫</div>
+          </div>
+          <!-- 輸入框 -->
+          <input type="text" placeholder=" 請輸入電子郵件並驗證" onfocus="this.placeholder=''"
+            onblur="this.placeholder='請輸入電子郵件並驗證'" style="
         color:  rgb(255, 255, 255);
         font-family: Inter;
         font-size: 13px;
         font-style: normal;
         font-weight: 500;
-        line-height: normal;"
-        class="Login_ALLuser_input">
-    
-        <button type="button" id="BT_Login_submit" >
-          <div id="bt_mon_verify">驗證
-          </div></button>
-    </div>
-    
-    
-    </div>
-  </div>
-</body>
+        line-height: normal;" class="Login_ALLuser_input">
 
-</html>
+          <button type="button" id="BT_Login_submit">
+            <div id="bt_mon_verify">驗證
+            </div>
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+
+  </body>
+
+  <script>
+
+  // 獲取元素
+  const emailInput = document.querySelector(".Login_ALLuser_input");
+  const checkButton = document.querySelector('#BT_Login_submit');
+    console.log(emailInput, checkButton);
+
+   // 郵件檢查函數
+   function checkEmail(emailInput) {
+           // 至少8個字符
+            const LengthCondition =emailInput.length >= 8;
+
+          // 包含@符號條件 = EmailSignCondition
+            const EmailSignCondition =emailInput.includes('@'); // 檢查是否包含 @ 符號
+
+            // 檢查所有條件
+            if (LengthCondition && EmailSignCondition) {
+                alert("郵件地址格式正確，將導向下一頁。");
+
+                // 將網頁導向到下一頁//
+                window.location.href = "/bootstrap-5.3.2-dist/pages/2.member/2-1-2_e-mail.index.html";
+            } else {
+                alert("郵件地址格式不正確，請重新輸入。");
+            }
+        }
+
+
+         // 添加事件監聽器
+         //EnteredEmail= 輸入的郵件地址
+    checkButton.addEventListener('click', function () {
+      const EnteredEmail =emailInput.value;
+      checkEmail(EnteredEmail);
+    });
+  </script>
+
+  </html>
