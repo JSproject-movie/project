@@ -177,7 +177,8 @@ lightbox.option({
             },500);
         }
     }catch(error){
-      console.log(error);
+        alert('資料取得錯誤!');
+      
     }
   }
 getData();
