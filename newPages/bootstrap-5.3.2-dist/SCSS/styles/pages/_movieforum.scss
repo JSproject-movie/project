@@ -291,4 +291,41 @@
   border: 2px solid #b3b6f2;
   background: $bg-c9
 }
-
+.falseContent{
+  padding: 10px;
+}
+.tureContent{
+  padding: 10px;
+}
+.movie-forum-title{
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9965b9;
+  background: $btn-c4;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4) inset,
+    -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
+}
+.check-rule{
+  color: red;
+  display: flex;
+}
+.movie-True-forum-title{
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9965b9;
+  background: $btn-c4;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4) inset,
+    -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
+}
