@@ -1,0 +1,112 @@
+.wrap-search{
+	padding: 40px;
+}
+.search-num{
+	@include font-title;
+	font-size: 40px;
+	font-weight: 700;
+	background: $bg-c1;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+// 搜尋結果
+.wrap-search-card{
+	margin: 70px auto;
+	max-width: 1030px;
+	display: flex;
+	padding: 30px;
+	flex-direction: column;
+	gap: 30px;
+	border-radius: 20px;
+	border: 2px solid #9498FE;
+	background:$bg-c6 ;
+}
+.search-card-header{
+	display: flex;
+}
+.search-img{
+	width: 180px;
+}
+.search-text{
+	margin-left: 30px;
+	h2{
+		@include btn-text-Inter;
+		color: #FFF;
+		font-size: 30px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	p{
+		color: #FFF;
+		font-size: 22px;
+		font-weight: 500;
+	}
+}
+.wrap-star-score{
+	display: flex;
+	p{
+		padding-top: 15px;
+		@include btn-text-Inter;
+		color: #FFF;
+		font-size: 26px;
+		font-weight: 700;
+	}
+}
+.star-search{
+	width: 38px;
+}
+.search-card-p{
+	@include btn-text-Inter;
+	width: 538px;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 700;
+}
+.btn-search-result{
+	display: flex;
+	width: 180px;
+	height: 51px;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	border-radius: 10px;
+	border: 2px solid #F8D8F5;
+	background: linear-gradient(94deg, #463069 1.43%, #A225C2 99.55%);
+}
+.text-btn-search{
+	color: #FFF;
+	@include btn-text-Inter;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+// 分頁
+// .wrap-pagination{
+
+// }
+.whole-pagination{
+	@include flex-center;
+	height: 34px;
+	padding: 0px 20px;
+	gap: 25px;
+	li{
+	list-style: none
+	}
+}
+.pagination-num{
+	text-decoration: none;
+	color: #FFF;
+	text-shadow: 0px 4px 9px rgba(232, 151, 151, 0.35);
+	font-family: $Inter;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 7.48px;
+}
+

@@ -1,0 +1,42 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin border-1{
+    border-radius: 20px;
+    border: 2px solid #B88ED3;
+}
+
+@mixin btn-border-1{
+    border-radius: 10px;
+    border: 2px solid #F8D8F5;
+}
+@mixin btn-border-2{
+    border-radius: 10px;
+    border: 2px solid #B37DD4;
+    background: linear-gradient(271deg, #6A477F 11.6%, #30536D 94.29%);
+}
+// font
+@mixin font-white{
+    color: #FFF;
+    font-family: $NotoSans;
+    font-style: normal;
+    line-height: normal;
+}
+@mixin font-title{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: $Poppins;
+    font-style: normal;
+    line-height: 150%;
+}
+@mixin btn-text-Inter{
+    font-family: $Inter;
+    font-style: normal;
+    line-height: normal;
+}
+// 星星評分
+@mixin star{
+    float: left;
+    margin-left: 10px;
+}

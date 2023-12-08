@@ -1,19 +1,160 @@
 {
+  "users": [
+    {
+      "email": "admin01@mail.com",
+      "password": "$2a$10$dGUltRMrGVyEDP1XquQrBur5Ehbp8bucpP.bf8FWdSQ/lwjxBvlnK",
+      "nickName": "Ivy",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "admin02@mail.com",
+      "password": "$2a$10$ZFrJegU1CUTOXi1yqvybaeAwHc1d0Gg9rQnVJi4LA1j5U1axxx77.",
+      "nickName": "rius",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "email": "admin03@mail.com",
+      "password": "$2a$10$d7RefdgJmFw3oWiMKWV/vegh0Yz5YppS6LE3QioaV3w2QJCYl5a7a",
+      "nickName": "Noah",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "admin04@mail.com",
+      "password": "$2a$10$/x/RHxN6xRaX2QtY6DlEjOGJPUOppQC31xfMjogVzkawh0uzJ6prG",
+      "nickName": "smalljie",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "email": "user05@mail.com",
+      "password": "$2a$10$hiPHx7DFxHFfVhxMWB6AUOip/7jt5pnNiBJln.pcFnK7ExHpvcrXG",
+      "lastName": "Smith",
+      "firstName": "Tom",
+      "nickName": "Tom",
+      "gender": "male",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "email": "user06@mail.com",
+      "password": "$2a$10$iGeZhCbo906CP6oWSrLYb.tDDerZB72p8RHysj8FBe6uoxX/x5oF6",
+      "lastName": "Taylor",
+      "firstName": "Jack",
+      "nickName": "Jack",
+      "gender": "male",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "email": "user07@mail.com",
+      "password": "$2a$10$8kFvQAoGd8sBBXPK7uwWJ.RKUJBwp9Ru9N218PPKmVTAZ6dt4K4Eu",
+      "lastName": "Brown",
+      "firstName": "Saul",
+      "nickName": "Saul",
+      "gender": "male",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "user08@mail.com",
+      "password": "$2a$10$xsCbMnOIcSozEMUyuIYSuuEf3mZlqexjMEbQv.vluh78lVYP/Je6S",
+      "lastName": "Miler",
+      "firstName": "Anna",
+      "nickName": "Anna",
+      "gender": "female",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "email": "user09@mail.com",
+      "password": "$2a$10$s/N.Cgun1FfF4B7rYERb1eVh4tGiuoWIWwukFawFvMXF3HOTOGi8i",
+      "lastName": "Gibbs",
+      "firstName": "Jean",
+      "nickName": "Jean",
+      "gender": "female",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "email": "user10@mail.com",
+      "password": "$2a$10$Y7WvJ8y.NXypcL1/VwZJS.eQvHW6MfF0cJSDL5DG8MM7ACivhqii.",
+      "lastName": "Hogan",
+      "firstName": "Freya",
+      "nickName": "Freya",
+      "gender": "female",
+      "role": "user",
+      "id": 10
+    }
+  ],
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "movieId": 1,
+      "spoiler": "false",
+      "title": "科學與道德的交織",
+      "content": "片中賈羅·奧本海默的角色由傑克·吉倫哈爾精湛詮釋，他不僅展現了奧本海默作為核物理學家的才華，更將觀眾帶入他內心的道德掙扎。奧本海默在創造毀滅性武器的同時，也面臨道德的困惑和人性的挑戰，這種內心掙扎讓影片更具深度和情感。",
+      "userId": 5,
+      "id": 1
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "movieId": 1,
+      "postId": 1,
+      "spoiler": "false",
+      "comment": "中肯的評論！",
+      "userId": 6,
+      "id": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "contacts": [
+    {
+      "name": "Tom",
+      "email": "user05@mail.com",
+      "phoneNumber": "0912345678",
+      "EventTime": "01/01/2023",
+      "issue": "意見回饋",
+      "issueContent": "希望電影介紹能更詳細",
+      "userId": 5,
+      "id": 1
+    }
+  ],
+  "reportPosts": [
+    {
+      "postId": 1,
+      "reportReason": "惡意劇透",
+      "userId": 7,
+      "id": 1
+    }
+  ],
+  "reportComments": [
+    {
+      "commentId": 1,
+      "reportReason": "散布明顯無意義之內容",
+      "userId": 7,
+      "id": 1
+    }
+  ],
+  "appealposts": [
+    {
+      "email": "user05@mail.com",
+      "beReportReason": "惡意劇透",
+      "reportPostId": 1,
+      "appealContent": "我認為這則影評並無劇透",
+      "userId": 5,
+      "id": 1
+    }
+  ],
+  "appealComments": [
+    {
+      "email": "user06@mail.com",
+      "beReportReason": "散布明顯無意義之內容",
+      "reportCommentId": 1,
+      "appealContent": "我認為這則留言並無問題",
+      "userId": 6,
+      "id": 1
+    }
+  ]
 }
