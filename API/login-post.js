@@ -5,12 +5,12 @@ let id = "";
 function signUp() {
   axios
     .post(`https://testrender-tga5.onrender.com/signup`, {
-      email: "user10@mail.com",
-      password: "user10",
-      lastName: "Hogan",
-      firstName: "Freya",
-      nickName: "Freya",
-      gender: "female",
+      email: "user11@mail.com",
+      password: "Users011",
+      lastName: "Ausborn",
+      firstName: "Kay",
+      nickName: "Kay",
+      gender: "male",
       role: "user",
     })
     .then(function (response) {
@@ -24,8 +24,8 @@ function signUp() {
 function login() {
   axios
     .post(`https://testrender-tga5.onrender.com/login`, {
-      email: "user06@mail.com",
-      password: "Users006",
+      email: "user05@mail.com",
+      password: "Users005",
     })
     .then(function (response) {
       token = response.data.accessToken;
@@ -36,7 +36,7 @@ function login() {
       console.log(error.response);
     });
 }
-// 修改密碼
+// 修改密碼 //如果改了密碼請記得到DC群講一聲，並寫在備註裡
 function upDatePassword() {
   axios
     .patch(
@@ -68,7 +68,7 @@ function addPost() {
         movieId: 1,
         spoiler: "false",
         title: "科學與道德的交織",
-        content: "TTTTTTest",
+        content: "XDDDDD",
         userId: id,
       },
       {
@@ -85,18 +85,15 @@ function addPost() {
     });
 }
 // 刪除影評
+// 備註：delete的第二個參數一定要放headers，不然授權會失效
 let delPostId = 2;
 function delPost() {
   axios
-    .delete(
-      `https://testrender-tga5.onrender.com/posts/${delPostId}`,
-      {},
-      {
-        headers: {
-          authorization: `Bearer ${token}`,
-        },
-      }
-    )
+    .delete(`https://testrender-tga5.onrender.com/600/posts/${delPostId}`, {
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    })
     .then(function (response) {
       token = response.data.accessToken;
       id = response.data.user.id;
@@ -106,11 +103,15 @@ function delPost() {
     });
 }
 // 修改影評
+let patchPostId = 2;
 function editPost() {
   axios
     .patch(
-      `https://testrender-tga5.onrender.com/posts`,
-      {},
+      `https://testrender-tga5.onrender.com/600/posts/${patchPostId}`,
+      {
+        title: "科學與道德的交織",
+        content: "哈哈",
+      },
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -129,7 +130,7 @@ function editPost() {
 function addComment() {
   axios
     .post(
-      `https://testrender-tga5.onrender.com/comments`,
+      `https://testrender-tga5.onrender.com/600/comments`,
       {
         movieId: 1,
         postId: 1,
@@ -144,18 +145,19 @@ function addComment() {
       }
     )
     .then(function (response) {
-      console.log(response);
+      token = response.data.accessToken;
+      id = response.data.user.id;
     })
     .catch(function (error) {
       console.log(error.response);
     });
 }
 // 刪除留言
+let delCommentId = 2;
 function delComment() {
   axios
     .delete(
-      `https://testrender-tga5.onrender.com/${delCommentId}`,
-      {},
+      `https://testrender-tga5.onrender.com/600/comments/${delCommentId}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -173,15 +175,11 @@ function delComment() {
 // 修改留言
 function editComment() {
   axios
-    .patch(
-      `https://testrender-tga5.onrender.com/comments`,
-      {},
-      {
-        headers: {
-          authorization: `Bearer ${token}`,
-        },
-      }
-    )
+    .patch(`https://testrender-tga5.onrender.com/600/comments`, {
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    })
     .then(function (response) {
       token = response.data.accessToken;
       id = response.data.user.id;
