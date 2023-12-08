@@ -520,7 +520,7 @@
 }
 
 .swiper-button-prev {
-  background-image: url(/icon/leftArrow.png) !important;
+  background-image: url(https://github.com/JSproject-movie/project/blob/main/newPages/icon/leftArrow.png?raw=true) !important;
   width: 42px;
   height: 60px;
   background-repeat: no-repeat;
@@ -529,7 +529,7 @@
 }
 
 .swiper-button-next {
-  background-image: url(/icon/rightArrow.png) !important;
+  background-image: url(https://github.com/JSproject-movie/project/blob/main/newPages/icon/rightArrow.png?raw=true) !important;
   width: 42px;
   height: 60px;
   background-repeat: no-repeat;
