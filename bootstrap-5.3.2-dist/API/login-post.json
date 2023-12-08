@@ -97,6 +97,54 @@
       "content": "片中賈羅·奧本海默的角色由傑克·吉倫哈爾精湛詮釋，他不僅展現了奧本海默作為核物理學家的才華，更將觀眾帶入他內心的道德掙扎。奧本海默在創造毀滅性武器的同時，也面臨道德的困惑和人性的挑戰，這種內心掙扎讓影片更具深度和情感。",
       "userId": 5,
       "id": 1
+    },
+    {
+      "movieId": 1,
+      "spoiler": false,
+      "title": "123",
+      "content": "222",
+      "userId": 5,
+      "id": 2
+    },
+    {
+      "movieId": 1,
+      "spoiler": true,
+      "title": "123",
+      "content": "123",
+      "userId": 5,
+      "id": 3
+    },
+    {
+      "movieId": 1,
+      "spoiler": true,
+      "title": "心得",
+      "content": "很棒",
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "movieId": 1,
+      "spoiler": true,
+      "title": "123",
+      "content": "123",
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "movieId": 1,
+      "spoiler": false,
+      "title": "123",
+      "content": "123",
+      "userId": 5,
+      "id": 6
+    },
+    {
+      "movieId": 1,
+      "spoiler": true,
+      "title": "123",
+      "content": "000",
+      "userId": 5,
+      "id": 7
     }
   ],
   "comments": [
@@ -139,6 +187,16 @@
       "issueContent": "網頁很棒",
       "userId": "5",
       "id": 3
+    },
+    {
+      "name": "123",
+      "email": "aa.aa@aa.aa",
+      "phoneNumber": "0978546269",
+      "EventTime": "2023-12-05",
+      "issue": "帳戶問題",
+      "issueContent": "1207",
+      "userId": "5",
+      "id": 4
     }
   ],
   "reportPosts": [
