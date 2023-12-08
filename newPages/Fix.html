@@ -27,18 +27,28 @@
             class="d-flex flex-column justify-content-between align-items-center h-100"
           >
             <div class="asideMenu h-75">
-              <h2 class="menuTitle h5 fw-bold mt-5">星塵會員專區</h2>
+              <h2 class="menuTitle h5 fw-bold mt-5">電影評論分類</h2>
+              <button class="return-button">
+                <span class="text">返回</span>
+                <img
+                  src="icon/arrow-back-circle.svg"
+                  alt=""
+                  class="icon"
+                  srcset=""
+                />
+              </button>
               <ul
                 class="menu_link d-flex flex-column justify-content-between align-items-center h-50 p-0"
               >
                 <li>
-                  <a href="#" class="link-light my-5 active">基本資料設定</a>
+                  <a href="#" class="link-light my-5 active">喜劇片</a>
                 </li>
-                <li><a href="#" class="link-light my-5">帳號與安全性</a></li>
-                <li><a href="#" class="link-light my-5">我的收藏影評</a></li>
-                <li><a href="#" class="link-light my-5">我的影評列表</a></li>
-                <li><a href="#" class="link-light my-5">我的評分列表</a></li>
-                <li><a href="#" class="link-light my-5">檢舉/申訴</a></li>
+                <li><a href="#" class="link-light my-5">劇情片</a></li>
+                <li><a href="#" class="link-light my-5">科幻片</a></li>
+                <li><a href="#" class="link-light my-5">恐怖片</a></li>
+                <li><a href="#" class="link-light my-5">紀錄片</a></li>
+                <li><a href="#" class="link-light my-5">音樂劇</a></li>
+                <li><a href="#" class="link-light my-5">驚悚片</a></li>
               </ul>
             </div>
             <ul
@@ -46,16 +56,16 @@
               style="height: 135px"
             >
               <li>
-                <a href="#"><img src="/icon/tumblr.png" alt="tumblr" /></a>
+                <a href="#"><img src="icon/tumblr.png" alt="tumblr" /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="/icon/linkedinLogo.png" alt="linkedinLogo"
+                  ><img src="icon/linkedinLogo.png" alt="linkedinLogo"
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="/icon/facebookSm.png" alt="facebookSm"
+                  ><img src="icon/facebookSm.png" alt="facebookSm"
                 /></a>
               </li>
             </ul>
@@ -65,13 +75,13 @@
         <div class="col-10">
           <div class="nav-header">
             <a href="#" class="nav-logo">
-              <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo" />
+              <img src="movie picture/LOGO.png" class="mLogo" alt="Logo" />
             </a>
             <nav>
               <a href="#" class="nav-txt">關於影評星塵</a>
               <!-- 搜尋 -->
               <div class="btn-box">
-                <img src="/icon/Search.png" class="search-icon" alt="搜尋" />
+                <img src="icon/Search.png" class="search-icon" alt="搜尋" />
                 <input type="text" placeholder=" " />
               </div>
               <!-- dropdown -->
@@ -79,7 +89,7 @@
                 <button class="dropbtn">
                   篩選
                   <span></span>
-                  <img src="/icon/dropdown-arrow-down.png" alt="" />
+                  <img src="icon/dropdown-arrow-down.png" alt="" />
                 </button>
                 <div class="dropdown-content">
                   <a href="#"> 喜劇片 </a>
@@ -93,209 +103,316 @@
               </div>
               <button class="btn-search">搜尋</button>
               <a href="#" class="nav-txt">
-                <img src="/icon/user.png" class="user-icon" alt="會員" />
+                <img src="icon/user.png" class="user-icon" alt="會員" />
               </a>
             </nav>
           </div>
           <!-- main -->
           <main
-            class="d-flex flex-column align-items-center justify-content-center mb-5"
+            class="d-flex flex-column align-items-center mb-5 justify-content-center"
           >
-            <h2 class="d-flex align-items-center text-white my-5">
-              <img src="/icon/user.png" alt="user" class="me-5" />用戶基本資料
-            </h2>
-            <div
-              class="informationArea card border-1 border-white rounded-6 p-4 w-75"
-              style="
-                background: linear-gradient(
-                  115deg,
-                  rgba(161, 118, 182, 0.5) 0%,
-                  rgba(57, 30, 54, 0.5) 100.56%
-                );
-              "
-            >
-              <h5 class="card-title mb-2 text-white">個人基本資料</h5>
-              <div class="informationArea">
-                <div class="row g-0">
-                  <div class="col-7 p-5">
-                    <div class="row">
-                      <div class="col-3 text-white">
-                        <p>用戶編號</p>
-                        <p>會員名稱</p>
-                        <p>性別</p>
-                        <p>電子郵件</p>
-                      </div>
-                      <div class="col-5 text-white">
-                        <p>A00012</p>
-                        <p>PENG</p>
-                        <p>男性</p>
-                        <p>123456@gmail.com</p>
+            <!-- carousel -->
+            <div class="swiper-container col-12">
+              <div class="swiper">
+                <div class="pink-box"></div>
+                <div class="green-box"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/Open03.jpg"
+                        class="carousel-img"
+                        alt="oppen03"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">奧本海默</h3>
+                          <h3 class="carousel-title">Oppenheimer</h3>
+                        </div>
+                        <p class="carousel-content">
+                          由克里斯多福·諾蘭編劇和執導，改編自凱·柏德和馬丁·J·薛文撰寫的傳記《奧本海默》，劇情講述了美國理論物理學家羅伯特·歐本海默參與研製原子彈的過程。全球票房超過9億美元，成為商業表現極為成功的二戰題材電影、傳記片以及R級電影之一
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">
+                            已獲得本周評論數第一名:955則評論
+                          </p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-5 px-6">
-                    <div
-                      class="row g-0 flex-column justify-content-center align-items-center"
-                    >
-                      <div class="col p-3 d-flex justify-content-center">
-                        <img
-                          src="/movie picture/Oppenheimer-3.jpg"
-                          alt="userImg"
-                          class="img-fluid"
-                          style="width: 223px; height: 207px"
-                        />
+                  <!-- 第二頁 -->
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/mission.jpg"
+                        class="carousel-img"
+                        alt="oppen"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">
+                            不可能的任務：致命清算 第一章
+                          </h3>
+                          <h3 class="carousel-title">
+                            Mission: Impossible – Dead Reckoning Part One
+                          </h3>
+                        </div>
+                        <p class="carousel-content">
+                          伊森·韓特和他的不可能任務情報局（IMF）團隊展開他們迄今為止最危險的任務：阻止一件威脅著全人類的危險武器落入惡人的手中；隨著世界的命運危在旦夕，伊森過去的黑暗勢力也找上門來
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">本周評論數:769則評論</p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-9 px-3 d-flex justify-content-center">
-                        <a
-                          href="#"
-                          class="text-decoration-none text-light fw-bold"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
-                          ><img
-                            src="/icon/userSm.png"
-                            alt="userImg"
-                            class="p-2 mx-3"
-                            style="
-                              background: linear-gradient(
-                                180deg,
-                                #a62281 0%,
-                                #854e99 100%
-                              );
-                              border-radius: 10px;
-                            "
-                          />變更個人會員相片</a
-                        >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/sand.jpg"
+                        class="carousel-img"
+                        alt="oppen"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">沙丘</h3>
+                          <h3 class="carousel-title">Dune</h3>
+                        </div>
+                        <p class="carousel-content">
+                          由丹尼·維勒納夫執導，艾瑞克·羅斯、喬·斯派茨和導演本人共同編寫劇本，劇情改編自法蘭克·赫伯特的1965年英文同名科幻小說《沙丘》的前半部分內容，是兩部改編電影計畫中的第一部；講述出身貴族家庭的年輕繼承者背負起守護銀河系中最寶貴的資產也是最重要的元素
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">本周評論數:861則評論</p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/game.jpg"
+                        class="carousel-img"
+                        alt="oppen"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">
+                            飢餓遊戲：鳴鳥與游蛇之歌
+                          </h3>
+                          <h3 class="carousel-title">
+                            The Hunger Games: The Ballad of Songbirds and Snakes
+                          </h3>
+                        </div>
+                        <p class="carousel-content">
+                          18歲的史諾將擔任第十屆飢餓遊戲的導師，期待能透過指導貢品贏得比賽，振興落魄的家族，不料他抽中的貢品是一名來自施惠國最窮困十二區的個性古怪女孩露西，兩人最後能夠順利在飢餓遊戲中勝出嗎？
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">本周評論數:672則評論</p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr class="my-3 text-white" />
-              <h5 class="card-title mb-2 text-white">個人介紹</h5>
-              <div class="introduce my-5 p-3">
-                <p class="text-white">
-                  你好，我是一名上班族的男性，非常高興能夠和你們交流。工作對我來說是生活的一部分，它讓我有機會不斷學習和成長，並實現自己的目標。我相信努力工作和追求夢想是每個人生命中重要的一部分。
-                  除了工作，我還有很多興趣和愛好，例如音樂、運動和旅行。我喜歡彈奏樂器，這對我來說是一種釋放壓力和表達情感的方式。運動也是我生活的一部分，它有幫助於保持身體健康和精力充沛。旅行則讓我有機會探索新的地方，體驗不同的文化和風景。
-                  我很喜歡與人交流和分享想法。我相信相互學習和交流經驗可以豐富我們的生活。無論是討論工作中的挑戰，分享生活中的快樂，還是探討世界上的各種話題，我都能夠期待與你們建立了有意義的對話。
-                  感謝您花時間閱讀我的自我介紹，我期待與您進一步的互動和交流！
-                </p>
-              </div>
-              <div class="d-flex justify-content-center w-100">
-                <button
-                  class="btn text-white mx-3 border border-white"
-                  style="
-                    background: linear-gradient(
-                      115deg,
-                      #8673d4 0%,
-                      #8f268b 100.56%
-                    );
-                  "
-                >
-                  變更密碼
-                </button>
-                <button
-                  class="btn text-white mx-3 border border-white"
-                  style="
-                    background: linear-gradient(
-                      115deg,
-                      #8673d4 0%,
-                      #8f268b 100.56%
-                    );
-                  "
-                >
-                  變更帳戶資訊
-                </button>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="imgModal">
-                  <div class="modal-header justify-content-center border-0">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      變更個人會員相片
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <div class="uploadImg">
-                      <img
-                        src="/movie picture/Oppenheimer-3.jpg"
-                        alt="userImg"
-                        class="img-fluid"
-                        style="width: 223px; height: 207px; flex-shrink: 0"
-                      />
-                      <a
-                        href="#"
-                        class="text-decoration-none text-light fw-bold"
-                        ><img
-                          src="/icon/publish.png"
-                          alt="userImg"
-                          class="p-2 mx-1"
-                        />點我開始上傳新個人風格</a
-                      >
+            <!-- TOP 10  -->
+            <div class="top10bc mt-62 col-12">
+              <div class="top10-title">
+                <div class="yellow-box"></div>
+                <h2 class="top10-text">TOP 10 Popular movies this week</h2>
+                <h3 class="top10-subtitle">本週熱門電影　 TOP 10</h3>
+              </div>
+            </div>
+            <div class="wrap-movie-card">
+              <div class="arrow-left">
+                <img src="icon/leftArrow.png" alt="Left" />
+              </div>
+              <div class="wrap-cards">
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/joker.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
                     </div>
-                  </div>
-                  <div class="d-flex">
-                    <input
-                      class="form-check-input me-3"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="consent"
-                    />
-                    <label class="form-check-label" for="consent">
-                      同意相關上傳照片規則<span style="color: #ea95d7"
-                        >定型化契約</span
-                      >
-                    </label>
-                  </div>
-
-                  <div class="modal-footer flex-row flex-nowrap border-0 w-100">
-                    <button
-                      type="button"
-                      class="btn text-white mx-3 border border-white w-50"
-                      style="
-                        background: linear-gradient(
-                          115deg,
-                          #8673d4 0%,
-                          #8f268b 100.56%
-                        );
-                      "
-                      data-bs-dismiss="modal"
-                    >
-                      取消並返回會員資料
-                    </button>
-                    <button
-                      type="button"
-                      class="btn text-white mx-3 border border-white w-50"
-                      style="
-                        background: linear-gradient(
-                          115deg,
-                          #8673d4 0%,
-                          #8f268b 100.56%
-                        );
-                      "
-                    >
-                      確定變更
-                    </button>
+                    <h3 class="card-title"><a href="#">小丑</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
                   </div>
                 </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/Oppenheimer-1.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">奧本海默</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/hacksaw.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">鋼鐵英雄</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/loki.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">洛基</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+              </div>
+              <!-- Right arrow -->
+              <div class="arrow-right">
+                <img
+                  src="https://github.com/JSproject-movie/project/blob/main/newPages/icon/rightArrow.png?raw=true"
+                  alt=""
+                />
               </div>
             </div>
           </main>
+
+          <!-- footer -->
           <footer class="footer p-4 pb-0">
             <div class="row align-items-center justify-content-between">
               <div class="col-3">
                 <a href="#">
                   <img
-                    src="/movie picture/LOGO.png"
+                    src="movie picture/LOGO.png"
                     class="img-fluid"
                     alt="logo"
                     width="211"
@@ -308,7 +425,7 @@
                   <div class="col-3">
                     <div class="d-flex flex-column align-items-center">
                       <img
-                        src="/icon/mail.png"
+                        src="icon/mail.png"
                         alt="mail"
                         style="width: 20px; height: 20px"
                       />
@@ -322,7 +439,7 @@
                   <div class="col-3">
                     <div class="d-flex flex-column align-items-center">
                       <img
-                        src="/icon/aboutUs.png"
+                        src="icon/aboutUs.png"
                         alt="aboutUs"
                         style="width: 20px; height: 20px"
                       />
@@ -334,7 +451,7 @@
                   <div class="col-3">
                     <div class="d-flex flex-column align-items-center">
                       <img
-                        src="/icon/chat.png"
+                        src="icon/chat.png"
                         alt="chat"
                         style="width: 20px; height: 20px"
                       />
@@ -346,7 +463,7 @@
                   <div class="col-2">
                     <div class="d-flex flex-column align-items-center">
                       <img
-                        src="/icon/error.png"
+                        src="icon/error.png"
                         alt="error"
                         style="width: 20px; height: 20px"
                       />
