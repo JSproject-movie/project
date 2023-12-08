@@ -59,7 +59,7 @@ function upDatePassword() {
     });
 }
 // 發布影評
-// 不用另外代userId的寫法：http://localhost:3000/600/users/${id}/posts
+// 不用另外代userId的寫法：https://testrender-tga5.onrender.com/users/${id}/posts
 function addPost() {
   axios
     .post(
@@ -109,7 +109,7 @@ function delPost() {
 function editPost() {
   axios
     .patch(
-      `http://localhost:3000/600/posts`,
+      `https://testrender-tga5.onrender.com/posts`,
       {},
       {
         headers: {
@@ -129,7 +129,7 @@ function editPost() {
 function addComment() {
   axios
     .post(
-      `http://localhost:3000/600/comments`,
+      `https://testrender-tga5.onrender.com/comments`,
       {
         movieId: 1,
         postId: 1,
@@ -154,7 +154,7 @@ function addComment() {
 function delComment() {
   axios
     .delete(
-      `http://localhost:3000/posts/${delCommentId}`,
+      `https://testrender-tga5.onrender.com/${delCommentId}`,
       {},
       {
         headers: {
@@ -174,7 +174,7 @@ function delComment() {
 function editComment() {
   axios
     .patch(
-      `http://localhost:3000/600/comments`,
+      `https://testrender-tga5.onrender.com/comments`,
       {},
       {
         headers: {
@@ -194,7 +194,7 @@ function editComment() {
 function addContact() {
   axios
     .post(
-      `http://localhost:3000/600/contacts`,
+      `https://testrender-tga5.onrender.com/contacts`,
       {
         name: "Tom",
         email: "user05@mail.com",
@@ -222,7 +222,7 @@ function addContact() {
 function reportPost() {
   axios
     .post(
-      `http://localhost:3000/reportPosts`,
+      `https://testrender-tga5.onrender.com/reportPosts`,
       {
         postId: 1,
         reportReason: "惡意劇透",
@@ -246,7 +246,7 @@ function reportPost() {
 function reportComment() {
   axios
     .post(
-      `http://localhost:3000/reportComments`,
+      `https://testrender-tga5.onrender.com/reportComments`,
       {
         commentId: 1,
         reportReason: "散布明顯無意義之內容",
@@ -270,7 +270,7 @@ function reportComment() {
 function appealPost() {
   axios
     .post(
-      `http://localhost:3000/600/appealposts`,
+      `https://testrender-tga5.onrender.com/appealposts`,
       {
         email: "user05@mail.com",
         beReportReason: "惡意劇透",
@@ -296,7 +296,7 @@ function appealPost() {
 function appealComment() {
   axios
     .post(
-      `http://localhost:3000/appealComments`,
+      `https://testrender-tga5.onrender.com/appealComments`,
       {
         email: "user05@mail.com",
         beReportReason: "散布明顯無意義之內容",
