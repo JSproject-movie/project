@@ -151,7 +151,6 @@ lightbox.option({
     let enable = false;
     collectBtn.addEventListener('click',(e) => {
       e.preventDefault();
-      
       if(enable === false){
         collectBtn.setAttribute('class','btn collectBtn me-5  d-flex align-items-center text-danger');
         collectBtn.innerHTML = '<i class="bi bi-heart-fill mx-3"></i>已收藏';
@@ -177,9 +176,12 @@ lightbox.option({
             },500);
         }
     }catch(error){
-        alert('資料取得錯誤!');
-      
+        console.log(1);
+        Swal.fire({
+            title: "發生錯誤",
+            text: "取得資料失敗!",
+            icon: "error"
+          });
     }
   }
 getData();
-
