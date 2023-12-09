@@ -232,7 +232,9 @@
 
 .top10bc {
   padding: 30px;
+  max-width: 1210px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 68px;
   background: linear-gradient(115deg, rgba(219, 72, 196, 0.34) -13.24%, rgba(50, 193, 224, 0.15) 9.84%, rgba(205, 203, 203, 0) 35.52%, rgba(165, 162, 162, 0) 84.27%);
   border-radius: 20px;
@@ -261,6 +263,7 @@
 }
 
 .wrap-movie-card {
+  max-width: 1210px;
   display: flex;
   align-items: center;
 }
@@ -285,7 +288,7 @@
 }
 
 .wrap-whole-card {
-  width: 256px;
+  max-width: 260px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -297,7 +300,7 @@
 
 .movie-card-img {
   margin: 0 auto;
-  width: 199px;
+  max-width: 250px;
   height: 274px;
   border-radius: 20px;
 }
