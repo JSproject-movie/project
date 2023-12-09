@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>page8-1</title>
+    <title>page8-2</title>
     <!-- Noto Sans、Poppins、Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -101,49 +101,33 @@
             class="d-flex flex-column align-items-center mb-5 justify-content-center"
           >
             <!-- appeal -->
-            <div class="wrap-appeal">
-              <h2 class="appeal-title">提出申訴</h2>
-              <div class="appeal-card">
-                <div class="wrap-member-num">
-                  <label class="appeal-info-title">會員帳號</label>
-                  <input
-                    type="text"
-                    class="appeal-info-input"
-                    placeholder="帳號"
-                  />
-                  <label class="appeal-info-title ml-30">案件編號</label>
-                  <div class="appeal-info-text">AB0001</div>
+            <div class="wrap-appeal m-90-a">
+              <div class="appeal-card-2">
+                <div class="green-circle">
+                  <img src="icon/check.png" alt="" class="green-check" />
                 </div>
-                <div class="wrap-member-num">
-                  <label class="appeal-info-title">被檢舉人原因</label>
-                  <input
-                    type="text"
-                    class="appeal-info-input"
-                    placeholder="被檢舉人原因(自動帶入)"
-                  />
+
+                <div class="appeal-fin-text">
+                  <h2 class="appeal-fin">申訴完成</h2>
+                  <p class="appeal-respond">
+                    本公司已收到您的申訴，我們會儘速處理您的案件,謝謝
+                  </p>
+                  <div class="wrap-respond-info">
+                    <span>案件編號</span>
+                    <span class="ml-40">AB0001</span>
+                  </div>
+                  <div class="wrap-respond-info">
+                    <span>案件成立時間</span>
+                    <span class="ml-40">02/14/2023</span>
+                  </div>
+                  <div class="wrap-respond-info">
+                    <span>申訴原因</span>
+                    <span class="ml-40">留言暴雷</span>
+                  </div>
+                  <button class="btn-send-appeal mb-30">
+                    <a href="#" class="text-btn-appeal">回檢舉案件狀態 </a>
+                  </button>
                 </div>
-                <div class="wrap-member-num">
-                  <label class="appeal-info-title"
-                    >(選填)提出申辯與被檢舉案件編號</label
-                  >
-                  <input
-                    type="text"
-                    class="appeal-info-input"
-                    placeholder="被檢舉編號"
-                  />
-                </div>
-                <div class="wrap-appeal-content">
-                  <label class="appeal-info-title mb-20">申訴內容</label>
-                  <input
-                    type="text"
-                    class="appeal-info-input-2"
-                    placeholder="輸入申訴內容"
-                  />
-                </div>
-                <!-- btn -->
-                <button class="btn-send-appeal">
-                  <a href="#" class="text-btn-appeal">送出 </a>
-                </button>
               </div>
             </div>
           </main>
