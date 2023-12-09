@@ -587,6 +587,10 @@
   outline: none;
 }
 
+.movie-side-fz {
+  font-size: 20px;
+}
+
 .editInformationArea {
   padding: 30px;
   border-radius: 30px;
