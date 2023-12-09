@@ -123,8 +123,9 @@
 // top 10
 .top10bc {
   padding: 30px;
-  max-width: 1238px;
+  max-width: 1210px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 68px;
   background: $bg-c4;
   border-radius: 20px;
@@ -149,6 +150,7 @@
 }
 // cards
 .wrap-movie-card {
+  max-width: 1210px;
   display: flex;
   align-items: center;
 }
@@ -170,7 +172,7 @@
 }
 
 .wrap-whole-card {
-  width: 256px;
+  max-width: 260px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -183,7 +185,7 @@
 .movie-card-img {
   margin: 0 auto;
 
-  width: 199px;
+  max-width: 250px;
   height: 274px;
   border-radius: 20px;
   // margin: 20px;
@@ -341,7 +343,7 @@
   border-radius: 20px;
   background: $secondary-c;
   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-  max-width: 1278px;
+  max-width: 1255px;
   height: 578px;
 }
 
@@ -439,4 +441,7 @@
 }
 .toTop-arrow:focus {
   outline: none;
+}
+.movie-side-fz {
+  font-size: 20px;
 }
