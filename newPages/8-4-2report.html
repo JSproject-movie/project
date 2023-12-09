@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>page8-4-2</title>
+    <!-- Noto Sans、Poppins、Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;200;300;400;500;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+  </head>
+  <body class="body-primary">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <!-- side bar -->
+        <div class="col p-3 border-end border-1">
+          <aside class="d-flex flex-column align-items-center h-100">
+            <div class="asideMenu h-75">
+              <h2 class="menuTitle h5 fw-bold mt-5">檢舉/申訴專區</h2>
+              <ul
+                class="menu_link d-flex flex-column align-items-center h-50 p-0"
+              >
+                <li class="mb-3">
+                  <a href="#" class="link-light movie-side-fz">提出申訴</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">檢舉案件進度</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">申訴案件進度</a>
+                </li>
+              </ul>
+            </div>
+            <ul
+              class="social_link d-flex flex-column justify-content-between p-0"
+              style="height: 135px"
+            >
+              <li>
+                <a href="#"><img src="icon/tumblr.png" alt="tumblr" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="icon/linkedinLogo.png" alt="linkedinLogo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="icon/facebookSm.png" alt="facebookSm"
+                /></a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-10">
+          <!-- nav bar -->
+          <div class="nav-header">
+            <a href="#" class="nav-logo">
+              <img src="movie picture/LOGO.png" class="mLogo" alt="Logo" />
+            </a>
+            <nav>
+              <a href="#" class="nav-txt">關於影評星塵</a>
+              <!-- 搜尋 -->
+              <div class="btn-box">
+                <img src="icon/Search.png" class="search-icon" alt="搜尋" />
+                <input type="text" placeholder=" " />
+              </div>
+              <!-- dropdown -->
+              <div class="dropdown">
+                <button class="dropbtn">
+                  篩選
+                  <span></span>
+                  <img src="icon/dropdown-arrow-down.png" alt="" />
+                </button>
+                <div class="dropdown-content">
+                  <a href="#"> 喜劇片 </a>
+                  <a href="#"> 劇情片 </a>
+                  <a href="#"> 科幻片 </a>
+                  <a href="#"> 恐怖片 </a>
+                  <a href="#"> 音樂劇 </a>
+                  <a href="#"> 愛情片 </a>
+                  <a href="#"> 驚悚片 </a>
+                </div>
+              </div>
+              <button class="btn-search">搜尋</button>
+              <a href="#" class="nav-txt">
+                <img src="icon/user.png" class="user-icon" alt="會員" />
+              </a>
+            </nav>
+          </div>
+          <!-- main -->
+          <main
+            class="d-flex flex-column align-items-center mb-5 justify-content-center"
+          >
+            <!-- appeal -->
+            <div class="wrap-appeal m-90-a">
+              <div class="wrap-report-title">
+                <img src="icon/report.png" alt="" class="appeal-title-icon" />
+                <h2 class="report-censor-title">申訴案件 審核進度</h2>
+              </div>
+
+              <div class="appeal-card-3">
+                <!-- 收合內容 -->
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body bg-transparent">
+                    <!-- status 圖示 -->
+                    <div class="wrap-case-st">
+                      <!-- 一組icon+text -->
+                      <div>
+                        <div class="st-gray-frame">
+                          <img src="icon/mark01-gray-chat-read.png" alt="" />
+                        </div>
+                        <h4 class="st-gray-txt">案件已成立</h4>
+                      </div>
+                      <div>
+                        <div class="st-green-frame">
+                          <img src="icon/mark02-1-teacher.png" alt="" />
+                        </div>
+                        <h4 class="st-green-txt">審核中</h4>
+                      </div>
+                      <div>
+                        <div class="st-gray-frame">
+                          <img src="icon/mark03-2-book-check.png" alt="" />
+                        </div>
+                        <h4 class="st-gray-txt">案件已完結</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 案件info -->
+                <div class="respond-info-header">
+                  <div class="wrap-respond-info">
+                    <span>案件編號</span>
+                    <span class="ml-40">AB0001</span>
+                  </div>
+                  <div class="wrap-respond-info">
+                    <span>案件成立時間</span>
+                    <span class="ml-40">02/14/2023</span>
+                  </div>
+                  <div class="wrap-respond-info">
+                    <span>申訴原因</span>
+                    <span class="ml-40">遭惡意檢舉</span>
+                  </div>
+                </div>
+                <!-- 收合btn -->
+                <p>
+                  <button
+                    class="btn-expand"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <div class="expand-btn-text">查看案件狀態</div>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </main>
+          <!-- footer -->
+          <footer class="footer p-4 pb-0">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-3">
+                <a href="#">
+                  <img
+                    src="movie picture/LOGO.png"
+                    class="img-fluid"
+                    alt="logo"
+                    width="211"
+                    height="69"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/mail.png"
+                        alt="mail"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">聯絡我們 E-MAIL</h5>
+                      <span class="text-secondary my-2"
+                        >moviegalaxy@Anythings</span
+                      >
+                      <h6 class="text-light my-2">服務時間 14~18</h6>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/aboutUs.png"
+                        alt="aboutUs"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">關於 影評星塵</h5>
+                      <span class="text-secondary my-2">Q & A</span>
+                      <h6 class="text-secondary my-2">網站理念</h6>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/chat.png"
+                        alt="chat"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">平台規則</h5>
+                      <span class="text-secondary my-2">用戶規章</span>
+                      <h6 class="text-secondary my-2">評論規章</h6>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/error.png"
+                        alt="error"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">檢舉/申訴</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="h6 text-white text-center mt-5 mb-0">
+              隱私權及服務條例 @ copyright 2023 All Rights Reserved.
+            </h5>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap-5.3.2-dist/js-page/index.js"></script>
+  </body>
+</html>

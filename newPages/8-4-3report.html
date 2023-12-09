@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>page1-2-1</title>
+    <title>page8-4-3</title>
     <!-- Noto Sans、Poppins、Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,7 +99,80 @@
           <!-- main -->
           <main
             class="d-flex flex-column align-items-center mb-5 justify-content-center"
-          ></main>
+          >
+            <!-- appeal -->
+            <div class="wrap-appeal m-90-a">
+              <div class="wrap-report-title">
+                <img src="icon/report.png" alt="" class="appeal-title-icon" />
+                <h2 class="report-censor-title">申訴案件 審核進度</h2>
+              </div>
+
+              <div class="appeal-card-3">
+                <!-- 收合內容 -->
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body bg-transparent">
+                    <!-- status 圖示 -->
+                    <div class="wrap-case-st">
+                      <!-- 一組icon+text -->
+                      <div>
+                        <div class="st-gray-frame">
+                          <img src="icon/mark01-gray-chat-read.png" alt="" />
+                        </div>
+                        <h4 class="st-gray-txt">案件已成立</h4>
+                      </div>
+                      <div>
+                        <div class="st-gray-frame">
+                          <img src="icon/mark02-2-teacher.png" alt="" />
+                        </div>
+                        <h4 class="st-gray-txt">審核中</h4>
+                      </div>
+                      <div>
+                        <div class="st-green-frame">
+                          <img src="icon/mark03-1-book-check.png" alt="" />
+                        </div>
+                        <h4 class="st-green-txt">案件已完結</h4>
+                      </div>
+                    </div>
+                    <div class="sensor-result">
+                      <h4 class="result-title">審核結果</h4>
+                      <p class="result-content">
+                        謝謝您的申訴，我們已對此檢舉判定為無違規，感謝您對於此電影的熱愛與留言，祝您有美好的一天
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 案件info -->
+                <div class="respond-info-header">
+                  <div class="wrap-respond-info">
+                    <span>案件編號</span>
+                    <span class="ml-40">AB0001</span>
+                  </div>
+                  <div class="wrap-respond-info">
+                    <span>案件成立時間</span>
+                    <span class="ml-40">02/14/2023</span>
+                  </div>
+                  <div class="wrap-respond-info">
+                    <span>申訴原因</span>
+                    <span class="ml-40">遭惡意檢舉</span>
+                  </div>
+                </div>
+                <!-- 收合btn -->
+                <p>
+                  <button
+                    class="btn-expand"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <div class="expand-btn-text">查看案件狀態</div>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </main>
           <!-- footer -->
           <footer class="footer p-4 pb-0">
             <div class="row align-items-center justify-content-between">
