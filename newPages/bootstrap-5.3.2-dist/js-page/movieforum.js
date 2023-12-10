@@ -1,6 +1,6 @@
 const movieForumList = document.querySelector(".movie-forum-list");
 function movieForumInit() {
-  axios.get("http://localhost:3000/posts").then(function (response) {
+  axios.get("https://testrender-tga5.onrender.com/posts").then(function (response) {
     let str = "";
     response.data.forEach((item) => {
       let content = `          <ul class="commentcard">
@@ -67,7 +67,7 @@ movieFalseMegEnter.addEventListener("click", function (e) {
     obj.title=movie_forum_title.value;
     obj.content = movieForumFalseContent.value;
     obj.userId = 5
-    axios.post("http://localhost:3000/posts",obj)
+    axios.post("https://testrender-tga5.onrender.com/posts",obj)
     .then(function (response) {
       console.log(response.data);
     });
@@ -90,7 +90,7 @@ movieTrueMegEnter.addEventListener("click", function (e) {
     obj.title=movieTrueForumTitle.value;
     obj.content = movieForumTrueContent.value;
     obj.userId = 5
-    axios.post("http://localhost:3000/posts",obj)
+    axios.post("https://testrender-tga5.onrender.com/posts",obj)
     .then(function (response) {
       console.log(response.data);
     });
