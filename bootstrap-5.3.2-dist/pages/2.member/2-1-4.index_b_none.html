@@ -87,7 +87,7 @@
            font-size: 13px;
            font-style: normal;
            font-weight: 500;
-           line-height: normal;" id="password_input">
+           line-height: normal;" id="password_input_1">
           <!-- 你已完成驗證，其他警告訊息 -->
           <div class="warning_message_ALL">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -104,7 +104,7 @@
      font-size: 13px;
      font-style: normal;
      font-weight: 500;
-     line-height: normal;" id="password_input">
+     line-height: normal;" id="password_input_2">
           <!-- 你已完成驗證，其他警告訊息 -->
           <div class="warning_message_ALL">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -119,10 +119,10 @@
 
           <!-- 下方BT列 -->
           <div class="DIV_lastDown_bt">
-            <button type="button" id="BT_Login_submit">
+            <button type="button"  onclick="location.href='./2-1-7 _index.html'" id="BT_Login_submit_backing">
               <div id="bt_mon_verify">返回登入
               </div>
-              <button type="button" id="BT_Login_submit">
+              <button type="button" id="BT_Login_submit_next">
                 <div id="bt_mon_verify">下一步
                 </div>
               </button>
@@ -159,5 +159,50 @@
       </div>
     </div>
 </body>
+<script>
+  const passwordInput_1 = document.querySelector('#password_input_1');
+  const passwordInput_2 = document.querySelector('#password_input_2');
+  const checkButton = document.querySelector('#BT_Login_submit_next');
 
+  console.log(passwordInput_1, passwordInput_2, checkButton);
+
+  //判斷
+  function checkPassword(passwordInput_1, passwordInput_2) {
+    // 至少8個字符(
+    const LengthCondition = (passwordInput_1, passwordInput_2).length >= 8;
+
+    // 包含英文字母
+    const EnglishCondition = /[a-zA-Z]/.test(passwordInput_1, passwordInput_2);
+
+    // 包含數字
+    const NumberCondition = /\d/.test(passwordInput_1, passwordInput_2);
+
+
+    // 不能空白
+    const NotEmptyCondition = passwordInput_1.trim() !== '' && passwordInput_2.trim() !== '';
+
+
+    // 內容相同
+    const SameContentCondition = passwordInput_1 === passwordInput_2;
+
+    // 檢查所有條件
+    if (LengthCondition && EnglishCondition && NumberCondition && NotEmptyCondition && SameContentCondition) {
+      alert("符合條件，可以使用。");
+      window.location.href = "/bootstrap-5.3.2-dist/pages/2.member/2-1-5 _index.html";
+      return true;
+    } else {
+      alert("密碼至少8個字符，包含大小寫字母混和英數，且不可為空白，兩次輸入的密碼應相同");
+      window.location.href = "/bootstrap-5.3.2-dist/pages/2.member/2-1-4.index_b_none.html";
+      return false;
+    }
+  }
+
+  // 添加事件監聽器
+  //EnteredEmail= 輸入的郵件地址
+  checkButton.addEventListener('click', function () {
+    const EnteredPassword_1 = passwordInput_1.value;
+    const EnteredPassword_2 = passwordInput_2.value;
+    checkPassword(EnteredPassword_1, EnteredPassword_2);
+  });
+</script>
 </html>
