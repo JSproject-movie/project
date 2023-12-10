@@ -4,7 +4,7 @@
   background: $bg-c16;
   padding: 30px;
 }
-.indi-card li {
+.indi-card li{
   padding-bottom: 30px;
 }
 .indi-title {
@@ -60,14 +60,14 @@
 }
 .indi-reaction {
   display: flex;
-  width: 35%;
+    width: 35%;
   justify-content: space-between;
   align-items: center;
 }
 .indi-good {
   display: flex;
   justify-content: space-evenly;
-
+  padding: 0px 20px;
   align-items: center;
   color: #fff;
   font-family: Inter;
@@ -90,85 +90,11 @@
   background: linear-gradient(271deg, #6a477f 11.6%, #30536d 94.29%);
   padding: 10px 0;
 }
-.indi-pic img {
+.indi-pic img{
   width: 1176px;
 }
-.indi-comment {
+.indi-comment{
   padding-right: 150px;
   text-align: left;
   font-size: 20px;
-}
-.forum-message {
-  border-radius: 20px;
-  border: 2px solid #dfdff1;
-  background: $btn-c3;
-  padding: 30px;
-}
-.forum-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 22px;
-  padding-bottom: 90px;
-}
-.forum-title li {
-  display: flex;
-  justify-content: space-between;
-}
-.forum-message li {
-  display: flex;
-}
-.forum-title-l {
-  display: flex;
-  align-items: center;
-}
-.forum-title-l img {
-  padding-right: 30px;
-}
-.regionSearch {
-  width: 208px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: 3px solid #dfdff1;
-  background: $bg-c16;
-  box-shadow: 9px 14px 29px 0px rgba(167, 122, 202, 0.25);
-  color: #fff;
-}
-
-.indi-down {
-  border-radius: 20px;
-  border: 1px solid #80a4da;
-  background: #251e1e;
-}
-.indi-forumcard {
-  padding: 30px 30px 0px 30px;
-  border-radius: 20px;
-  background: linear-gradient(
-    115deg,
-    rgba(91, 79, 124, 0.49) 0%,
-    rgba(57, 30, 54, 0.5) 100.56%
-  );
-  box-shadow: 0px 0.5px 0px 0px rgba(255, 255, 255, 0.5) inset,
-    0px -2px 40px 0px rgba(187, 155, 255, 0.15),
-    0px -2px 10px 0px rgba(233, 223, 255, 0.3);
-}
-.indi-forumcard li{
-padding-bottom: 30px;
-font-size: 25px;
-}
-.indi-user {
-  display: flex;
-  
-  align-items: center;
-}
-.indi-user img {
-  width: 58px;
-  height: 58px;
-  margin-right: 21px;
-  overflow: hidden;
-  border-radius: 50px;
-}
-.indi-end{
-  display: flex;
-  justify-content: space-between;
 }

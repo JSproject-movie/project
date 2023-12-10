@@ -18,7 +18,7 @@
 	gap: 30px;
 
 	margin: auto;
-	max-width: 802px;
+	width: 802px;
 	height: 740px;
 	padding: 30px;
 	align-content: space-between;
@@ -29,6 +29,8 @@
 .wrap-member-num{
 	display: flex;
 	align-items: center;
+    
+    
 }
 .appeal-info-title{
 	@include btn-text-Inter;
