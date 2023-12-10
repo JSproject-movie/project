@@ -1,5 +1,5 @@
-const searchInput = document.querySelector(".search-input");
-const wrapSearchCard = document.querySelector(".wrap-search-card");
+const searchCardContainer = document.querySelector(".search-card-container");
+const searchNum = document.querySelector(".search-num");
 // console.log(searchInput);
 let movieIntroData = [];
 
@@ -7,9 +7,9 @@ function getMovieIntroData() {
   axios
     .get(`https://testrender-tga5.onrender.com/movieDatas`)
     .then(function (res) {
-      console.log(res.data);
+      // console.log(res.data);
       movieIntroData = res.data;
-      renderSearchResult(movieIntroData);
+      // renderSearchResult(movieIntroData);
     })
     .catch(function (error) {
       console.log(error.res);
@@ -17,10 +17,12 @@ function getMovieIntroData() {
 }
 getMovieIntroData();
 
+// 渲染結果
 function renderSearchResult(movieIntroData) {
   let str = "";
   movieIntroData.forEach((item) => {
     str += `
+    <div class="wrap-search-card">
     <div class="search-card-header">
     <img
       src="${item.imgUrl}"
@@ -56,7 +58,31 @@ function renderSearchResult(movieIntroData) {
   <button class="btn-search-result">
     <a href="#" class="text-btn-search">read more </a>
   </button>
+  </div>
     `;
   });
-  wrapSearchCard.innerHTML = str;
+  searchCardContainer.innerHTML = str;
+}
+
+// 關鍵字搜尋
+const searchInput = document.querySelector(".search-input");
+const searchBtn = document.querySelector(".btn-search");
+searchBtn.addEventListener("click", keywordSearch);
+
+function keywordSearch() {
+  let keyword = searchInput.value.trim().toLowerCase();
+  let targetMovieData = [];
+  targetMovieData = movieIntroData.filter(function (item) {
+    let title = item.movieName.toLowerCase();
+    return title.match(keyword);
+  });
+  renderSearchNum(targetMovieData);
+  renderSearchResult(targetMovieData);
+}
+// 渲染搜尋筆數
+function renderSearchNum(targetMovieData) {
+  let str = "";
+  let inputKeyword = searchInput.value;
+  str += `搜尋「 ${inputKeyword}」的結果： ${targetMovieData.length} 筆`;
+  searchNum.innerHTML = str;
 }
