@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>index</title>
+    <!-- Noto Sans、Poppins、Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;200;300;400;500;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+  </head>
+  <body class="body-primary">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <!-- side bar -->
+        <div class="col p-3 border-end border-1">
+          <aside class="d-flex flex-column align-items-center h-100">
+            <div class="asideMenu h-75">
+              <h2 class="menuTitle h5 fw-bold mt-5">電影分類</h2>
+              <ul
+                class="menu_link d-flex flex-column align-items-center h-50 p-0"
+              >
+                <li class="mb-3">
+                  <a href="#" class="link-light movie-side-fz">喜劇片</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">劇情片</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">科幻片</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">恐怖片</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">紀錄片</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">音樂劇</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="link-light movie-side-fz">驚悚片</a>
+                </li>
+              </ul>
+            </div>
+            <ul
+              class="social_link d-flex flex-column justify-content-between p-0"
+              style="height: 135px"
+            >
+              <li>
+                <a href="#"><img src="icon/tumblr.png" alt="tumblr" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="icon/linkedinLogo.png" alt="linkedinLogo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="icon/facebookSm.png" alt="facebookSm"
+                /></a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <!-- nav bar -->
+        <div class="col-10">
+          <div class="nav-header">
+            <a href="#" class="nav-logo">
+              <img src="movie picture/LOGO.png" class="mLogo" alt="Logo" />
+            </a>
+            <nav>
+              <a href="#" class="nav-txt">關於影評星塵</a>
+              <!-- 搜尋 -->
+              <div class="btn-box">
+                <img src="icon/Search.png" class="search-icon" alt="搜尋" />
+                <input type="text" placeholder=" " />
+              </div>
+              <!-- dropdown -->
+              <div class="dropdown">
+                <button class="dropbtn">
+                  篩選
+                  <span></span>
+                  <img src="icon/dropdown-arrow-down.png" alt="" />
+                </button>
+                <div class="dropdown-content">
+                  <a href="#"> 喜劇片 </a>
+                  <a href="#"> 劇情片 </a>
+                  <a href="#"> 科幻片 </a>
+                  <a href="#"> 恐怖片 </a>
+                  <a href="#"> 音樂劇 </a>
+                  <a href="#"> 愛情片 </a>
+                  <a href="#"> 驚悚片 </a>
+                </div>
+              </div>
+              <button class="btn-search">搜尋</button>
+              <a href="#" class="nav-txt">
+                <img src="icon/user.png" class="user-icon" alt="會員" />
+              </a>
+            </nav>
+          </div>
+          <!-- main -->
+          <main
+            class="d-flex flex-column align-items-center mb-5 justify-content-center"
+          >
+            <!-- carousel -->
+            <div class="swiper-container col-12">
+              <div class="swiper">
+                <div class="pink-box"></div>
+                <div class="green-box"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/Open03.jpg"
+                        class="carousel-img"
+                        alt="oppen03"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">奧本海默</h3>
+                          <h3 class="carousel-title">Oppenheimer</h3>
+                        </div>
+                        <p class="carousel-content">
+                          由克里斯多福·諾蘭編劇和執導，改編自凱·柏德和馬丁·J·薛文撰寫的傳記《奧本海默》，劇情講述了美國理論物理學家羅伯特·歐本海默參與研製原子彈的過程。全球票房超過9億美元，成為商業表現極為成功的二戰題材電影、傳記片以及R級電影之一
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">
+                            已獲得本周評論數第一名:955則評論
+                          </p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 第二頁 -->
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/mission.jpg"
+                        class="carousel-img"
+                        alt="oppen"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">
+                            不可能的任務：致命清算 第一章
+                          </h3>
+                          <h3 class="carousel-title">
+                            Mission: Impossible – Dead Reckoning Part One
+                          </h3>
+                        </div>
+                        <p class="carousel-content">
+                          伊森·韓特和他的不可能任務情報局（IMF）團隊展開他們迄今為止最危險的任務：阻止一件威脅著全人類的危險武器落入惡人的手中；隨著世界的命運危在旦夕，伊森過去的黑暗勢力也找上門來
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">本周評論數:769則評論</p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/sand.jpg"
+                        class="carousel-img"
+                        alt="oppen"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">沙丘</h3>
+                          <h3 class="carousel-title">Dune</h3>
+                        </div>
+                        <p class="carousel-content">
+                          由丹尼·維勒納夫執導，艾瑞克·羅斯、喬·斯派茨和導演本人共同編寫劇本，劇情改編自法蘭克·赫伯特的1965年英文同名科幻小說《沙丘》的前半部分內容，是兩部改編電影計畫中的第一部；講述出身貴族家庭的年輕繼承者背負起守護銀河系中最寶貴的資產也是最重要的元素
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">本周評論數:861則評論</p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-page">
+                      <img
+                        src="movie picture/game.jpg"
+                        class="carousel-img"
+                        alt="oppen"
+                      />
+                      <div class="car-caption">
+                        <div class="wrap-carousel-title">
+                          <h3 class="carousel-title">
+                            飢餓遊戲：鳴鳥與游蛇之歌
+                          </h3>
+                          <h3 class="carousel-title">
+                            The Hunger Games: The Ballad of Songbirds and Snakes
+                          </h3>
+                        </div>
+                        <p class="carousel-content">
+                          18歲的史諾將擔任第十屆飢餓遊戲的導師，期待能透過指導貢品贏得比賽，振興落魄的家族，不料他抽中的貢品是一名來自施惠國最窮困十二區的個性古怪女孩露西，兩人最後能夠順利在飢餓遊戲中勝出嗎？
+                        </p>
+                        <div class="wrap-carousel-content">
+                          <!-- 星星 -->
+                          <div class="wrap-star">
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                            <img src="icon/star1.png" class="star" alt="" />
+                          </div>
+                          <p class="carousel-content2">本周評論數:672則評論</p>
+                          <button class="btn-carousel">
+                            <a href="#" class="btn-index-a"
+                              >read more <span class="ml-15"></span
+                              ><img src="icon/PlayButton_purple.png" alt="" />
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- TOP 10  -->
+            <div class="top10bc mt-62 col-12">
+              <div class="top10-title">
+                <div class="yellow-box"></div>
+                <h2 class="top10-text">TOP 10 Popular movies this week</h2>
+                <h3 class="top10-subtitle">本週熱門電影　 TOP 10</h3>
+              </div>
+            </div>
+            <div class="wrap-movie-card col-12 d-flex justify-content-center">
+              <div class="arrow-left">
+                <img src="icon/leftArrow.png" alt="Left" />
+              </div>
+              <div class="wrap-cards">
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/joker.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">小丑</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/Oppenheimer-1.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">奧本海默</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/hacksaw.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">鋼鐵英雄</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/loki.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">洛基</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+              </div>
+              <!-- Right arrow -->
+              <div class="arrow-right">
+                <img
+                  src="https://github.com/JSproject-movie/project/blob/main/newPages/icon/rightArrow.png?raw=true"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- TOP 1 Discussion -->
+            <div class="top10bc mt-81 mb-40 col-12">
+              <div class="top10-title">
+                <div class="blue-box"></div>
+                <h2 class="top10-text">TOP 1 Discussion this week</h2>
+                <h3 class="top10-subtitle">本週討論度 TOP 1</h3>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="top-discuss col-12">
+              <div class="blur-bg">
+                <div class="discuss-section">
+                  <img
+                    src="movie picture/Oppenheimer-1.jpg"
+                    class="img-oppen"
+                    alt="Oppen"
+                  />
+                  <!-- text -->
+                  <div class="discuss-movie">
+                    <h3>奧本海默</h3>
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h4>討論則數 :1250 筆</h4>
+                  </div>
+                </div>
+                <p class="discuss-p">
+                  《奧本海默》由環球影業定檔2023年7月21日在美國上映，由於2020年底諾蘭與華納兄弟於2021年起全面實施院線與HBO
+                  Max同步上映的計劃中產生了分歧，使得諾蘭宣佈不再與華納兄弟進行合作，因此本片成為諾蘭繼《跟蹤》（1998年）和《記憶拼圖》（2000年）後，第三部非.....
+                </p>
+                <button class="btn-carousel ma">
+                  <a href="#" class="btn-index-a"
+                    >read more <span class="ml-15"></span
+                    ><img src="icon/PlayButton_purple.png" alt="" />
+                  </a>
+                </button>
+              </div>
+            </div>
+            <!-- Coming Soon -->
+            <div class="top10bc mt-60 col-12">
+              <div class="top10-title">
+                <h2 class="top10-text">Coming Soon to theaters</h2>
+                <h3 class="top10-subtitle">即將上映</h3>
+              </div>
+            </div>
+            <div class="wrap-movie-card col-12 d-flex justify-content-center">
+              <div class="arrow-left">
+                <img src="icon/leftArrow.png" alt="" />
+              </div>
+              <div class="wrap-cards">
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/joker.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">小丑</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/Oppenheimer-1.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">奧本海默</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/hacksaw.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">鋼鐵英雄</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/loki.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">洛基</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+              </div>
+              <!-- Right arrow -->
+              <div class="arrow-right">
+                <img src="icon/rightArrow.png" alt="" />
+              </div>
+            </div>
+            <!-- Recently viewed -->
+            <div class="top10bc mt-60 col-12">
+              <div class="top10-title">
+                <div class="purple-box"></div>
+                <h2 class="top10-text">Recently viewed</h2>
+                <h3 class="top10-subtitle">近期瀏覽紀錄</h3>
+              </div>
+            </div>
+
+            <div class="wrap-movie-card col-12 d-flex justify-content-center">
+              <div class="arrow-left">
+                <img src="icon/leftArrow.png" alt="" />
+              </div>
+              <div class="wrap-cards">
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/joker.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">小丑</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/Oppenheimer-1.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">奧本海默</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/hacksaw.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">鋼鐵英雄</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="wrap-whole-card">
+                  <img
+                    src="movie picture/loki.jpg"
+                    class="movie-card-img"
+                    alt=""
+                  />
+                  <!-- 星,片:靠左 -->
+                  <div class="wrap-title-btn">
+                    <div>
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                      <img src="icon/star1.png" class="star" alt="" />
+                    </div>
+                    <h3 class="card-title"><a href="#">洛基</a></h3>
+                    <btton class="btn-vedio">
+                      <a href="#" class="vedio-link">
+                        <img src="icon/PlayButton_grey.png" alt="" /><span
+                          class="ml-15"
+                        ></span
+                        >預告片
+                      </a>
+                    </btton>
+                  </div>
+                </div>
+              </div>
+              <!-- Right arrow -->
+              <div class="arrow-right">
+                <img src="icon/rightArrow.png" alt="" />
+              </div>
+            </div>
+          </main>
+<<<<<<< HEAD
+          <!-- btn returnTop -->
+          <button type="button" id="BackTop" class="toTop-arrow"></button>
+=======
+>>>>>>> dev
+          <!-- footer -->
+          <footer class="footer p-4 pb-0">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-3">
+                <a href="#">
+                  <img
+                    src="movie picture/LOGO.png"
+                    class="img-fluid"
+                    alt="logo"
+                    width="211"
+                    height="69"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/mail.png"
+                        alt="mail"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">聯絡我們 E-MAIL</h5>
+                      <span class="text-secondary my-2"
+                        >moviegalaxy@Anythings</span
+                      >
+                      <h6 class="text-light my-2">服務時間 14~18</h6>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/aboutUs.png"
+                        alt="aboutUs"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">關於 影評星塵</h5>
+                      <span class="text-secondary my-2">Q & A</span>
+                      <h6 class="text-secondary my-2">網站理念</h6>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/chat.png"
+                        alt="chat"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">平台規則</h5>
+                      <span class="text-secondary my-2">用戶規章</span>
+                      <h6 class="text-secondary my-2">評論規章</h6>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="d-flex flex-column align-items-center">
+                      <img
+                        src="icon/error.png"
+                        alt="error"
+                        style="width: 20px; height: 20px"
+                      />
+                      <h5 class="text-light h6 my-2">檢舉/申訴</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="h6 text-white text-center mt-5 mb-0">
+              隱私權及服務條例 @ copyright 2023 All Rights Reserved.
+            </h5>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap-5.3.2-dist/js-page/index.js"></script>
+  </body>
+</html>
