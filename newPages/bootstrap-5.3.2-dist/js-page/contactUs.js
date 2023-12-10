@@ -10,23 +10,21 @@ const contactUsListFloatingSelect = document.querySelector(
 const contactUsListFloatingTextarea = document.querySelector(
   "#contact_us_floatingTextarea"
 );
-const contactBtn = document.querySelector(".contact-btn");
+const contact_warn = document.querySelector(".contact-warn");
 const contactForm = document.querySelector(".contact-form");
 addComment.addEventListener("click", function (e) {
   let obj = {};
   if (
     (contactUsListName.value == "") |
-    (contactUsListEmail == "") |
-    (contactUsListTel == "") |
-    (contactUsListDate == "") |
-    (contactUsListFloatingSelect == "") |
-    (contactUsListFloatingTextarea == "")
+    (contactUsListEmail.value == "") |
+    (contactUsListTel.value == "") |
+    (contactUsListDate.value == "") |
+    (contactUsListFloatingSelect.value == "") |
+    (contactUsListFloatingTextarea.value == "")
   ) {
-    contactBtn.innerHTML = `<div class="pb-4 contact-btn">
-        <p>請輸入完整資料!!!</p>
-        <button type="button" class="mf-addcomment" id="add_comment">提交</button>
-      </div>`;
+    contact_warn.innerHTML = `<p class="contact_warn">請輸入完整資料!!!</p>`;
   } else {
+    contact_warn.innerHTML = `<p class="contact_warn"></p>`;
     obj.name = contactUsListName.value;
     obj.email = contactUsListEmail.value;
     obj.phoneNumber = contactUsListTel.value;
@@ -36,7 +34,7 @@ addComment.addEventListener("click", function (e) {
     obj.userId = "5";
     contactForm.reset();
 
-    axios.post("http://localhost:3000/contacts",obj)
+    axios.post("https://testrender-tga5.onrender.com/contacts",obj)
     .then(function (response) {
       console.log(response.data);
     });

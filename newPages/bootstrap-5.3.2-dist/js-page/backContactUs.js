@@ -4,7 +4,7 @@ const backContactUs = document.querySelector(".back-contact-us");
 function contactUsInit(){
     axios
     .get(
-      "http://localhost:3000/contacts"
+      "https://testrender-tga5.onrender.com/contacts"
     )
     .then(function (response) {
         let str ="";
