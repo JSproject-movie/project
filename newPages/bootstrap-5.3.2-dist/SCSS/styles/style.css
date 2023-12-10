@@ -2602,6 +2602,7 @@
   padding: 60px 0px;
   background: linear-gradient(142deg, #404c53 21.85%, #382538 56.98%, #161618 91.4%);
   margin: 0;
+  border-right: 1px solid #707070;
 }
 
 .sidebar ul {
