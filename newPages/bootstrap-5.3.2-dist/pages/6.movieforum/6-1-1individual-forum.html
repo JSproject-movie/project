@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影評列表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/newPages/bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+    <link href="/newPages/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="m-row">
+      <div class="nav-header">
+        <a href="#" class="nav-logo">
+          <img src="/newPages/movie picture/LOGO.png" class="mLogo" alt="Logo" />
+        </a>
+        <nav>
+          <a href="#" class="nav-txt">關於影評星塵</a>
+          <!-- 搜尋 -->
+          <div class="btn-box">
+            <img src="/newPages/icon/Search.png" class="search-icon" alt="搜尋" />
+            <img src="/newPages/icon/Search.png" class="search-icon" alt="搜尋" />
+            <input type="text" placeholder=" " />
+          </div>
+          <!-- dropdown -->
+          <div class="dropdown">
+            <button class="dropbtn">
+              篩選
+              <span></span>
+              <img src="/newPages/icon/dropdown-arrow-down.png" alt="" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#"> 喜劇片 </a>
+              <a href="#"> 劇情片 </a>
+              <a href="#"> 科幻片 </a>
+              <a href="#"> 恐怖片 </a>
+              <a href="#"> 音樂劇 </a>
+              <a href="#"> 愛情片 </a>
+              <a href="#"> 驚悚片 </a>
+            </div>
+          </div>
+          <button class="btn-search">搜尋</button>
+          <a href="#" class="nav-txt">
+            <img src="/newPages/icon/user.png" class="user-icon" alt="會員" />
+          </a>
+        </nav>
+      </div>
+
+      <div class="mf-content">
+        <div class="sidebar">
+          <div class="sideitem">
+            <ul>
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >電影分類</a
+                >
+              </li>
+              <li class="collapse" id="collapseExample">
+                <!-- <div class="mgtitle">
+    
+                  <button class="return-button">
+                    <span class="text">返回</span>
+                    <img src="/icon/arrow-back-circle.svg" alt="" class="icon" srcset="">
+                  </button>  
+                </div> -->
+            <div class="mgroup">
+              <ul>
+                <li><a href="#">喜劇片</a></li>
+                <li><a href="#">劇情片</a></li>
+                <li><a href="#">科幻片</a></li>
+                <li><a href="#">恐怖片</a></li>
+                <li><a href="#">紀錄片</a></li>
+                <li><a href="#">音樂劇</a></li>
+                <li><a href="#">驚悚片</a></li>
+              </ul>
+            </div>
+          </li>  
+              <li><a href="#">平台規則</a></li>
+            </ul>
+          </div>
+    
+    
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><img src="/newPages/icon/tumblr.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/newPages/icon/linkedinLogo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/newPages/icon/facebookSm.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mf-wrap">
+          <ul class="indi-card">
+            <li class="indi-title">
+              <h3>科學與道德的交織</h3>
+              <button type="button">
+                <img src="/newPages/icon/privacy-tip.png" alt="" />
+                <p>檢舉</p>
+              </button>
+            </li>
+            <li class="indi-intro">
+              <img
+                class="col-1"
+                src="/newPages/movie picture/repairman.jpg"
+                alt=""
+                srcset=""
+              />
+              <p class="username">詹姆．瑪莎爾</p>
+              <p class="date">01-22-2023</p>
+            </li>
+            <li class="indi-reaction">
+              <div class="indi-good col-5">
+                <img src="/newPages/icon/white-good.png" alt="" srcset="" />按讚
+                <p class="goodnum">0000</p>
+              </div>
+              <button type="button" class="indi-favorite col-4">
+                <img src="/newPages/icon/favorite.png" alt="" />
+                <p>收藏</p>
+              </button>
+            </li>
+            <li class="indi-pic">
+              <img src="/newPages/movie picture/moviepic1.png" alt="" srcset="" />
+            </li>
+            <li>
+              <p class="indi-comment">
+                片中賈羅·奧本海默的角色由傑克·吉倫哈爾精湛詮釋，他不僅展現了奧本海默作為核物理學家的才華，更將觀眾帶入他內心的道德掙扎。奧本海默在創造毀滅性武器的同時，也面臨道德的困惑和人性的挑戰，這種內心掙扎讓影片更具深度和情感。<br />
+                影片不僅探討了科學家在戰爭時期所承受的壓力，也提出了深刻的道德問題。奧本海默的故事讓觀眾思考科學與道德之間的平衡，以及科技發展對世界的影響。同時也反映出在困難時刻，個人的信仰和價值觀會如何影響重大決定。<br />
+                總的來說，《Oppenheimer》是一部富有挑戰性和啟發性的電影，讓觀眾不僅了解科學的奇妙，也思考人類的道德責任。這部電影將深深觸動觀眾的內心，值得一看。
+              </p>
+            </li>
+          </ul>
+          <div class="forum-message">
+            <ul class="forum-title">
+              <li class="col-5">
+                <div class="forum-title-l">
+                <img src="/newPages/icon/mark-chat-unread.png" alt="" srcset="" />
+                <p>2521則</p>
+                </div>
+                <select name="" class="regionSearch">
+                  <option value="排序" disabled selected hidden>排序</option>
+                  <option class="indi-down" value="">由舊至新</option>
+                  <option class="indi-down" value="">由新至舊</option>
+                </select>
+              </li>
+              <li>
+                <button type="button" class="mf-addcomment">
+                  我要留言<img src="/newPages/icon/edit-meg.png" alt="" srcset="" />
+                </button>
+              </li>
+            </ul>
+            <ul class="indi-forumcard col-7">
+              <li class="indi-user">
+                <img
+                  class="col-3"
+                  src="/newPages/movie picture/repairman.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <p class="username">詹姆．瑪莎爾</p>
+              </li>
+              <li><p class="indi-message">中肯的評論！</p></li>
+              <li class="indi-end">
+                <div class="indi-good ">
+                  <img src="/newPages/icon/white-good.png" alt="" srcset="" />
+                  <p class="goodnum">0000</p>
+                  讚
+                </div>
+                <button type="button" class="mf-addcomment">回覆</button>
+              </li>
+            </ul>
+            <!-- <div class="pb-4">
+            <button type="button" class="mf-addcomment">展開/收合評論</button>
+          </div> -->
+            <ul class="indi-forumcard col-7">
+              <li class="indi-user">
+                <img
+                  class="col-3"
+                  src="/newPages/movie picture/repairman.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <p class="username">詹姆．瑪莎爾</p>
+              </li>
+              <li><p class="indi-message">中肯的評論！</p></li>
+              <li class="indi-end">
+                <div class="indi-good ">
+                  <img src="/newPages/icon/white-good.png" alt="" srcset="" />
+                  <p class="goodnum">0000</p>
+                  讚
+                </div>
+                <button type="button" class="mf-addcomment">回覆</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/newPages/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

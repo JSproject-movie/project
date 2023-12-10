@@ -19,12 +19,30 @@
 .meg-row li {
   list-style: none;
 }
+.meg-head{
+  display: flex;
+  align-items: center;
+}
 .meg-head input {
   padding: 9px 16px;
   border-radius: 6px;
   border: 1px solid var(--gray-300, #dee2e6);
   background: var(--default-white, #fff);
 }
+.meg-head button{
+background: $bg-c9;
+border-radius: 10px;
+border: 2px solid #B3B6F2;
+padding: 10px;
+color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
 .meg-category {
   padding: 10px 20px;
   justify-content: space-between;
