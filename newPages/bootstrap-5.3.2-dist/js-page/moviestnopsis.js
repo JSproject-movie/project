@@ -7,6 +7,10 @@ lightbox.option({
     'alwaysShowNavOnTouchDevices':true,
     'wrapAround': true,
   }); 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
   const queryString = window.location.search;
   const movieMain = document.querySelector('main');
   const loadingPage = document.querySelector('.loadingPage');
@@ -269,3 +273,8 @@ function onPlayerStateChange(event) {
 getData();
 onYouTubeIframeAPIReady();
 
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+=======
+>>>>>>> dev
