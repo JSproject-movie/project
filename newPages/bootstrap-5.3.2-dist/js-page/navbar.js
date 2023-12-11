@@ -7,7 +7,7 @@ function getMovieIntroData() {
   axios
     .get(`https://testrender-tga5.onrender.com/movieDatas`)
     .then(function (res) {
-      // console.log(res.data);
+      console.log(res.data);
       movieIntroData = res.data;
       // renderSearchResult(movieIntroData);
     })
