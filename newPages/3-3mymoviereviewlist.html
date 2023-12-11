@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>影評星塵-我的影評列表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="../newPages/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../newPages/bootstrap-5.3.2-dist/SCSS/styles/style.css">
+  </head>
+  <body class="body-primary">
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            <div class="col p-3 border-end border-1">
+                <aside class="d-flex flex-column justify-content-between align-items-center h-100">
+                    <div class="asideMenu h-75">
+                        <h2 class="menuTitle h5 fw-bold mt-5">星塵會員專區</h2>
+                        <ul class="menu_link d-flex flex-column justify-content-between align-items-center h-50 p-0">
+                            <li><a href="../newPages/3-1basicInformation.html" class="link-light my-5">基本資料設定</a></li>
+                            <li><a href="../newPages/3-1-2changepassword.html" class="link-light my-5">帳號與安全性</a></li>
+                            <li><a href="../newPages/3-2moviereviewcollectionlist.html" class="link-light my-5">我的收藏影評</a></li>
+                            <li><a href="../newPages/3-3mymoviereviewlist.html" class="link-light my-5 active">我的影評列表</a></li>
+                            <li><a href="../newPages/3-4myratinglist.html" class="link-light my-5">我的評分列表</a></li>
+                            <li><a href="../newPages/8-1report.html" class="link-light my-5">檢舉/申訴</a></li>
+                        </ul>
+                    </div>
+                    <ul class="social_link d-flex flex-column justify-content-between p-0" style="height: 135px">
+                        <li><a href="#"><img src="../newPages/icon/tumblr.png" alt="tumblr"></a></li>
+                        <li><a href="#"><img src="../newPages/icon/linkedinLogo.png" alt="linkedinLogo"></a></li>
+                        <li><a href="#"><img src="../newPages/icon/facebookSm.png" alt="facebookSm"></a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-10">
+                <div class="nav-header">
+                    <a href="../newPages/1.index.html" class="nav-logo">
+                      <img src="../newPages/movie picture/LOGO.png" class="mLogo" alt="Logo">
+                    </a>
+                    <nav>
+                      <a href="../newPages/bootstrap-5.3.2-dist/pages/7-1about-us.html" class="nav-txt">關於影評星塵</a>
+                      <!-- 搜尋 -->        
+                      <div class="btn-box">
+                        <img src="../newPages/icon/Search.png" class="search-icon" alt="搜尋">
+                        <input type="text" placeholder=" "/>
+                      </div>
+                      <!-- dropdown -->
+                      <div class="dropdown">
+                        <button class="dropbtn"> 篩選 
+                          <span></span>
+                          <img src="../newPages/icon/dropdown-arrow-down.png" alt="">
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#"> 喜劇片 </a>
+                          <a href="#"> 劇情片 </a>
+                          <a href="#"> 科幻片 </a>
+                          <a href="#"> 恐怖片 </a>
+                          <a href="#"> 音樂劇 </a>
+                          <a href="#"> 愛情片 </a>
+                          <a href="#"> 驚悚片 </a>
+                        </div>
+                      </div>
+                      <button class="btn-search">搜尋</button>
+                      <a href="#" class="nav-txt">
+                        <img src="../newPages/icon/user.png" class="user-icon" alt="會員">
+                    </a>
+                    </nav>
+                  </div>
+                <main class="d-flex flex-column align-items-center justify-content-center mb-5">
+                    <h2 class="d-flex align-items-center text-white my-5">我的影評列表</h2>
+                    <div class="searchArea d-flex w-100 justify-content-center mb-5">
+                        <a href="#" class="d-flex align-items-center"><img src="../newPages/icon/Search.png" class="img-fluid mx-3" alt="Search"></a>
+                        <select class="filterCategories mx-3" aria-label="Default select example">
+                            <option selected>篩選</option>
+                            <option value="喜劇片">喜劇片</option>
+                            <option value="劇情片">劇情片</option>
+                            <option value="科幻片">科幻片</option>
+                            <option value="恐怖片">恐怖片</option>
+                            <option value="音樂劇">音樂劇</option>
+                            <option value="愛情片">愛情片</option>
+                            <option value="驚悚片">驚悚片</option>
+                          </select>
+                          <div class="searchMovie">
+                            <input type="text" class="search">
+                            <span class="ms-1">搜尋</span>
+                          </div>
+                    </div>
+                    <div class="movieReview w-75 mb-4">
+                        <div class="row g-0">
+                            <div class="col-3 ">
+                                <div class="movieImg d-flex justify-content-center align-items-center">
+                                    <img src="../newPages/movie picture/Oppenheimer-1.jpg" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover;" alt="Oppenheimer-1">
+                                </div>
+                            </div>
+                            <div class="col p-3">
+                                <h5 class="text-white fw-bold h4 mb-4">奧本海默</h5>
+                                <h6 class="text-white">我的影評:</h6>
+                                <p class="text-white">片中賈羅·奧本海默的角色由傑克·吉倫哈爾精湛詮釋，他不僅展現了奧本海默作為核物理學家的才華，更將觀眾帶入他內心的道德掙扎。奧本海默在創造毀滅性武器的同時，也面臨道德的困惑和人性的挑戰，這種內心掙扎讓影片更具深度和情感。....</p>
+                            </div>
+                            <div class="col d-flex flex-row-reverse py-5">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex  align-items-center justify-content-center mb-5">
+                                        <button type="button" class="btn border-0"><img src="../newPages/icon/good.png" class="mx-2" alt="good"></button>
+                                    </div>
+                                    <button type="button" class="btn editMovieReviewBtn d-flex align-items-center justify-content-between w-100">修改影評<img src="../newPages/icon/edit.png" alt="edit"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movieReview w-75 mb-4">
+                        <div class="row g-0">
+                            <div class="col-3 ">
+                                <div class="movieImg d-flex justify-content-center align-items-center">
+                                    <img src="../newPages/movie picture/Left.png" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover;" alt="Left">
+                                </div>
+                            </div>
+                            <div class="col p-3">
+                                <h5 class="text-white fw-bold h4 mb-4">小丑</h5>
+                                <h6 class="text-white">我的影評:</h6>
+                                <p class="text-white">20 世紀 80 年代，一位失敗的單口喜劇演員陷入瘋狂，轉而在哥譚市過著犯罪和混亂的生活，同時成為臭名昭著的精神病犯罪人物。</p>
+                            </div>
+                            <div class="col d-flex flex-row-reverse py-5">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex  align-items-center justify-content-center mb-5">
+                                        <button type="button" class="btn border-0"><img src="../newPages/icon/good.png" class="mx-2" alt="good"></button>
+                                    </div>
+                                    <button type="button" class="btn editMovieReviewBtn d-flex align-items-center justify-content-between w-100">修改影評<img src="../newPages/icon/edit.png" alt="edit"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movieReview w-75 mb-4">
+                        <div class="row g-0">
+                            <div class="col-3 ">
+                                <div class="movieImg d-flex justify-content-center align-items-center">
+                                    <img src="../newPages/movie picture/Hacksaw.png" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover;" alt="Hacksaw">
+                                </div>
+                            </div>
+                            <div class="col p-3">
+                                <h5 class="text-white fw-bold h4 mb-4">鋼鐵英雄</h5>
+                                <h6 class="text-white">我的影評:</h6>
+                                <p class="text-white">第二次世界大戰期間，在沖繩島戰役中服役的美國陸軍軍醫德斯蒙德·T·多斯拒絕殺人，成為美國歷史上第一位不開槍就獲得榮譽勳章的人。</p>
+                            </div>
+                            <div class="col d-flex flex-row-reverse py-5">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex  align-items-center justify-content-center mb-5">
+                                        <button type="button" class="btn border-0"><img src="../newPages/icon/good.png" class="mx-2" alt="good"></button>
+                                    </div>
+                                    <button type="button" class="btn editMovieReviewBtn d-flex align-items-center justify-content-between w-100">修改影評<img src="../newPages/icon/edit.png" alt="edit"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movieReview w-75 mb-4">
+                        <div class="row g-0">
+                            <div class="col-3 ">
+                                <div class="movieImg d-flex justify-content-center align-items-center">
+                                    <img src="../newPages/movie picture/loki.jpg" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover;" alt="loki">
+                                </div>
+                            </div>
+                            <div class="col p-3">
+                                <h5 class="text-white fw-bold h4 mb-4">洛基</h5>
+                                <h6 class="text-white">我的影評:</h6>
+                                <p class="text-white">在《復仇者聯盟：終局之戰》事件發生後的新系列中，善變的反派洛基重新扮演惡作劇之神的角色。惡作劇之神洛基發現自己已經不合時宜，身處一個不尋常的地方，被迫與他人合作——這違背了他的神聖本性</p>
+                            </div>
+                            <div class="col d-flex flex-row-reverse py-5">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex  align-items-center justify-content-center mb-5">
+                                        <button type="button" class="btn border-0"><img src="../newPages/icon/good.png" class="mx-2" alt="good"></button>
+                                    </div>
+                                    <button type="button" class="btn editMovieReviewBtn d-flex align-items-center justify-content-between w-100">修改影評<img src="../newPages/icon/edit.png" alt="edit"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link bg-transparent text-white border-0" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link bg-transparent text-secondary border-0" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link bg-transparent text-secondary border-0" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link bg-transparent text-secondary border-0" href="#">4</a></li>
+                          <li class="page-item">
+                            <a class="page-link bg-transparent text-white border-0" href="#" aria-label="Next">
+                              <img src="../newPages/icon/Vector.png" alt="Vector">
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </main>
+                <footer class="footer p-4 pb-0">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-3">
+                            <a href="../newPages/1.index.html">
+                                <img src="../newPages/movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
+                                </a>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="../newPages/icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">聯絡我們  E-MAIL</h5>
+                                        <span class="text-secondary my-2">moviegalaxy@Anythings</span>
+                                        <h6 class="text-light my-2">服務時間 14~18</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="../newPages/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">關於 影評星塵</h5>
+                                        <span class="my-2"><a href="../newPages/bootstrap-5.3.2-dist/pages/7-2fq.html" class="text-secondary text-decoration-none">Q & A</a></span>
+                                        <h6 class="my-2"><a href="../newPages/bootstrap-5.3.2-dist/pages/7-1about-us.html" class="text-secondary text-decoration-none">網站理念</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="../newPages/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2">平台規則</h5>
+                                        <span class="my-2"><a href="../newPages/bootstrap-5.3.2-dist/pages/7-4rule.html" class="text-secondary text-decoration-none">用戶規章</a></span>
+                                        <h6 class="text-secondary my-2"><a href="../newPages/bootstrap-5.3.2-dist/pages/7-4rule.html" class="text-secondary text-decoration-none">評論規章</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="../newPages/icon/error.png" alt="error" style="width: 20px; height: 20px;">
+                                        <h5 class="text-light h6 my-2"><a href="../newPages/8-1report.html" class="text-light text-decoration-none">檢舉/申訴</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="h6 text-white text-center mt-5 mb-0">隱私權及服務條例  @ copyright    2023   All Rights Reserved.</h5>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="../newPages/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
