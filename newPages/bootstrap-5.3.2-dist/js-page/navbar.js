@@ -86,3 +86,27 @@ function renderSearchNum(targetMovieData) {
   str += `搜尋「 ${inputKeyword}」的結果： ${targetMovieData.length} 筆`;
   searchNum.innerHTML = str;
 }
+// 以類別搜尋
+const dropdownContent = document.querySelector(".dropdown-content");
+console.log(dropdownContent);
+
+dropdownContent.addEventListener("click", function (e) {
+  const targetClass = e.target.getAttribute("class");
+  console.log(targetClass);
+  // if (targetClass == "delSingleOrder-Btn js-orderDelete") {
+  //   deleteOrderItem(id);
+  //   return;
+  // }
+  // let movieType=
+
+  // let keyword = searchInput.value.trim().toLowerCase();
+  let targetMovieData = [];
+  targetMovieData = movieIntroData.filter(function (item) {
+    let type = item.type;
+    console.log(type);
+
+    return type.match(targetClass);
+  });
+  renderSearchNum(targetMovieData);
+  renderSearchResult(targetMovieData);
+});
