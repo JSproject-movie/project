@@ -157,33 +157,35 @@
       "id": 1
     }
   ],
-  "movieDatas":[
+  "movieDatas": [
     {
-      "id":1,
-      "movieId":1,
+      "id": 1,
+      "movieId": 1,
       "movieName": "奧本海默",
       "movieEnglishName": "Oppenheimer",
+      "language": "英語",
+      "movieLength": "180分鐘",
+      "type": "劇情片",
       "reviewersNumber": 3000,
       "ratingStars": "5.0",
-      "videoId": "cnc8mDAB7QI",
       "movieIntroduction": "美國科學家 J. 羅伯特·奧本海默的故事以及他在原子彈研發中所扮演的角色。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "克里斯多福諾蘭",
         "writer": "克里斯多福諾蘭凱鳥馬丁·舍溫",
         "actor": "希里安墨菲艾米莉 · 布朗特 · 馬特達蒙"
       },
-      "imgUrl": "../newPages/movie picture/Oppenheimer-1.jpg",
-      "imgUrl2": "../newPages/movie picture/OppenheimerVideo.png",
+      "imgUrl": "https://github.com/JSproject-movie/project/blob/main/newPages/movie%20picture/Oppenheimer-1.jpg?raw=true",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/OppenheimerVideo.png",
       "stillsPhotos": [
-        "../newPages/movie picture/Oppenheimer-4.jpg",
-        "../newPages/movie picture/meet.jpg",
-        "../newPages/movie picture/Oppenheimer-3.jpg",
-        "../newPages/movie picture/Oppenheimer-5.jpeg"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/Oppenheimer-4.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/meet.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/Oppenheimer-3.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/Oppenheimer-5.jpeg"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "科學與道德的交織",
           "comtent": "片中賈羅·奧本海默的角色由傑克·吉倫哈爾精湛詮釋，他不僅展現了奧本海默作為核物理學家的才華，更將觀眾帶入他內心的道德掙扎。奧本海默在創造毀滅性武器的同時，也面臨道德的困惑和人性的…",
@@ -191,8 +193,8 @@
           "messages": "2598"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "科學與愛的對話",
           "comtent": "奧本海默作為天才科學家，他在努力解開原子核的奧秘的同時，也在思考人類的未來和科學的責任。電影通過細膩的情節和感人的表現，讓觀眾看到奧本海默內心的複雜情感，以及他與妻子的…",
@@ -200,8 +202,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "原子彈背後的道德爭論",
           "comtent": "這部電影對於原子彈背後的道德爭論進行了深刻的探討。奧本海默作為科學家，為了國家和人民的利益，需要面對艱難抉擇。觀眾在影片中能感受到他的內心糾結和掙扎，也讓我們反思科學發展所帶來…",
@@ -211,31 +213,33 @@
       ]
     },
     {
-      "id":2,
-      "movieId":2,
+      "id": 2,
+      "movieId": 2,
       "movieName": "洛基",
       "movieEnglishName": "Loki",
+      "language": "英語",
+      "movieLength": "共6集",
+      "type": "科幻片",
       "reviewersNumber": 3000,
-      "videoId": "h0xFhp45VLQ",
       "ratingStars": 3.8,
       "movieIntroduction": "在《復仇者聯盟：終局之戰》事件發生後的新系列中，善變的反派洛基重新扮演惡作劇之神的角色。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "凱特·赫倫",
         "writer": "麥可沃爾德倫",
         "actor": "湯姆希德斯頓·歐文威爾森· 索菲亞·迪·馬蒂諾"
       },
-      "imgUrl": "../newPages/movie picture/loki.jpg",
-      "imgUrl2": "../newPages/movie picture/lokiMovie.png",
+      "imgUrl": "https://github.com/JSproject-movie/project/blob/main/newPages/movie%20picture/loki.jpg?raw=true",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/lokiMovie.png",
       "stillsPhotos": [
-        "../newPages/movie picture/loki1.jpg",
-        "../newPages/movie picture/loki2.jpg",
-        "../newPages/movie picture/loki3.jpg",
-        "../newPages/movie picture/loki4.jpg"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki1.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki2.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki3.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki4.jpg"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "穿越時空的精彩奇航",
           "comtent": "以深刻的人物探索和獨特視覺效果，淋漓盡致呈現Marvel宇宙的複雜層次，為觀眾帶來一場前所未見的奇幻冒險。",
@@ -243,8 +247,8 @@
           "messages": "2598"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "驚艷的演技與出奇不意的劇情轉折",
           "comtent": "Tom Hiddleston的傑出表現與扣人心弦的敘事，使《洛基》在Marvel電影中脫穎而出。劇情轉折層出不窮，觀眾難以預測，令人回味無窮。",
@@ -252,8 +256,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "引領Marvel宇宙的全新時代",
           "comtent": "深度思考、時空跳躍、情感共鳴，《洛基》不僅是一部超級英雄電影，更是一次探索未知領域的心靈之旅，將Marvel帶向嶄新高度。",
@@ -263,31 +267,33 @@
       ]
     },
     {
-      "id":3,
-      "movieId":3,
+      "id": 3,
+      "movieId": 3,
       "movieName": "小丑",
       "movieEnglishName": "Joker",
+      "language": "英語",
+      "movieLength": "122分鐘",
+      "type": "劇情片",
       "reviewersNumber": 2850,
-      "videoId": "Eoook2Ee6q0",
       "ratingStars": 4.0,
       "movieIntroduction": "小丑” 這部戲圍繞在這個經典反派上，是大螢幕上前所未見的一部原創獨立故事。本片在探討亞瑟佛萊克 (瓦昆菲尼克斯飾)，一個被社會遺棄的人。他的故事不只是一個寫實的角色研究，更代表一個意義深遠的警示。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "陶德·菲利普斯",
         "writer": "史考特·席佛",
         "actor": "比爾·芬格  鮑勃·凱恩"
       },
-      "imgUrl": "../newPages/movie picture/joker.jpg",
-      "imgUrl2": "../newPages/movie picture/jokermovie.jpg",
+      "imgUrl": "https://github.com/JSproject-movie/project/blob/main/newPages/movie%20picture/joker.jpg?raw=true",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/jokermovie.jpg",
       "stillsPhotos": [
-        "../newPages/movie picture/joker1.jpg",
-        "../newPages/movie picture/joker2.jpg",
-        "../newPages/movie picture/joker3.png",
-        "../newPages/movie picture/joker4.png"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker1.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker2.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker3.png",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker4.png"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "深刻解析心靈黑暗面",
           "comtent": "《小丑》不僅是一部驚悚犯罪片，更是對社會病態的沉痛反思。Joaquin Phoenix的精湛演技令人動容，影片通過一個角色的變化，揭示了人性的脆弱與黑暗。",
@@ -295,8 +301,8 @@
           "messages": "2458"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "令人窒息的孤獨與絕望",
           "comtent": "文章：環境的冷漠、社會的不公，構築了一個黑暗的心靈寓言，《小丑》以沉痛的筆觸探討精神健康議題，深深觸動每位觀眾的心靈。",
@@ -304,8 +310,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "詭譎狂想，深掘人性黑暗角落",
           "comtent": "文章：Joker的誕生故事以驚人的方式呈現，Todd Phillips以影像藝術傑作描繪一個墮落的世界，影片不僅是一場視覺盛宴，更是對人性的強烈震撼。",
@@ -315,31 +321,33 @@
       ]
     },
     {
-      "id":4,
-      "movieId":4,
+      "id": 4,
+      "movieId": 4,
       "movieName": "鋼鐵英雄",
       "movieEnglishName": "Hacksaw Ridge",
+      "language": "英語",
+      "movieLength": "139分鐘",
+      "type": "劇情片",
       "reviewersNumber": 1850,
-      "videoId": "pPbWGl7vKrg",
       "ratingStars": 3.5,
       "movieIntroduction": "故事改編自第二次世界大戰軍醫戴斯蒙杜斯的真實經歷。1945年春天，二戰隨著太平洋戰事進入最後階段，但在沖繩島的美軍遭遇前所未見的慘烈苦戰，雙方傷亡人數超過16萬人！一名士兵戴斯蒙杜斯因信仰而拒絕拿任何武器上戰場，數度被同袍恥笑霸凌。但當上級下達撤退命令，部隊所有人都離開時，他卻獨自留下來，憑藉一己之力來回穿梭於槍林彈雨之中，拯救了75名重傷同袍的生命。同年10月杜斯從杜魯門總統手中接過榮譽勳章，成為美國史上最偉大的二戰英雄。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "梅爾·吉勃遜",
         "writer": "安德魯·奈特  勞勃·申坎",
         "actor": "安德魯·加菲爾德  文斯·范恩"
       },
-      "imgUrl": "../newPages/movie picture/hacksaw.jpg",
-      "imgUrl2": "../newPages/movie picture/HacksawRidgemovie.jpg",
+      "imgUrl": "https://github.com/JSproject-movie/project/blob/main/newPages/movie%20picture/hacksaw.jpg?raw=true",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidgemovie.jpg",
       "stillsPhotos": [
-        "../newPages/movie picture/HacksawRidge1.jpg",
-        "../newPages/movie picture/HacksawRidge2.jpg",
-        "../newPages/movie picture/HacksawRidge3.jpg",
-        "../newPages/movie picture/HacksawRidge4.jpg"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge1.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge2.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge3.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge4.jpg"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "奪目鋼鐵戰舞",
           "comtent": "Marvel的巔峰之作，《鋼鐵英雄》以驚人視覺效果與精湛動作設計，呈現Tony Stark從傷痛走向成為超級英雄的壯麗旅程，為觀眾帶來動人心弦的感動。",
@@ -347,8 +355,8 @@
           "messages": "2598"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "科技創新的翱翔",
           "comtent": "Tony Stark的科技天才在《鋼鐵英雄》中綻放光芒，電影巧妙結合高科技元素，打造出一場視覺與智慧的融合饗宴，為Marvel宇宙注入全新能量。",
@@ -356,8 +364,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "人性與正義的融合",
           "comtent": "超越裝甲的真正英雄精神，《鋼鐵英雄》探討權力的濫用、自由意志的抉擇，燃點觀眾對於正義與人性的深刻思考。",
@@ -367,33 +375,32 @@
       ]
     }
   ],
-  "comingsoonmovie":[
+  "comingsoonmovie": [
     {
-      "id":1,
-      "movieId":1,
+      "id": 1,
+      "movieId": 1,
       "movieName": "奧本海默",
       "movieEnglishName": "Oppenheimer",
       "reviewersNumber": 3000,
       "ratingStars": "5.0",
-      "videoId": "cnc8mDAB7QI",
       "movieIntroduction": "美國科學家 J. 羅伯特·奧本海默的故事以及他在原子彈研發中所扮演的角色。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "克里斯多福諾蘭",
         "writer": "克里斯多福諾蘭凱鳥馬丁·舍溫",
         "actor": "希里安墨菲艾米莉 · 布朗特 · 馬特達蒙"
       },
-      "imgUrl": "../newPages/movie picture/Oppenheimer-1.jpg",
-      "imgUrl2": "../newPages/movie picture/OppenheimerVideo.png",
+      "imgUrl": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/Oppenheimer-1.jpg",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/OppenheimerVideo.png",
       "stillsPhotos": [
-        "../newPages/movie picture/Oppenheimer-4.jpg",
-        "../newPages/movie picture/meet.jpg",
-        "../newPages/movie picture/Oppenheimer-3.jpg",
-        "../newPages/movie picture/Oppenheimer-5.jpeg"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/Oppenheimer-4.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/meet.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/Oppenheimer-3.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/Oppenheimer-5.jpeg"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "科學與道德的交織",
           "comtent": "片中賈羅·奧本海默的角色由傑克·吉倫哈爾精湛詮釋，他不僅展現了奧本海默作為核物理學家的才華，更將觀眾帶入他內心的道德掙扎。奧本海默在創造毀滅性武器的同時，也面臨道德的困惑和人性的…",
@@ -401,8 +408,8 @@
           "messages": "2598"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "科學與愛的對話",
           "comtent": "奧本海默作為天才科學家，他在努力解開原子核的奧秘的同時，也在思考人類的未來和科學的責任。電影通過細膩的情節和感人的表現，讓觀眾看到奧本海默內心的複雜情感，以及他與妻子的…",
@@ -410,8 +417,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "原子彈背後的道德爭論",
           "comtent": "這部電影對於原子彈背後的道德爭論進行了深刻的探討。奧本海默作為科學家，為了國家和人民的利益，需要面對艱難抉擇。觀眾在影片中能感受到他的內心糾結和掙扎，也讓我們反思科學發展所帶來…",
@@ -421,31 +428,30 @@
       ]
     },
     {
-      "id":2,
-      "movieId":2,
+      "id": 2,
+      "movieId": 2,
       "movieName": "洛基",
       "movieEnglishName": "Loki",
       "reviewersNumber": 3000,
-      "videoId": "h0xFhp45VLQ",
       "ratingStars": 3.8,
       "movieIntroduction": "在《復仇者聯盟：終局之戰》事件發生後的新系列中，善變的反派洛基重新扮演惡作劇之神的角色。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "凱特·赫倫",
         "writer": "麥可沃爾德倫",
         "actor": "湯姆希德斯頓·歐文威爾森· 索菲亞·迪·馬蒂諾"
       },
-      "imgUrl": "../newPages/movie picture/loki.jpg",
-      "imgUrl2": "../newPages/movie picture/lokiMovie.png",
+      "imgUrl": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki.jpg",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/lokiMovie.png",
       "stillsPhotos": [
-        "../newPages/movie picture/loki1.jpg",
-        "../newPages/movie picture/loki2.jpg",
-        "../newPages/movie picture/loki3.jpg",
-        "../newPages/movie picture/loki4.jpg"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki1.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki2.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki3.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/loki4.jpg"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "穿越時空的精彩奇航",
           "comtent": "以深刻的人物探索和獨特視覺效果，淋漓盡致呈現Marvel宇宙的複雜層次，為觀眾帶來一場前所未見的奇幻冒險。",
@@ -453,8 +459,8 @@
           "messages": "2598"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "驚艷的演技與出奇不意的劇情轉折",
           "comtent": "Tom Hiddleston的傑出表現與扣人心弦的敘事，使《洛基》在Marvel電影中脫穎而出。劇情轉折層出不窮，觀眾難以預測，令人回味無窮。",
@@ -462,8 +468,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "引領Marvel宇宙的全新時代",
           "comtent": "深度思考、時空跳躍、情感共鳴，《洛基》不僅是一部超級英雄電影，更是一次探索未知領域的心靈之旅，將Marvel帶向嶄新高度。",
@@ -473,31 +479,30 @@
       ]
     },
     {
-      "id":3,
-      "movieId":3,
+      "id": 3,
+      "movieId": 3,
       "movieName": "小丑",
       "movieEnglishName": "Joker",
       "reviewersNumber": 2850,
-      "videoId": "Eoook2Ee6q0",
       "ratingStars": 4.0,
       "movieIntroduction": "小丑” 這部戲圍繞在這個經典反派上，是大螢幕上前所未見的一部原創獨立故事。本片在探討亞瑟佛萊克 (瓦昆菲尼克斯飾)，一個被社會遺棄的人。他的故事不只是一個寫實的角色研究，更代表一個意義深遠的警示。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "陶德·菲利普斯",
         "writer": "史考特·席佛",
         "actor": "比爾·芬格  鮑勃·凱恩"
       },
-      "imgUrl": "../newPages/movie picture/joker.jpg",
-      "imgUrl2": "../newPages/movie picture/jokermovie.jpg",
+      "imgUrl": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker.jpg",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/jokermovie.jpg",
       "stillsPhotos": [
-        "../newPages/movie picture/joker1.jpg",
-        "../newPages/movie picture/joker2.jpg",
-        "../newPages/movie picture/joker3.png",
-        "../newPages/movie picture/joker4.png"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker1.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker2.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker3.png",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/joker4.png"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "深刻解析心靈黑暗面",
           "comtent": "《小丑》不僅是一部驚悚犯罪片，更是對社會病態的沉痛反思。Joaquin Phoenix的精湛演技令人動容，影片通過一個角色的變化，揭示了人性的脆弱與黑暗。",
@@ -505,8 +510,8 @@
           "messages": "2458"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "令人窒息的孤獨與絕望",
           "comtent": "文章：環境的冷漠、社會的不公，構築了一個黑暗的心靈寓言，《小丑》以沉痛的筆觸探討精神健康議題，深深觸動每位觀眾的心靈。",
@@ -514,8 +519,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "詭譎狂想，深掘人性黑暗角落",
           "comtent": "文章：Joker的誕生故事以驚人的方式呈現，Todd Phillips以影像藝術傑作描繪一個墮落的世界，影片不僅是一場視覺盛宴，更是對人性的強烈震撼。",
@@ -525,31 +530,30 @@
       ]
     },
     {
-      "id":4,
-      "movieId":4,
+      "id": 4,
+      "movieId": 4,
       "movieName": "鋼鐵英雄",
       "movieEnglishName": "Hacksaw Ridge",
       "reviewersNumber": 1850,
-      "videoId": "pPbWGl7vKrg",
       "ratingStars": 3.5,
       "movieIntroduction": "故事改編自第二次世界大戰軍醫戴斯蒙杜斯的真實經歷。1945年春天，二戰隨著太平洋戰事進入最後階段，但在沖繩島的美軍遭遇前所未見的慘烈苦戰，雙方傷亡人數超過16萬人！一名士兵戴斯蒙杜斯因信仰而拒絕拿任何武器上戰場，數度被同袍恥笑霸凌。但當上級下達撤退命令，部隊所有人都離開時，他卻獨自留下來，憑藉一己之力來回穿梭於槍林彈雨之中，拯救了75名重傷同袍的生命。同年10月杜斯從杜魯門總統手中接過榮譽勳章，成為美國史上最偉大的二戰英雄。",
-      "personnelInformation":{
+      "personnelInformation": {
         "director": "梅爾·吉勃遜",
         "writer": "安德魯·奈特  勞勃·申坎",
         "actor": "安德魯·加菲爾德  文斯·范恩"
       },
-      "imgUrl": "../newPages/movie picture/hacksaw.jpg",
-      "imgUrl2": "../newPages/movie picture/HacksawRidgemovie.jpg",
+      "imgUrl": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/hacksaw.jpg",
+      "imgUrl2": "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidgemovie.jpg",
       "stillsPhotos": [
-        "../newPages/movie picture/HacksawRidge1.jpg",
-        "../newPages/movie picture/HacksawRidge2.jpg",
-        "../newPages/movie picture/HacksawRidge3.jpg",
-        "../newPages/movie picture/HacksawRidge4.jpg"
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge1.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge2.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge3.jpg",
+        "https://raw.githubusercontent.com/JSproject-movie/project/feature/moviepage/movie%20picture/HacksawRidge4.jpg"
       ],
       "memberComments": [
         {
-          "userId":6,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 6,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Jack",
           "title": "奪目鋼鐵戰舞",
           "comtent": "Marvel的巔峰之作，《鋼鐵英雄》以驚人視覺效果與精湛動作設計，呈現Tony Stark從傷痛走向成為超級英雄的壯麗旅程，為觀眾帶來動人心弦的感動。",
@@ -557,8 +561,8 @@
           "messages": "2598"
         },
         {
-          "userId":7,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 7,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "saul",
           "title": "科技創新的翱翔",
           "comtent": "Tony Stark的科技天才在《鋼鐵英雄》中綻放光芒，電影巧妙結合高科技元素，打造出一場視覺與智慧的融合饗宴，為Marvel宇宙注入全新能量。",
@@ -566,8 +570,8 @@
           "messages": "1388"
         },
         {
-          "userId":5,
-          "userImg" : "../newPages/movie picture/userImg.png",
+          "userId": 5,
+          "userImg": "https://github.com/JSproject-movie/project/blob/feature/moviepage/movie%20picture/userImg.png",
           "nickName": "Tom",
           "title": "人性與正義的融合",
           "comtent": "超越裝甲的真正英雄精神，《鋼鐵英雄》探討權力的濫用、自由意志的抉擇，燃點觀眾對於正義與人性的深刻思考。",

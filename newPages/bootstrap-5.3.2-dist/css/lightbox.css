@@ -104,11 +104,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-<<<<<<< HEAD
   background: url(/newPages/icon/prev.png) left 48% no-repeat;
-=======
-  background: url(/icon/prev.png) left 48% no-repeat;
->>>>>>> dev
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -126,11 +122,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-<<<<<<< HEAD
   background: url(/newPages/icon/next.png) right 48% no-repeat;
-=======
-  background: url(/icon/next.png) right 48% no-repeat;
->>>>>>> dev
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
