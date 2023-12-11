@@ -1322,6 +1322,47 @@
   background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);
 }
 
+.falseContent {
+  padding: 10px;
+}
+
+.tureContent {
+  padding: 10px;
+}
+
+.movie-forum-title {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9965b9;
+  background: linear-gradient(115deg, rgba(255, 180, 248, 0.1) 0%, rgba(142, 9, 129, 0.1) 100.56%);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4) inset, -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
+}
+
+.check-rule {
+  color: red;
+  display: flex;
+}
+
+.movie-True-forum-title {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9965b9;
+  background: linear-gradient(115deg, rgba(255, 180, 248, 0.1) 0%, rgba(142, 9, 129, 0.1) 100.56%);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4) inset, -1px -3px 18px 0px rgba(161, 101, 189, 0.25);
+}
+
 .filterCategories {
   width: 115px;
   padding: 5px 20px;
@@ -2131,8 +2172,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  -moz-text-align-last: left;
-       text-align-last: left;
 }
 
 .contact-row input {
@@ -2199,6 +2238,11 @@
   margin: 0 auto;
 }
 
+.contact-btn p {
+  margin: 0 auto;
+  color: red;
+}
+
 .meg-row {
   padding: 40px 20px;
   color: #fff;
@@ -2224,11 +2268,29 @@
   list-style: none;
 }
 
+.meg-head {
+  display: flex;
+  align-items: center;
+}
+
 .meg-head input {
   padding: 9px 16px;
   border-radius: 6px;
   border: 1px solid var(--gray-300, #dee2e6);
   background: var(--default-white, #fff);
+}
+
+.meg-head button {
+  background: linear-gradient(115deg, #8673D4 0%, #8F268B 100.56%);
+  border-radius: 10px;
+  border: 2px solid #B3B6F2;
+  padding: 10px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .meg-category {
@@ -2551,6 +2613,7 @@
   padding: 60px 0px;
   background: linear-gradient(142deg, #404c53 21.85%, #382538 56.98%, #161618 91.4%);
   margin: 0;
+  border-right: 1px solid #707070;
 }
 
 .sidebar ul {

@@ -75,46 +75,50 @@
         <div class="about-content">
           <p class="about-title">聯絡我們</p>
           <div class="contact-row">
+            <form action="" class="contact-form">
             <ul >
-              <li>
-                <p class="col-3">姓名</p><input type="text" placeholder="輸入姓名" />
-                <p class="col-1">E-mail</p><input type="text" placeholder="電子郵件" />
+              <li id="contact_us_list">
+                <p class="col-3" >姓名</p><input type="text" id="contact_us_list_name" placeholder="輸入姓名" />
+                <p class="col-1" >E-mail</p><input type="text" id="contact_us_list_email" placeholder="電子郵件" />
               </li>
               <li class="col-12">
-                <p class="col-3">連絡電話</p><input type="text" placeholder="輸入電話" />
-                <p class="">事發時間</p><input type="date" placeholder="事發時間" />
+                <p class="col-3" >連絡電話</p><input type="text" id="contact_us_list_tel" placeholder="輸入電話" />
+                <p class="" >事發時間</p><input type="date" id="contact_us_list_date" placeholder="事發時間" />
               </li>
               <li>
                 <div class=" contact-option">
                   <select
                     class=" contact-question"
-                    id="floatingSelect"
+                    id="contact_us_floatingSelect"
                     aria-label="Floating label select example"
                   >
                     <option selected>請選擇原因</option>
-                    <option value="1">帳戶問題</option>
-                    <option value="2">合作提案</option>
-                    <option value="3">意見回饋</option>
-                    <option value="4">其他</option>
+                    <option value="帳戶問題">帳戶問題</option>
+                    <option value="合作提案">合作提案</option>
+                    <option value="意見回饋">意見回饋</option>
+                    <option value="其他">其他</option>
                   </select>
                 </div>
               </li>
               <li >
                 <div class="form-floating col-12 contact-detal">
-                    <textarea class="form-control" placeholder="詳細說明" id="floatingTextarea"></textarea>
+                    <textarea class="form-control" placeholder="詳細說明" id="contact_us_floatingTextarea"></textarea>
                     <label for="floatingTextarea">詳細說明</label>
                   </div>
               </li>
               <li>
                 <div class="pb-4 contact-btn">
-                  <button type="button" class="mf-addcomment">提交</button>
+                  <button type="button" class="mf-addcomment" id="add_comment">提交</button>
                 </div>
               </li>
             </ul>
+            </form>
           </div>
         </div>
       </div>
     </div>
     <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/bootstrap-5.3.2-dist/js-page/contactUs.js"></script>
   </body>
 </html>

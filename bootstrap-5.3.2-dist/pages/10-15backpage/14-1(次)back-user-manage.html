@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影評列表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+    <link href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="m-row">
+        <div class="navbar" style="background: darkgrey; height: 90px">
+            <p>navbar</p>
+        </div>
+
+        <div class="mf-content">
+            <div class="col-4" style="background: gray; width: 163px">
+                <ul>
+                    <li>sidebar</li>
+                    <li>123</li>
+                    <li>456</li>
+                </ul>
+            </div>
+            <div class="meg-row">
+                <div class="meg-title">
+                    <h3>後台人員管理</h3>
+                </div>
+                <ul class="meg-head">
+                    <li><input type="text" name="" id="" placeholder="搜尋" /></li>
+                    <li>
+                        <div class="contact-option">
+                            <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>管理權限</option>
+                                <option value="1">管理權限開通</option>
+                                <option value="2">管理權限關閉</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-option">
+                            <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>權限開通狀態</option>
+                                <option value="1">前後台管理</option>
+                                <option value="2">僅後台管理</option>
+                                <option value="3">僅會員管理</option>
+                                <option value="4">僅檢舉處理</option>
+                                <option value="5">僅申訴管理</option>
+                                <option value="6">僅申訴與檢舉</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <table class="table meg-intro ">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                        aria-label="..." />
+                                </div>
+                            </th>
+                            <th class="">#</th>
+                            <th class="">後台人員編號</th>
+                            <th class="">人員名稱</th>
+                            <th class="">權限</th>
+                            <th class="">權限開通狀態</th>
+                            <th class="">被檢舉者</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                </div>
+                            </th>
+                            <td>1</td>
+                            <td>#AHG12345</td>
+                            <td> Admin</td>
+                            <td>
+                                <div class="contact-option">
+                                    <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                        <option selected>管理權限</option>
+                                        <option value="1">管理權限開通</option>
+                                        <option value="2">管理權限關閉</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="contact-option">
+                                    <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                        <option selected>權限開通狀態</option>
+                                        <option value="1">前後台管理</option>
+                                        <option value="2">僅後台管理</option>
+                                        <option value="3">僅會員管理</option>
+                                        <option value="4">僅檢舉處理</option>
+                                        <option value="5">僅申訴管理</option>
+                                        <option value="6">僅申訴與檢舉</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button">刪除</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="meg-page ">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
