@@ -83,30 +83,25 @@ function keywordSearch() {
 function renderSearchNum(targetMovieData) {
   let str = "";
   let inputKeyword = searchInput.value;
-  str += `搜尋「 ${inputKeyword}」的結果： ${targetMovieData.length} 筆`;
+  let targetClass =
+    (str += `搜尋「 ${inputKeyword}」的結果： ${targetMovieData.length} 筆`);
   searchNum.innerHTML = str;
 }
 // 以類別搜尋
 const dropdownContent = document.querySelector(".dropdown-content");
-console.log(dropdownContent);
-
 dropdownContent.addEventListener("click", function (e) {
   const targetClass = e.target.getAttribute("class");
-  console.log(targetClass);
-  // if (targetClass == "delSingleOrder-Btn js-orderDelete") {
-  //   deleteOrderItem(id);
-  //   return;
-  // }
-  // let movieType=
-
-  // let keyword = searchInput.value.trim().toLowerCase();
-  let targetMovieData = [];
   targetMovieData = movieIntroData.filter(function (item) {
     let type = item.type;
-    console.log(type);
-
     return type.match(targetClass);
   });
-  renderSearchNum(targetMovieData);
+  renderSearchNum2(targetMovieData);
   renderSearchResult(targetMovieData);
 });
+// 渲染以類別搜尋的筆數
+function renderSearchNum2(targetMovieData) {
+  let str = "";
+  let inputKeyword = searchInput.value;
+  let targetClass = (str += `搜尋結果： ${targetMovieData.length} 筆`);
+  searchNum.innerHTML = str;
+}
