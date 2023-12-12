@@ -1,0 +1,25 @@
+.menuTitle{
+    background: linear-gradient(to top, #94C5FF, #D595F3);
+      background: -webkit-linear-gradient(to top, #94C5FF, #D595F3);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-align: center;
+      margin: 0 0 5rem 0;
+}
+.menu_link,.social_link{
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        transition: all .3s;
+        &:hover{
+            text-shadow: 0 0 10px white;
+        }
+    }
+    .active{
+        text-shadow: 0 0 10px white;
+    }
+}

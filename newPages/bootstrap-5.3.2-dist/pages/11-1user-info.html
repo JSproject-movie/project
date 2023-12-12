@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影評列表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Public+Sans:wght@300;400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/newPages/bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+    <link href="/newPages/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="m-row">
+        <div class="navbar" style="background: darkgrey; height: 90px">
+            <p>navbar</p>
+        </div>
+
+        <div class="mf-content">
+            <div class="sidebar">
+                <div class="mgtitle">
+                    <h3>後臺管理</h3>
+                </div>
+              <div class="muser">
+                <ul>
+                  <li><a href="#">影評留言管理</a></li>
+                  <li><a href="#">會員管理</a></li>
+                  <li><a href="#">檢舉處理</a></li>
+                  <li><a href="#">申訴處理</a></li>
+                  <!-- <li><a href="#">後臺人員管理</a></li> -->
+                </ul>
+              </div>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="#"><img src="/icon/tumblr.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="/icon/linkedinLogo.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="/icon/facebookSm.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="meg-row">
+                <div class="meg-title">
+                    <h3>會員管理</h3>
+                </div>
+                <ul class="meg-head">
+                    <li><input type="text" name="" id="" placeholder="會員帳號" /></li>
+                    <li>
+                        <div class="contact-option">
+                            <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>會員狀態</option>
+                                <option value="1">開通</option>
+                                <option value="2">暫定停用</option>
+                                <option value="3">7天停用</option>
+                                <option value="4">30天停用</option>
+                                <option value="5">永久停用</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li><button>搜尋</button></li>
+                </ul>
+                <table class="table meg-intro ">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                        aria-label="..." />
+                                </div>
+                            </th>
+                            <th class="">#</th>
+                            <th class="">會員帳號</th>
+                            <th class="">會員電話</th>
+                            <th class="">會員Mail</th>
+                            <th class="">開通停用狀態</th>
+                            <th class="">違規次數</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                </div>
+                            </th>
+                            <td>1</td>
+                            <td>AHGA68</td>
+                            <td>0912345678</td>
+                            <td>aa.aa@gmail.com</td>
+                            <td>
+                                <div class="contact-option">
+                                    <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                        <option selected>會員狀態</option>
+                                        <option value="1">開通</option>
+                                        <option value="2">暫定停用</option>
+                                        <option value="3">7天停用</option>
+                                        <option value="4">30天停用</option>
+                                        <option value="5">永久停用</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> 0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                </div>
+                            </th>
+                            <td>2</td>
+                            <td>Thornton</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>
+                                <div class="contact-option">
+                                    <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                        <option selected>會員狀態</option>
+                                        <option value="1">開通</option>
+                                        <option value="2">暫定停用</option>
+                                        <option value="3">7天停用</option>
+                                        <option value="4">30天停用</option>
+                                        <option value="5">永久停用</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                            </th>
+                            <td>3</td>
+                            <td>@twitter</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>
+                                <div class="contact-option">
+                                    <select class="meg-category" id="floatingSelect" aria-label="Floating label select example">
+                                        <option selected>會員狀態</option>
+                                        <option value="1">開通</option>
+                                        <option value="2">暫定停用</option>
+                                        <option value="3">7天停用</option>
+                                        <option value="4">30天停用</option>
+                                        <option value="5">永久停用</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="meg-page ">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <script src="/newPages/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
