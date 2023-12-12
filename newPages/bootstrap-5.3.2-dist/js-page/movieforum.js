@@ -10,7 +10,7 @@ function movieForumInit() {
                <span class=""
                  ><img
                    class="col-1"
-                   src="/movie picture/repairman.jpg"
+                   src="/newPages/movie picture/repairman.jpg"
                    alt=""
                    srcset=""
                  />
@@ -24,15 +24,15 @@ function movieForumInit() {
                <ul>
                  <li class="mf-reaction">
                    <button class="mf-good" type="button">
-                     <img src="/icon/white-good.png" alt="" srcset="" />0000讚
+                     <img src="/newPages/icon/white-good.png" alt="" srcset="" />0000讚
                    </button>
                    <button class="mf-chat" type="button">
-                     <img src="/icon/chat.png" alt="" srcset="" />2521則
+                     <img src="/newPages/icon/chat.png" alt="" srcset="" />2521則
                    </button>
                  </li>
                  <li class="mf-more"><a href="/bootstrap-5.3.2-dist/pages/6-1-1individual-forum.html">
                    <button class="more-icon" type="button" >
-                     展開評論<img src="/icon/downArrow.png" alt=""  srcset="" />
+                     展開評論<img src="/newPages/icon/downArrow.png" alt=""  srcset="" />
                    </button></a>
                  </li>
                </ul>
@@ -69,8 +69,10 @@ movieFalseMegEnter.addEventListener("click", function (e) {
     obj.userId = 5
     axios.post("https://testrender-tga5.onrender.com/posts",obj)
     .then(function (response) {
-      console.log(response.data);
+      console.log(response)
     });
+    movie_forum_title.value='';
+    movieForumFalseContent.value='';
   }
 });
 
@@ -94,6 +96,8 @@ movieTrueMegEnter.addEventListener("click", function (e) {
     .then(function (response) {
       console.log(response.data);
     });
+    movieTrueForumTitle.value='';
+    movieForumTrueContent.value='';
   }
 });
 
@@ -104,6 +108,48 @@ movieForumAll.addEventListener("click",function(e){
   movieForumInit()
 })
 movieForumNoSpoiler.addEventListener("click",function(e){
-  let val = "";
-  
+  axios.get("https://testrender-tga5.onrender.com/posts").then(function (response) {
+    let str = "";
+    if(response.data = false){}
+    response.data.forEach((item) => {
+      if(response.data == item.spoiler){}
+      str+= `          <ul class="commentcard">
+           <li class="card-body">
+             <div class="mf-intro">
+               <h3 class="mf-purpose">${item.title}</h3>
+               <span class=""
+                 ><img
+                   class="col-1"
+                   src="/newPages/movie picture/repairman.jpg"
+                   alt=""
+                   srcset=""
+                 />
+                 <p>台北星探．伊莎貝爾</p></span
+               >
+             </div>
+             <div class="mf-comment">
+               ${item.content}
+             </div>
+             <div class="mf-btn">
+               <ul>
+                 <li class="mf-reaction">
+                   <button class="mf-good" type="button">
+                     <img src="/newPages/icon/white-good.png" alt="" srcset="" />0000讚
+                   </button>
+                   <button class="mf-chat" type="button">
+                     <img src="/newPages/icon/chat.png" alt="" srcset="" />2521則
+                   </button>
+                 </li>
+                 <li class="mf-more"><a href="/bootstrap-5.3.2-dist/pages/6-1-1individual-forum.html">
+                   <button class="more-icon" type="button" >
+                     展開評論<img src="/newPages/icon/downArrow.png" alt=""  srcset="" />
+                   </button></a>
+                 </li>
+               </ul>
+             </div>
+           </li>
+         </ul>`;
+    });
+    movieForumList.innerHTML = str;
+  });
 })

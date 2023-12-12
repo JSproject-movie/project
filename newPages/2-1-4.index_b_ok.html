@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.3.2-dist/SCSS/styles/style.css">
+  <link href="./bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>(4)2-1-4 設定密碼_b</title>
+</head>
+
+<body>
+  <!-- 上方無Email -->
+  <div class="wrap2-1-4" style="display: flex;
+  width: 1440px;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;">
+    <!-- 左側sideBAr -->
+    <div class="sidebar" style="display: flex;
+   width: 163px;
+   padding: 60px 40px 40px 40px;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   flex-shrink: 0;
+   align-self: stretch;">
+      <div class="sideitem">
+        <ul>
+          <li>
+            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+              aria-controls="collapseExample">電影分類</a>
+          </li>
+          <li class="collapse" id="collapseExample">
+            <!-- <div class="mgtitle">
+
+            <button class="return-button">
+              <span class="text">返回</span>
+              <img src="/icon/arrow-back-circle.svg" alt="" class="icon" srcset="">
+            </button>  
+          </div> -->
+            <div class="mgroup">
+              <ul>
+                <li><a href="#">喜劇片</a></li>
+                <li><a href="#">劇情片</a></li>
+                <li><a href="#">科幻片</a></li>
+                <li><a href="#">恐怖片</a></li>
+                <li><a href="#">紀錄片</a></li>
+                <li><a href="#">音樂劇</a></li>
+                <li><a href="#">驚悚片</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">平台規則</a></li>
+        </ul>
+      </div>
+
+
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#"><img src="./icon/tumblr.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icon/linkedinLogo.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icon/facebookSm.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 右側 -->
+    <div style="display: flex;
+    width: 1277px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+  ">
+      <!-- 上方navbar -->
+      <div class="nav-header" style="
+  display: flex;
+width: 1277px;
+height: 90px;
+padding: 10px 20px;
+justify-content: space-between;
+align-items: center;">
+        <a href="#" class="nav-logo">
+          <img src="./movie picture/LOGO.png" class="mLogo" alt="Logo">
+        </a>
+        <nav>
+          <a href="#" class="nav-txt">關於影評星塵</a>
+          <!-- 搜尋 -->
+          <div class="btn-box">
+            <img src="./icon/Search.png" class="search-icon" alt="搜尋">
+            <input type="text" placeholder=" " />
+          </div>
+          <!-- dropdown -->
+          <div class="dropdown">
+            <button class="dropbtn"> 篩選
+              <span></span>
+              <img src="./icon/dropdown-arrow-down.png" alt="">
+            </button>
+            <div class="dropdown-content">
+              <a href="#"> 喜劇片 </a>
+              <a href="#"> 劇情片 </a>
+              <a href="#"> 科幻片 </a>
+              <a href="#"> 恐怖片 </a>
+              <a href="#"> 音樂劇 </a>
+              <a href="#"> 愛情片 </a>
+              <a href="#"> 驚悚片 </a>
+            </div>
+          </div>
+          <button class="btn-search">搜尋</button>
+          <a href="#" class="nav-txt">
+            <img src="./icon/user.png" class="user-icon" alt="會員">
+          </a>
+        </nav>
+      </div>
+
+      <!-- 內容放這裡 -->
+      <div style="display: flex;
+      width: 600px;
+      height: 664.899px;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;">
+        <!-- 創建帳戶 與 顯示列 -->
+        <div class="login_Allmain_2-1-4" style="
+        height: 400px;">
+          <div id="h1">創建您的帳戶</div>
+          <div class="Register_account_stage_and_img_2-3-4">
+            <div class="Register_account_stage_font">
+              <div id="stage1_e-mail" style="color: #D0C3E2 ;font-weight: 700;">電郵密碼</div>
+              <div id="stage2_user" style=" color: rgba(255, 255, 255, 0.20); ;font-weight: 400;">個人資料</div>
+              <div id="stage3_finish">完成送出</div>
+            </div>
+            <img src="./movie picture/Group 2610438.svg" alt="" id="Register_account_img">
+          </div>
+          <!-- 文字與輸入框 -->
+          <div id="Create_account_input_e-mail_2-1-4">
+            <!-- <div id="E-mail_div">
+                  <div id="E-mail">E-mail</div>
+                </div> -->
+            <!-- 重發驗證瑪輸入框 -->
+            <!-- <div id="E-mail-talk_font">驗證碼已寄到 123456@gmail.com
+                  <p style="margin: 0;"></p>
+                  請去收件匣查看驗證碼，於下方輸入欄位輸入驗證碼即可
+                  驗證完成!
+                </div> -->
+            <!-- 輸入框 -->
+            <div id="Verification_code_main">
+              <!-- <input type="text" placeholder=" 驗證碼" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入驗證瑪'" style="
+                color:  rgb(255, 255, 255);
+                font-family: Inter;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;" id="Verification_input">
+                  <div id="DIV_return_Verification">
+                    <button type="button" id="BT_return_Verification">
+                      <div id="BT_return_font">
+                        重發驗證碼
+                      </div>
+                    </button>
+                    <div style="color: rgba(255, 255, 255, 0.80);
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;">20秒</div>
+                  </div> -->
+              <!-- 密碼輸入框 -->
+            </div>
+            <!-- <button type="button" id="BT_Login_submit">
+                  <div id="bt_mon_verify">驗證
+                  </div>
+                </button> -->
+            <!-- 你已完成驗證 -->
+            <!-- <div class="warning_message_ALL">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path
+                      d="M7.50045 14.1617L4.60878 11.27C4.45297 11.1142 4.24164 11.0267 4.02128 11.0267C3.80092 11.0267 3.58959 11.1142 3.43378 11.27C3.27797 11.4259 3.19043 11.6372 3.19043 11.8575C3.19043 11.9667 3.21192 12.0747 3.25367 12.1755C3.29543 12.2763 3.35663 12.3679 3.43378 12.445L6.91711 15.9284C7.24211 16.2534 7.76711 16.2534 8.09211 15.9284L16.9088 7.11171C17.0646 6.9559 17.1521 6.74457 17.1521 6.52421C17.1521 6.30385 17.0646 6.09252 16.9088 5.93671C16.753 5.7809 16.5416 5.69336 16.3213 5.69336C16.1009 5.69336 15.8896 5.7809 15.7338 5.93671L7.50045 14.1617Z"
+                      fill="#52FF00" />
+                  </svg>
+                  <div class="warning_message_font">你已完成驗證</div>
+                </div>
+              </div> -->
+            <!-- 線
+              <div class="Loginline"> </div> -->
+            <!-- 密碼輸入欄位 全部 -->
+            <div id="Create_account_input_e-mail_2-1-4">
+              <div id="E-mail_div">
+                <div id="E-mail">密碼</div>
+              </div>
+              <!-- 輸入框 -->
+              <input type="password" placeholder=" 請輸入密碼" onfocus="this.placeholder=''"
+                onblur="this.placeholder='請輸入密碼'" style="
+                    height: 40px;
+                   color:  rgb(255, 255, 255);
+                   font-family: Inter;
+                   font-size: 13px;
+                   font-style: normal;
+                   font-weight: 500;
+                   line-height: normal;" id="password_input_1">
+              <!-- 密碼請輸入符合6-18位半形英文數字含大小寫，其他警告訊息 -->
+              <!-- <div class="warning_message_ALL">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                      <path
+                        d="M18.8002 6.39772C18.7077 6.30502 18.5978 6.23147 18.4768 6.18129C18.3559 6.13111 18.2262 6.10528 18.0952 6.10528C17.9643 6.10528 17.8346 6.13111 17.7136 6.18129C17.5926 6.23147 17.4827 6.30502 17.3902 6.39772L12.5002 11.2777L7.61022 6.38772C7.51764 6.29514 7.40773 6.2217 7.28677 6.1716C7.1658 6.12149 7.03615 6.0957 6.90522 6.0957C6.77429 6.0957 6.64464 6.12149 6.52368 6.1716C6.40272 6.2217 6.29281 6.29514 6.20022 6.38772C6.10764 6.48031 6.0342 6.59022 5.9841 6.71118C5.93399 6.83214 5.9082 6.96179 5.9082 7.09272C5.9082 7.22365 5.93399 7.3533 5.9841 7.47427C6.0342 7.59523 6.10764 7.70514 6.20022 7.79772L11.0902 12.6877L6.20022 17.5777C6.10764 17.6703 6.0342 17.7802 5.9841 17.9012C5.93399 18.0221 5.9082 18.1518 5.9082 18.2827C5.9082 18.4137 5.93399 18.5433 5.9841 18.6643C6.0342 18.7852 6.10764 18.8951 6.20022 18.9877C6.29281 19.0803 6.40272 19.1537 6.52368 19.2038C6.64464 19.254 6.77429 19.2797 6.90522 19.2797C7.03615 19.2797 7.1658 19.254 7.28677 19.2038C7.40773 19.1537 7.51764 19.0803 7.61022 18.9877L12.5002 14.0977L17.3902 18.9877C17.4828 19.0803 17.5927 19.1537 17.7137 19.2038C17.8346 19.254 17.9643 19.2797 18.0952 19.2797C18.2262 19.2797 18.3558 19.254 18.4768 19.2038C18.5977 19.1537 18.7076 19.0803 18.8002 18.9877C18.8928 18.8951 18.9662 18.7852 19.0163 18.6643C19.0665 18.5433 19.0922 18.4137 19.0922 18.2827C19.0922 18.1518 19.0665 18.0221 19.0163 17.9012C18.9662 17.7802 18.8928 17.6703 18.8002 17.5777L13.9102 12.6877L18.8002 7.79772C19.1802 7.41772 19.1802 6.77772 18.8002 6.39772Z"
+                        fill="#EF6D7D" />
+                    </svg>
+                    <div class="X-warning_message_font">密碼請輸入符合6-18位半形英文數字含大小寫</div>
+                  </div> -->
+              <input type="password" placeholder=" 請輸入密碼" onfocus="this.placeholder=''"
+                onblur="this.placeholder='請輸入密碼'" style="
+                    height: 40px;
+             color:  rgb(255, 255, 255); 
+             font-family: Inter;
+             font-size: 13px;
+             font-style: normal;
+             font-weight: 500;
+             line-height: normal;" id="password_input_2">
+              <!-- 再次輸入密碼與第一次輸入不一致，其他警告訊息 -->
+              <!-- <div class="warning_message_ALL">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                      <path
+                        d="M18.8002 6.39772C18.7077 6.30502 18.5978 6.23147 18.4768 6.18129C18.3559 6.13111 18.2262 6.10528 18.0952 6.10528C17.9643 6.10528 17.8346 6.13111 17.7136 6.18129C17.5926 6.23147 17.4827 6.30502 17.3902 6.39772L12.5002 11.2777L7.61022 6.38772C7.51764 6.29514 7.40773 6.2217 7.28677 6.1716C7.1658 6.12149 7.03615 6.0957 6.90522 6.0957C6.77429 6.0957 6.64464 6.12149 6.52368 6.1716C6.40272 6.2217 6.29281 6.29514 6.20022 6.38772C6.10764 6.48031 6.0342 6.59022 5.9841 6.71118C5.93399 6.83214 5.9082 6.96179 5.9082 7.09272C5.9082 7.22365 5.93399 7.3533 5.9841 7.47427C6.0342 7.59523 6.10764 7.70514 6.20022 7.79772L11.0902 12.6877L6.20022 17.5777C6.10764 17.6703 6.0342 17.7802 5.9841 17.9012C5.93399 18.0221 5.9082 18.1518 5.9082 18.2827C5.9082 18.4137 5.93399 18.5433 5.9841 18.6643C6.0342 18.7852 6.10764 18.8951 6.20022 18.9877C6.29281 19.0803 6.40272 19.1537 6.52368 19.2038C6.64464 19.254 6.77429 19.2797 6.90522 19.2797C7.03615 19.2797 7.1658 19.254 7.28677 19.2038C7.40773 19.1537 7.51764 19.0803 7.61022 18.9877L12.5002 14.0977L17.3902 18.9877C17.4828 19.0803 17.5927 19.1537 17.7137 19.2038C17.8346 19.254 17.9643 19.2797 18.0952 19.2797C18.2262 19.2797 18.3558 19.254 18.4768 19.2038C18.5977 19.1537 18.7076 19.0803 18.8002 18.9877C18.8928 18.8951 18.9662 18.7852 19.0163 18.6643C19.0665 18.5433 19.0922 18.4137 19.0922 18.2827C19.0922 18.1518 19.0665 18.0221 19.0163 17.9012C18.9662 17.7802 18.8928 17.6703 18.8002 17.5777L13.9102 12.6877L18.8002 7.79772C19.1802 7.41772 19.1802 6.77772 18.8002 6.39772Z"
+                        fill="#EF6D7D" />
+                    </svg>
+                    <div class="X-warning_message_font">再次輸入密碼與第一次輸入不一致</div>
+                  </div> -->
+              <!-- 線 -->
+              <div class="Loginline"> </div>
+
+              <!-- 下方BT列 -->
+              <div class="DIV_lastDown_bt">
+                <button type="button" id="BT_Login_submit_backing" onclick="location.href='./2-1-7 _index.html'">
+                  <div id="bt_mon_verify">返回登入
+                  </div>
+                  <button type="button" id="BT_Login_submit_next">
+                    <div id="bt_mon_verify">下一步
+                    </div>
+                  </button>
+                  <!-- <button type="button" id="BT_Login_submit">
+                  <div id="bt_mon_verify">下一步
+                  </div>
+            
+                </button> -->
+              </div>
+            </div>
+            <!-- <div id="Create_account_input_e-mail">
+                <div id="Create_account_font">
+                  <div id="E-mail">E-mail</div>
+                  <div id="E-mail_fonts">電郵是找尋密碼使用請謹慎填寫</div>
+                </div> -->
+            <!-- 輸入框 -->
+            <!-- <input type="text"
+                placeholder=" 請輸入電子郵件並驗證"
+                onfocus ="this.placeholder=''"
+                onblur ="this.placeholder='請輸入電子郵件並驗證'"
+                style="
+                color:  rgb(255, 255, 255);
+                font-family: Inter;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;"
+                class="Login_ALLuser_input">
+            
+                <button type="button" id="BT_Login_submit" >
+                  <div id="bt_mon_verify">登入
+                  </div></button> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      
+
+        <!-- footer -->
+        <footer class="body-primary" style="
+display: flex;
+width: 1277px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: linear-gradient(91deg, rgba(0, 0, 0, 0.40) 0%, rgba(98, 106, 179, 0.00) 51.9%);
+backdrop-filter: blur(20px);">
+          <div class="container-fluid">
+            <div class="row g-0">
+              <div class="col-2"></div>
+              <div class="col-10">
+                <footer class="footer p-4 pb-0">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-3">
+                      <a href="#">
+                        <img src="./movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
+                      </a>
+                    </div>
+                    <div class="col">
+                      <div class="row align-items-center">
+                        <div class="col-3">
+                          <div class="d-flex flex-column align-items-center">
+                            <img src="./icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
+                            <h5 class="text-light h6 my-2">聯絡我們 E-MAIL</h5>
+                            <span class="text-secondary my-2">moviegalaxy@Anythings</span>
+                            <h6 class="text-light my-2">服務時間 14~18</h6>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="d-flex flex-column align-items-center">
+                            <img src="./icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
+                            <h5 class="text-light h6 my-2">關於 影評星塵</h5>
+                            <span class="text-secondary my-2">Q & A</span>
+                            <h6 class="text-secondary my-2">網站理念</h6>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="d-flex flex-column align-items-center">
+                            <img src="./icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
+                            <h5 class="text-light h6 my-2">平台規則</h5>
+                            <span class="text-secondary my-2">用戶規章</span>
+                            <h6 class="text-secondary my-2">評論規章</h6>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="d-flex flex-column align-items-center">
+                            <img src="./icon/error.png" alt="error" style="width: 20px; height: 20px;">
+                            <h5 class="text-light h6 my-2">檢舉/申訴</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <h5 class="h6 text-white text-center mt-5 mb-0">隱私權及服務條例 @ copyright 2023 All Rights Reserved.</h5>
+                </footer>
+              </div>
+            </div>
+          </div>
+
+
+
+          <script src="js/bootstrap.bundle.min.js"></script>
+        </footer>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+<script>
+  const passwordInput_1 = document.querySelector('#password_input_1');
+  const passwordInput_2 = document.querySelector('#password_input_2');
+  const checkButton = document.querySelector('#BT_Login_submit_next');
+
+  console.log(passwordInput_1, passwordInput_2, checkButton);
+
+  //判斷
+  function checkPassword(passwordInput_1, passwordInput_2) {
+    // 至少8個字符(
+    const LengthCondition = (passwordInput_1, passwordInput_2).length >= 8;
+
+    // 包含英文字母
+    const EnglishCondition = /[a-zA-Z]/.test(passwordInput_1, passwordInput_2);
+
+    // 包含數字
+    const NumberCondition = /\d/.test(passwordInput_1, passwordInput_2);
+
+
+    // 不能空白
+    const NotEmptyCondition = passwordInput_1.trim() !== '' && passwordInput_2.trim() !== '';
+
+
+    // 內容相同
+    const SameContentCondition = passwordInput_1 === passwordInput_2;
+
+    // 檢查所有條件
+    if (LengthCondition && EnglishCondition && NumberCondition && NotEmptyCondition && SameContentCondition) {
+      alert("符合條件，可以使用。");
+      window.location.href = "./2-1-5 _index.html";
+      return true;
+    } else {
+      alert("密碼至少8個字符，包含大小寫字母混和英數，且不可為空白，兩次輸入的密碼應相同");
+      window.location.href = "./2-1-4.index_b_none.html";
+      return false;
+    }
+  }
+
+  // 添加事件監聽器
+  //EnteredEmail= 輸入的郵件地址
+  checkButton.addEventListener('click', function () {
+    const EnteredPassword_1 = passwordInput_1.value;
+    const EnteredPassword_2 = passwordInput_2.value;
+    checkPassword(EnteredPassword_1, EnteredPassword_2);
+  });
+</script>
+
+</html>
