@@ -7,10 +7,6 @@ lightbox.option({
     'alwaysShowNavOnTouchDevices':true,
     'wrapAround': true,
   }); 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
   const queryString = window.location.search;
   const movieMain = document.querySelector('main');
   const loadingPage = document.querySelector('.loadingPage');
@@ -166,7 +162,7 @@ lightbox.option({
   
   const getData = async () => {
     try{
-      const res = await axios.get(`http://localhost:3000/movieDatas${queryString}`);
+      const res = await axios.get(`https://testrender-tga5.onrender.com/movieDatas${queryString}`);
       movieData = res.data[0];
         if(movieData.length === 0){
             alert('資料取得錯誤!');
@@ -272,9 +268,3 @@ function onPlayerStateChange(event) {
 }
 getData();
 onYouTubeIframeAPIReady();
-
-<<<<<<< HEAD
-=======
->>>>>>> dev
-=======
->>>>>>> dev
