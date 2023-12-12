@@ -1,4 +1,9 @@
 {
     "liveServer.settings.port": 5501,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "liveServer.settings.https": {
+        "cert": "C:\\Users\\i8905\\localhost+1.pem",
+        "key": "C:\\Users\\i8905\\localhost+1-key.pem",
+        "passphrase": "12345"
+    },
 }
