@@ -248,4 +248,6 @@ function onYouTubeIframeAPIReady() {
     }
   }
 getData();
-onYouTubeIframeAPIReady();
+setTimeout(() => {
+  onYouTubeIframeAPIReady();
+},500)

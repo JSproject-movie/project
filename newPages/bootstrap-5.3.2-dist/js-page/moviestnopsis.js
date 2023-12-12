@@ -267,4 +267,6 @@ function onPlayerStateChange(event) {
   }
 }
 getData();
-onYouTubeIframeAPIReady();
+setTimeout(() => {
+  onYouTubeIframeAPIReady();
+},500)
