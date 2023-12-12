@@ -591,6 +591,11 @@
   font-size: 20px;
 }
 
+.search-a {
+  text-decoration: none;
+  color: white;
+}
+
 .editInformationArea {
   padding: 30px;
   border-radius: 30px;
@@ -1965,7 +1970,6 @@
 }
 
 .movieTrailer {
-  height: 616px;
   padding: 20px;
   background: linear-gradient(77deg, rgba(0, 0, 0, 0.4) 19.22%, rgba(31, 32, 42, 0.4) 94.28%);
   -webkit-backdrop-filter: blur(20px);
@@ -1986,6 +1990,7 @@
 }
 .movieTrailer .movieBtn,
 .movieTrailer .moviePlayBtn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
