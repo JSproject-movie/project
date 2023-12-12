@@ -88,20 +88,20 @@ padding: 10px 20px;
 justify-content: space-between;
 align-items: center;">
         <a href="#" class="nav-logo">
-          <img src="/movie picture/LOGO.png" class="mLogo" alt="Logo">
+          <img src="./movie picture/LOGO.png" class="mLogo" alt="Logo">
         </a>
         <nav>
           <a href="#" class="nav-txt">關於影評星塵</a>
           <!-- 搜尋 -->
           <div class="btn-box">
-            <img src="/icon/Search.png" class="search-icon" alt="搜尋">
+            <img src="./icon/Search.png" class="search-icon" alt="搜尋">
             <input type="text" placeholder=" " />
           </div>
           <!-- dropdown -->
           <div class="dropdown">
             <button class="dropbtn"> 篩選
               <span></span>
-              <img src="/icon/dropdown-arrow-down.png" alt="">
+              <img src="./icon/dropdown-arrow-down.png" alt="">
             </button>
             <div class="dropdown-content">
               <a href="#"> 喜劇片 </a>
@@ -115,7 +115,7 @@ align-items: center;">
           </div>
           <button class="btn-search">搜尋</button>
           <a href="#" class="nav-txt">
-            <img src="/icon/user.png" class="user-icon" alt="會員">
+            <img src="./icon/user.png" class="user-icon" alt="會員">
           </a>
         </nav>
       </div>
@@ -172,14 +172,14 @@ align-items: center;">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-3">
                     <a href="#">
-                      <img src="/movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
+                      <img src="./movie picture/LOGO.png" class="img-fluid" alt="logo" width="211" height="69">
                     </a>
                   </div>
                   <div class="col">
                     <div class="row align-items-center">
                       <div class="col-3">
                         <div class="d-flex flex-column align-items-center">
-                          <img src="/icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
+                          <img src="./icon/mail.png" alt="mail" style="width: 20px; height: 20px;">
                           <h5 class="text-light h6 my-2">聯絡我們 E-MAIL</h5>
                           <span class="text-secondary my-2">moviegalaxy@Anythings</span>
                           <h6 class="text-light my-2">服務時間 14~18</h6>
@@ -187,7 +187,7 @@ align-items: center;">
                       </div>
                       <div class="col-3">
                         <div class="d-flex flex-column align-items-center">
-                          <img src="/icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
+                          <img src="./icon/aboutUs.png" alt="aboutUs" style="width: 20px; height: 20px;">
                           <h5 class="text-light h6 my-2">關於 影評星塵</h5>
                           <span class="text-secondary my-2">Q & A</span>
                           <h6 class="text-secondary my-2">網站理念</h6>
@@ -195,7 +195,7 @@ align-items: center;">
                       </div>
                       <div class="col-3">
                         <div class="d-flex flex-column align-items-center">
-                          <img src="/icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
+                          <img src="./icon/chat.png" alt="chat" style="width: 20px; height: 20px;">
                           <h5 class="text-light h6 my-2">平台規則</h5>
                           <span class="text-secondary my-2">用戶規章</span>
                           <h6 class="text-secondary my-2">評論規章</h6>
@@ -203,7 +203,7 @@ align-items: center;">
                       </div>
                       <div class="col-2">
                         <div class="d-flex flex-column align-items-center">
-                          <img src="/icon/error.png" alt="error" style="width: 20px; height: 20px;">
+                          <img src="./icon/error.png" alt="error" style="width: 20px; height: 20px;">
                           <h5 class="text-light h6 my-2">檢舉/申訴</h5>
                         </div>
                       </div>
@@ -224,93 +224,6 @@ align-items: center;">
     </div>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-<script>
-  // 獲取元素
-  const emailInput = document.querySelector(".Login_ALLuser_input");
-  const checkButton = document.querySelector('#BT_Login_submit');
-  console.log(emailInput, checkButton);
-
-  // 郵件檢查函數
-  function checkEmail(emailInput) {
-    // 至少8個字符
-    const LengthCondition = emailInput.length >= 8;
-
-    // 包含@符號條件 = EmailSignCondition
-    const EmailSignCondition = emailInput.includes('@'); // 檢查是否包含 @ 符號
-
-    // 檢查所有條件
-    if (LengthCondition && EmailSignCondition) {
-      alert("郵件地址格式正確，將導向下一頁。");
-
-      // 將網頁導向到下一頁//
-      window.location.href = "./2-1-4.index_b_ok.html";
-      // window.event.returnValue = false;
-    } else {
-      alert("郵件地址格式不正確，請重新輸入。");
-    }
-  }
-
-
-  // 添加事件監聽器
-  //EnteredEmail= 輸入的郵件地址
-  checkButton.addEventListener('click', function () {
-    const EnteredEmail = emailInput.value;
-    checkEmail(EnteredEmail);
-  });
-</script>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./bootstrap-5.3.2-dist/SCSS/styles/style.css">
-  <title>2-1-1填寫e-mail</title>
-</head>
-
-<body>
-  <div class="wrap2-1-1">
-    <!-- 創建帳戶 與 顯示列 -->
-    <div class="login_Allmain-2-1-1">
-      <div id="h1">創建您的帳戶</div>
-      <div class="Register_account_stage_and_img_2-3-4">
-        <div class="Register_account_stage_font">
-          <div id="stage1_e-mail" style="color: #D0C3E2 ;font-weight: 700;">電郵密碼</div>
-          <div id="stage2_user" style=" color: rgba(255, 255, 255, 0.20); ;font-weight: 400;">個人資料</div>
-          <div id="stage3_finish">完成送出</div>
-        </div>
-        <img src="./movie picture/Group 2610438.svg" alt="" id="Register_account_img">
-      </div>
-      <!-- 文字與輸入框 -->
-      <div id="Create_account_input_e-mail_2-1-1">
-        <div id="Create_account_font">
-          <div id="E-mail">E-mail</div>
-          <div id="E-mail_fonts">電郵是找尋密碼使用請謹慎填寫</div>
-        </div>
-        <!-- 輸入框 -->
-        <input type="text" placeholder=" 請輸入電子郵件並驗證" onfocus="this.placeholder=''"
-          onblur="this.placeholder='請輸入電子郵件並驗證'" style="
-        color:  rgb(255, 255, 255);
-        font-family: Inter;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;" class="Login_ALLuser_input">
-
-        <button type="button" id="BT_Login_submit">
-          <div id="bt_mon_verify">驗證
-          </div>
-        </button>
-      </div>
-
-
-    </div>
-  </div>
 
 </body>
 
