@@ -17,6 +17,14 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/SCSS/styles/style.css" />
+    <style>
+      .reportedReason {
+        margin-top: 15px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 20px;
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body class="body-primary">
     <div class="container-fluid px-0">
@@ -111,26 +119,17 @@
                     class="appeal-info-input"
                     placeholder="帳號"
                   />
-                  <label class="appeal-info-title ml-30">案件編號</label>
+                  <label class="appeal-info-title ml-30">被檢舉案件編號</label>
                   <div class="appeal-info-text">AB0001</div>
                 </div>
                 <div class="wrap-member-num">
-                  <label class="appeal-info-title">被檢舉人原因</label>
-                  <input
+                  <label class="appeal-info-title">被檢舉原因</label>
+                  <p class="reportedReason"></p>
+                  <!-- <input
                     type="text"
                     class="appeal-info-input"
                     placeholder="被檢舉人原因(自動帶入)"
-                  />
-                </div>
-                <div class="wrap-member-num">
-                  <label class="appeal-info-title"
-                    >(選填)提出申辯與被檢舉案件編號</label
-                  >
-                  <input
-                    type="text"
-                    class="appeal-info-input"
-                    placeholder="被檢舉編號"
-                  />
+                  /> -->
                 </div>
                 <div class="wrap-appeal-content">
                   <label class="appeal-info-title mb-20">申訴內容</label>
@@ -222,6 +221,7 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
@@ -230,5 +230,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="bootstrap-5.3.2-dist/js-page/index.js"></script>
+    <script src="bootstrap-5.3.2-dist/js-page/report.js"></script>
   </body>
 </html>
