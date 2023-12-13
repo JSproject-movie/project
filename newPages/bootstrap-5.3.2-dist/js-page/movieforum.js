@@ -10,7 +10,7 @@ function movieForumInit() {
                <span class=""
                  ><img
                    class="col-1"
-                   src="/newPages/movie picture/repairman.jpg"
+                   src="movie picture/repairman.jpg"
                    alt=""
                    srcset=""
                  />
@@ -24,15 +24,15 @@ function movieForumInit() {
                <ul>
                  <li class="mf-reaction">
                    <button class="mf-good" type="button">
-                     <img src="/newPages/icon/white-good.png" alt="" srcset="" />0000讚
+                     <img src="icon/white-good.png" alt="" srcset="" />0000讚
                    </button>
                    <button class="mf-chat" type="button">
-                     <img src="/newPages/icon/chat.png" alt="" srcset="" />2521則
+                     <img src="icon/chat.png" alt="" srcset="" />2521則
                    </button>
                  </li>
-                 <li class="mf-more"><a href="/bootstrap-5.3.2-dist/pages/6-1-1individual-forum.html">
+                 <li class="mf-more"><a href="6-1-1individual-forum.html">
                    <button class="more-icon" type="button" >
-                     展開評論<img src="/newPages/icon/downArrow.png" alt=""  srcset="" />
+                     展開評論<img src="icon/downArrow.png" alt=""  srcset="" />
                    </button></a>
                  </li>
                </ul>
@@ -120,7 +120,7 @@ movieForumNoSpoiler.addEventListener("click",function(e){
                <span class=""
                  ><img
                    class="col-1"
-                   src="/newPages/movie picture/repairman.jpg"
+                   src="movie picture/repairman.jpg"
                    alt=""
                    srcset=""
                  />
@@ -134,15 +134,15 @@ movieForumNoSpoiler.addEventListener("click",function(e){
                <ul>
                  <li class="mf-reaction">
                    <button class="mf-good" type="button">
-                     <img src="/newPages/icon/white-good.png" alt="" srcset="" />0000讚
+                     <img src="icon/white-good.png" alt="" srcset="" />0000讚
                    </button>
                    <button class="mf-chat" type="button">
-                     <img src="/newPages/icon/chat.png" alt="" srcset="" />2521則
+                     <img src="icon/chat.png" alt="" srcset="" />2521則
                    </button>
                  </li>
-                 <li class="mf-more"><a href="/bootstrap-5.3.2-dist/pages/6-1-1individual-forum.html">
+                 <li class="mf-more"><a href="6-1-1individual-forum.html">
                    <button class="more-icon" type="button" >
-                     展開評論<img src="/newPages/icon/downArrow.png" alt=""  srcset="" />
+                     展開評論<img src="icon/downArrow.png" alt=""  srcset="" />
                    </button></a>
                  </li>
                </ul>
@@ -151,5 +151,6 @@ movieForumNoSpoiler.addEventListener("click",function(e){
          </ul>`;
     });
     movieForumList.innerHTML = str;
+    movieForumInit();
   });
 })
