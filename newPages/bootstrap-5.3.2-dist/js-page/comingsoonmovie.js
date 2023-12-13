@@ -227,7 +227,7 @@ function onYouTubeIframeAPIReady() {
 
   const getData = async () => {
     try{
-      const res = await axios.get(`http://localhost:3000/comingsoonmovie${queryString}`);
+      const res = await axios.get(`https://testrender-tga5.onrender.com/comingsoonmovie${queryString}`);
       movieData = res.data[0];
       document.title = `即將上映-${movieData.movieName}`;
       renderData();
@@ -248,4 +248,6 @@ function onYouTubeIframeAPIReady() {
     }
   }
 getData();
-onYouTubeIframeAPIReady();
+setTimeout(() => {
+  onYouTubeIframeAPIReady();
+},500)
