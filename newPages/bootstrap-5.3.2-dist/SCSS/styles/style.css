@@ -1020,6 +1020,11 @@
   justify-content: space-between;
 }
 
+.del-line {
+  text-decoration: none;
+  color: #C5C1C1;
+}
+
 .m-row {
   background: linear-gradient(142deg, #404c53 21.85%, #382538 56.98%, #161618 91.4%);
 }
