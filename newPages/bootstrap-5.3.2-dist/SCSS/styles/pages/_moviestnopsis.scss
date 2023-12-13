@@ -22,21 +22,37 @@
   .movieBtn,
   .moviePlayBtn {
     position: relative;
+    color: white;
+    font-size: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    background-color: black;
-    border-radius: 50%;
-    border: 3px solid white;
-    z-index: 20;
   }
   .moviePlayBtn {
     width: 50px;
     height: 50px;
+    &::after{
+      content: '';
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   .movieControl {
     display: flex;
+  }
+  .movieVideo{
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
