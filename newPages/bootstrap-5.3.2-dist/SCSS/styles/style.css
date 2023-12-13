@@ -212,8 +212,8 @@
   gap: 15px;
   flex-shrink: 0;
   border-radius: 5px;
-  border: 2px solid #D7CDFF;
-  background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
+  border: 2px solid #d7cdff;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%);
 }
 
 .btn-index-a {
@@ -232,8 +232,9 @@
 
 .top10bc {
   padding: 30px;
-  max-width: 1238px;
+  max-width: 1210px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 68px;
   background: linear-gradient(115deg, rgba(219, 72, 196, 0.34) -13.24%, rgba(50, 193, 224, 0.15) 9.84%, rgba(205, 203, 203, 0) 35.52%, rgba(165, 162, 162, 0) 84.27%);
   border-radius: 20px;
@@ -262,6 +263,7 @@
 }
 
 .wrap-movie-card {
+  max-width: 1210px;
   display: flex;
   align-items: center;
 }
@@ -286,19 +288,19 @@
 }
 
 .wrap-whole-card {
-  width: 256px;
+  max-width: 260px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
   flex-direction: column;
   border-radius: 20px;
-  border: 2px solid #B88ED3;
+  border: 2px solid #b88ed3;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
 }
 
 .movie-card-img {
   margin: 0 auto;
-  width: 199px;
+  max-width: 250px;
   height: 274px;
   border-radius: 20px;
 }
@@ -322,7 +324,7 @@
 }
 .card-title a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
 .btn-vedio {
@@ -333,7 +335,7 @@
 .vedio-link {
   padding: 5px;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -347,7 +349,7 @@
   position: relative;
   width: 1200px;
   height: 650px;
-  background: url(/icon/meet.jpg);
+  background: url(https://github.com/JSproject-movie/project/blob/main/newPages/icon/meet.jpg?raw=true);
   background-repeat: no-repeat;
   background-position: right;
   border-radius: 20px;
@@ -394,7 +396,7 @@
   font-family: "Inter", sans-serif;
   font-style: normal;
   line-height: normal;
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
@@ -403,7 +405,7 @@
   font-family: "Inter", sans-serif;
   font-style: normal;
   line-height: normal;
-  color: #FFF;
+  color: #fff;
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
@@ -430,7 +432,7 @@
   left: 39px;
   top: -33px;
   border-radius: 351px;
-  background: #45DBC0;
+  background: #45dbc0;
   filter: blur(171.5px);
 }
 
@@ -440,7 +442,7 @@
   position: absolute;
   right: 9px;
   top: -71px;
-  background: #BE2EA7;
+  background: #be2ea7;
   filter: blur(171.5px);
 }
 
@@ -450,7 +452,7 @@
   width: 172px;
   height: 172px;
   flex-shrink: 0;
-  background: #97794C;
+  background: #97794c;
   filter: blur(150px);
 }
 
@@ -460,7 +462,7 @@
   width: 172px;
   height: 172px;
   flex-shrink: 0;
-  background: #7FE7CE;
+  background: #7fe7ce;
   filter: blur(150px);
 }
 
@@ -470,7 +472,7 @@
   width: 172px;
   height: 172px;
   flex-shrink: 0;
-  background: #5C6DC6;
+  background: #5c6dc6;
   filter: blur(150px);
 }
 
@@ -478,7 +480,7 @@
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-  max-width: 1278px;
+  max-width: 1255px;
   height: 578px;
 }
 
@@ -505,7 +507,7 @@
   height: 8px;
   display: inline-block;
   border-radius: 20px;
-  background: #8C7B97;
+  background: #8c7b97;
   opacity: 0.3;
   margin: 0 5px;
   outline: 0;
@@ -515,12 +517,12 @@
 .swiper-pagination-customs-active {
   opacity: 1;
   border-radius: 20px;
-  background: #FFABF7;
+  background: #ffabf7;
   box-shadow: 0px 2px 11px 0px rgba(255, 171, 247, 0.3);
 }
 
 .swiper-button-prev {
-  background-image: url(/icon/leftArrow.png) !important;
+  background-image: url(https://github.com/JSproject-movie/project/blob/main/newPages/icon/leftArrow.png?raw=true) !important;
   width: 42px;
   height: 60px;
   background-repeat: no-repeat;
@@ -529,7 +531,7 @@
 }
 
 .swiper-button-next {
-  background-image: url(/icon/rightArrow.png) !important;
+  background-image: url(https://github.com/JSproject-movie/project/blob/main/newPages/icon/rightArrow.png?raw=true) !important;
   width: 42px;
   height: 60px;
   background-repeat: no-repeat;
@@ -559,11 +561,12 @@
   box-shadow: 3px 4px 32px 0px rgba(167, 122, 202, 0.25);
 }
 
-.toTop-arrow::before, .toTop-arrow::after {
+.toTop-arrow::before,
+.toTop-arrow::after {
   width: 31px;
   height: 7px;
   border-radius: 3px;
-  background: #FFF;
+  background: #fff;
   position: absolute;
   content: "";
   stroke-width: 8px;
@@ -582,6 +585,15 @@
 
 .toTop-arrow:focus {
   outline: none;
+}
+
+.movie-side-fz {
+  font-size: 20px;
+}
+
+.white-a {
+  text-decoration: none;
+  color: white;
 }
 
 .editInformationArea {
