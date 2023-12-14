@@ -131,13 +131,13 @@ lightbox.option({
     <h2 class="text-white fw-bold mb-0">會員評論</h2>
     <div class="row g-0 w-100">
         <div class="col-12 d-flex justify-content-end px-5 my-3">
-            <button type="button" class="btn commentBtn mx-3">我要評論<i class="bi bi-pencil-square mx-3"></i></button>
+            <a href="../newPages/6-1movieforum.html" class="btn commentBtn mx-3">我要評論<i class="bi bi-pencil-square mx-3"></i></a>
         </div>
         <div class="col-12 mt-3">
             <div class="row g-0">
               ${commentTemelate}
             <div class="d-flex justify-content-center w-100">
-                <button type="button" class="btn commentBtn w-25">更多影評</button>
+                <a href="../newPages/6-1movieforum.html" class="btn commentBtn w-25">更多影評</a>
             </div>
         </div>
     </div>
@@ -270,3 +270,18 @@ getData();
 setTimeout(() => {
   onYouTubeIframeAPIReady();
 },500)
+// btn returnTop
+$(function () {
+  $("#BackTop").click(function () {
+    $("html,body").animate({ scrollTop: 0 }, 333);
+  });
+  $(window)
+    .scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $("#BackTop").fadeIn(222);
+      } else {
+        $("#BackTop").stop().fadeOut(222);
+      }
+    })
+    .scroll();
+});
